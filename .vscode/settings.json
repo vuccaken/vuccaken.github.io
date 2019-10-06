@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.root": "/_site/", // root を /_site/ に設定。
+  "files.associations": { // syntax coloring
+    "*.html": "jekyll",
+    // ".latexmkrc": "perl"
+  },
+  "scss.validate": false // don't show scss errors with front matter
+}
