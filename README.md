@@ -12,8 +12,13 @@ Access: https://vuccaken.github.io/new-hp/
 - git init: 2019-10-07
 
 
-
 ## 部員へ
 
 - Jekyllという静的サイトジェネレータを使って作っています。
 - 学祭までには完成させます......
+
+
+## jekyll使い方メモ
+
+- `gem install`
+- `bundle exec jekyll server`
