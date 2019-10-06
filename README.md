@@ -1,8 +1,9 @@
 # new-hp
 developing new homepage......
 
-Access: https://vuccaken.github.io/new-hp/_site/
+Access: https://vuccaken.github.io/new-hp/
 
+反映おそい
 
 
 ## developing
