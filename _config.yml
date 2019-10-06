@@ -1,3 +1,6 @@
+baseurl: "/new-hp"
+url: "https://vuccaken.github.io/"
+
 collections:
   members:
     output: true
