@@ -1,0 +1,10 @@
+
+<div class="info-news-pad">
+  {% for post in site.posts %}
+  <div class="home-news">
+    <div>{{ post.date | date_to_string }}</div>
+    <div><a href="/pages/news.html#{{ page.url }}">{{ post.title }}</a></div>
+    {%- comment -%} <p>{{ post.excerpt }}</p> {%- endcomment -%}
+  </div>
+  {% endfor %}
+</div>

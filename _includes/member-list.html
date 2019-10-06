@@ -1,0 +1,22 @@
+{% for member in site.data.members %}
+<h3>
+  {% if member.position %}{{ member.position }}：{% endif %}{% if member.url %}<a href="{{ member.url }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
+</h3>
+<div class="member-list">
+  <div class="member-info">
+    <div class="member-info-icon">
+    {% if member.icon %}<img class="member-icon" src="/assets/img/icon/{{ member.icon }}" />{% else %}<img class="member-icon" src="/assets/img/logo.png" />{% endif %}
+    </div>
+    <ul class="member-info-list">
+      <li>{{ member.belong }}</li>
+      <li>{{ member.from }}</li>
+      <li>{{ member.hobby }}</li>
+      <li>{{ member.free-1 }}</li>
+      <li>{{ member.free-2 }}</li>
+      <li>{{ member.free-3 }}</li>
+      <li>{{ member.anime }}</li>
+    </ul>
+  </div>
+  <p class="member-massage">{{ member.massage }}</p>
+</div>
+{% endfor %}

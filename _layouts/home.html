@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home-img">
+  <img class="home-tesla" src="/assets/img/pages/tesla.jpg" alt="">
+  <div class="home-text">
+    {{ content }}
+  </div>
+</div>
+
+
+<div class="home-info">
+  <div class="info-block">
+    <p class="info-title"><a href="news.html">News</a></p>
+    <div class="info-frame">
+      {% include news_list.html %}
+    </div>
+  </div>
+  <div class="info-block">
+    <p class="info-title"><a href="https://twitter.com/vuccaken">Twitter</a></p>
+    <div class="info-frame">
+      {% include twitter.html %}
+    </div>
+  </div>
+</div>

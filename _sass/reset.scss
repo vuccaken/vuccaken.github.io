@@ -1,0 +1,36 @@
+body {
+  font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+}
+// ul {
+//   list-style: none;
+// }
+a {
+  text-decoration: none;
+  color: skyblue;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+h2 {
+  border-left: solid 8px tomato;
+  padding-left: 15px;
+  line-height: 1.2em;
+}
+h3 {
+  border-bottom: solid 2px tomato;
+}
+tr, td{
+  // border: solid 1px tomato;
+  // margin: 0;
+}
+table td {
+  padding: 3px 8px;
+}
+table {
+  empty-cells: hide;
+}

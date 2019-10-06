@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="立命館大学物理科学研究会">
+  {% if page.url == '/' %}
+    <meta name="keywords" content="立命館大学,物理科学研究会">
+    <meta name="description" content="紹介文">
+  {% endif %}
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      {% include header.html %}
+      {% include content.html %}
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
