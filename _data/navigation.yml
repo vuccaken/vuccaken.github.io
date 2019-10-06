@@ -1,0 +1,12 @@
+- name: News
+  link: /pages/news.html
+- name: About
+  link: /pages/about.html
+- name: Member
+  link: /pages/member.html
+- name: Material
+  link: /pages/material.html
+- name: Link
+  link: /pages/link.html
+- name: Special
+  link: /pages/special.html

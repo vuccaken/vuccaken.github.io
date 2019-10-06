@@ -1,0 +1,53 @@
+//
+// HOME
+//
+.home-img {
+  position: relative;
+}
+.home-tesla {
+  width: 100%;
+  position: relative;
+  z-index: -5;
+}
+.home-text {
+  color: aqua;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.home-info {
+  padding: 2.5% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  // margin-bottom: 30px;
+}
+.info-block{ // each news and twitter
+  width: 40%;
+}
+.info-title {
+  text-align: center;
+}
+.info-frame {
+  height: 300px;
+  min-width: 300px;
+  max-width: 400px;
+  overflow: auto;
+  // padding: 10px;
+  border: 2px solid tomato;
+  // background: #fca;
+  border-radius: 6px;
+}
+.info-news-pad {
+  padding: 10px;
+}
+.home-news {
+  border-bottom: solid 1px #aaa;
+}
+.twitter-timeline {
+  // background-color: tomato;
+  // color: yellow;
+}

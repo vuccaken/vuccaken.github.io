@@ -1,0 +1,26 @@
+
+- name: nukoyama
+  url: https://twitter.com/geniusium_
+  icon: nuko06.png
+  position: 会計
+  belong: 所属：理工学部 物理科学科 4回生
+  from: 出身地：大阪府の郊外
+  hobby: 趣味：ソシャゲ
+  free-1: 好きなもの：ステーキ、チョコ、豚骨醤油
+  free-2: 座右の銘：迷ったらやらない
+  free-3: 過去のテーマ：ゼータ関数
+  anime: 極上のアニメ：苺ましまろ、わたてん
+  massage: 一言：2次元と10次元に興味があります。
+
+- name: your name.
+  url: # null is OK!
+  position: # null is OK!
+  icon: # defalt is vuccaken logo
+  belong: 所属：
+  from: 出身地：
+  hobby: 趣味：
+  free-1: 好きなもの：
+  free-2: 座右の銘：
+  free-3: 将来の野望：
+  anime: 極上のアニメ：
+  massage: 一言：
