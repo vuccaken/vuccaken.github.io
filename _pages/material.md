@@ -6,10 +6,12 @@ title: Material
 toc: true
 ---
 
-## ああああ
-ページのタイトル、seminarでいいのかなぁ。
+<h2 id="seminar">セミナー資料</h2>
 
-<h2 id="seminar">セミナー</h2>
+### 2019年度
+
+- aaaaa
+- bbbbb
 
 <h2 id="kaishi">会誌</h2>
 
