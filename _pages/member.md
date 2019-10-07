@@ -2,8 +2,6 @@
 title: Member
 ---
 
-## hello
-
 ## 会員構成
 
 ### 現役
