@@ -21,12 +21,14 @@
 .home-info {
   padding: 2.5% 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  // flex-direction: row;
+  // justify-content: space-evenly;
   // margin-bottom: 30px;
 }
 .info-block{ // each news and twitter
   width: 40%;
+  margin: auto;
+  // background-color: aqua;
 }
 .info-title {
   text-align: center;
@@ -36,10 +38,14 @@
   min-width: 300px;
   max-width: 400px;
   overflow: auto;
+  // overflow:hidden;
   // padding: 10px;
   border: 2px solid tomato;
   // background: #fca;
   border-radius: 6px;
+}
+.info-frame::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
 }
 .info-news-pad {
   padding: 10px;
