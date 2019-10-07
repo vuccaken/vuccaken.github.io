@@ -31,6 +31,7 @@ title: About
 
 ## 年間予定
 
+<div class="table-space">
 <table>
 {% for item in site.data.about-schedule %}
   <tr>
@@ -39,3 +40,4 @@ title: About
   </tr>
 {% endfor %}
 </table>
+</div>
