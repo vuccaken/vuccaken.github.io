@@ -1,5 +1,6 @@
-baseurl: "/new-hp"
+
 url: "https://vuccaken.github.io/"
+baseurl: "/new-hp"
 
 collections:
   members:
