@@ -1,6 +1,6 @@
 
 {% for post in site.posts %}
-<a href="/pages/news.html#{{ post.url }}">
+<a href="{{ site.baseurl }}/pages/news.html#{{ post.url }}">
   <div class="home-news">
   <div>{{ post.date | date_to_string }}</div>
   <div>{{ post.title }}</div>

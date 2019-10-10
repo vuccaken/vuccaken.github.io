@@ -5,7 +5,7 @@
 <div class="member-list">
   <div class="member-info">
     <div class="member-info-icon">
-    {% if member.icon %}<img class="member-icon" src="/assets/img/icon/{{ member.icon }}" />{% else %}<img class="member-icon" src="/assets/img/logo.png" />{% endif %}
+    {% if member.icon %}<img class="member-icon" src="{{ site.baseurl }}/assets/img/icon/{{ member.icon }}" />{% else %}<img class="member-icon" src="{{ site.baseurl }}/assets/img/logo.png" />{% endif %}
     </div>
     <ul class="member-info-list">
       <li>{{ member.belong }}</li>
