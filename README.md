@@ -23,8 +23,8 @@ Access: https://vuccaken.github.io/new-hp/
 
 ### ローカルでビルドする場合
 
-`._config.yml` でGithub Pages用に `baseurl` を設定しているので、
-ローカルでビルドする時は次のようにオプションを付ける。
+`_config.yml` でGithub Pages用に `baseurl` を設定しているので、
+ローカルでビルドする時は次のようにflagを付ける。
 
 ```
 bundle exec jekyll s --baseurl ''
