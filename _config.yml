@@ -1,7 +1,3 @@
-# baseurl: "/new-hp"
-# url: "https://vuccaken.github.io/"
-# repository: "vuccalen/new-hp"
-
 title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -31,24 +27,4 @@ defaults:
     values:
       layout: "default"
       toc: true
-      # type: "pages"
 
-toc:
-  min_level: 2 # default: 1
-  max_level: 2 # default: 6
-
-# plugins:
-#   - jekyll-toc
-
-
-# markdown: redcarpet
-# redcarpet:
-#   extensions: [
-#     "no_intra_emphasis",
-#     "fenced_code_blocks",
-#     "autolink",
-#     "tables",
-#     "footnotes",
-#     "strikethrough",
-#     "lax_html_blocks"
-#   ]
