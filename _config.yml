@@ -1,6 +1,6 @@
-
-url: "https://vuccaken.github.io/"
 baseurl: "/new-hp"
+url: "https://vuccaken.github.io/"
+repository: "vuccalen/new-hp"
 
 collections:
   members:
