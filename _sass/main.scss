@@ -8,12 +8,13 @@ header {
   background: tomato;
   // border-bottom: solid 1px blue;
 }
-.nav-list {
+.nav-area {
   display: flex;
 }
 .img-logo {
   width: 130px;
   margin-bottom: -80px;
+  margin-right: -60px;
   // position: relative;
   // z-index: 0;
 }
@@ -23,11 +24,16 @@ header {
   // filter:alpha(opacity=80);
   // -ms-filter: "alpha( opacity=80 )";
 }
+.nav-list {
+  // width: 700px;
+  margin: auto;
+  display: flex;
+  // background-color: aqua;
+}
 .nav-menu {
   // background-color: #333;
   text-align: center;
-  margin: auto 0;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 .nav-menu a{
   color: black;
@@ -35,7 +41,7 @@ header {
   // padding-right: 10px;
   padding: 5px 10px;
   // border-radius: 100px;
-  font-size: 110%;
+  font-size: 14pt;
 }
 .nav-menu a:hover{
   background-color: aquamarine;
@@ -69,26 +75,28 @@ footer .copyright {
 .toc-area {
   display: flex;
   // background-color: greenyellow;
+  // border-top: solid 2px tomato;
+  // border-bottom: solid 2px tomato;
+  // width: 70%;
+  // max-width: 500px;
+  // min-width: 500px;
+  // margin: auto;
+}
+.toc-ul { // <ul>
+  // background-color: #fff;
   border-top: solid 2px tomato;
   border-bottom: solid 2px tomato;
-  width: 75%;
-  max-width: 500px;
-  margin: auto;
-}
-.section-nav { // <ul>
-  // background-color: #fff;
   padding: 0;
   margin: auto;
   display: flex;
 }
-.toc-entry { // <li>
-  // width: 200px;
+.toc-li { // <li>
   // border: 1px solid aqua;
   list-style: none;
   text-align: center;
-  font-size: 80%;
+  font-size: 10.5pt;
 }
-.toc-entry a{
+.toc-a{
   // color: tomato;
   // border: 1px solid tomato;
   padding: 0px 15px;
