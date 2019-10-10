@@ -23,6 +23,15 @@ Access: https://vuccaken.github.io/new-hp/
 - `gem install`
 - `bundle exec jekyll server`
 
+### ローカルでビルドする場合
+
+`._config.yml` でGithub Pages用に `baseurl` を設定しているので、
+ローカルでビルドする時は次のようにオプションを付ける。
+
+```
+bundle exec jekyll s --baseurl ''
+```
+
 ## 参考
 
 - https://github.com/allejo/jekyll-toc
