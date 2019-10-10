@@ -18,6 +18,8 @@
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
+
+// info
 .home-info {
   padding: 2.5% 0;
   display: flex;
@@ -48,11 +50,14 @@
 .info-frame::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   display:none;
 }
-.info-news-pad {
-  padding: 10px;
-}
 .home-news {
-  border-bottom: solid 1px #aaa;
+  padding: 5px 10px;
+  // border-bottom: solid 1px #aaa;
+  font-size: 12pt;
+}
+.info-news-pad .home-news:hover {
+  // background-color: aqua;
+  background-color: rgba(0,0,0,0.3);
 }
 .twitter-timeline {
   // background-color: tomato;
