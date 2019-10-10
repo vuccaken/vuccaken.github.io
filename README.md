@@ -3,8 +3,6 @@ developing new homepage......
 
 Access: https://vuccaken.github.io/new-hp/
 
-反映おそい
-
 
 ## developing
 
@@ -31,6 +29,16 @@ Access: https://vuccaken.github.io/new-hp/
 ```
 bundle exec jekyll s --baseurl ''
 ```
+
+winだと（？）上のような `''` ではなく `` `' `` じゃないとダメっぽい（アホ）。
+
+```
+bundle exec jekyll s --baseurl `'
+```
+
+## 注意
+
+- Github Pagesでは、未来の記事も表示される。
 
 ## 参考
 
