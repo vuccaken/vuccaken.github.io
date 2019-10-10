@@ -22,3 +22,8 @@ Access: https://vuccaken.github.io/new-hp/
 
 - `gem install`
 - `bundle exec jekyll server`
+
+## 参考
+
+- https://github.com/allejo/jekyll-toc
+  - h2の目次はこれで出力。
