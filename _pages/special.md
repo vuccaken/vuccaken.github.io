@@ -22,8 +22,10 @@ title: Special
 
 ## ギャラリー
 
+
+
 ### 新歓チラシ
 
 #### 2019年度
 
-![aa]({{ site.baseurl }}/assets/img/gallery/chirashi2019/chirashi19sj.jpg)
+![19sj]({{ site.baseurl }}/assets/img/gallery/chirashi2019/chirashi19sj.jpg){:width="500px"}
