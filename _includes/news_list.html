@@ -2,9 +2,9 @@
 {% for post in site.posts %}
 <a href="{{ site.baseurl }}/pages/news.html#{{ post.url }}">
   <div class="home-news">
-  <div>{{ post.date | date_to_string }}</div>
-  <div>{{ post.title }}</div>
-  {%- comment -%} <p>{{ post.excerpt }}</p> {%- endcomment -%}
+    <span class="news-list_date">{{ post.date | date_to_string }}</span>
+    <div class="news-list_title">{{ post.title }}</div>
+    {%- comment -%} <p>{{ post.excerpt }}</p> {%- endcomment -%}
   </div>
 </a>
 {% endfor %}
