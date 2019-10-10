@@ -28,4 +28,5 @@ title: Special
 
 #### 2019年度
 
-![19sj]({{ site.baseurl }}/assets/img/gallery/chirashi2019/chirashi19sj.jpg){:width="500px"}
+![19sj]({{ site.baseurl }}/assets/img/gallery/chirashi2019/chirashi19sj.jpg){:width="200px"}
+![19sj]({{ site.baseurl }}/assets\img\gallery\chirashi2019\chirashi19nk1-th.jpg){:width="200px"}
