@@ -1,0 +1,13 @@
+
+- name      : your name.
+  url       : # null is OK!
+  position  : # null is OK!
+  icon      : # defalt is vuccaken logo
+  item1     : 卒業：
+  item2     : 進学先： # 進学 or 就職
+  item3     : 出身地：
+  item4     : 趣味：
+  item5     : 座右の銘：
+  item6     : 将来の野望：
+  item7     : 極上のアニメ：
+  massage   : 一言：

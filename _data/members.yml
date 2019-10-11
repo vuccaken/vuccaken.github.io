@@ -1,26 +1,152 @@
 
-- name: nukoyama
-  url: https://twitter.com/geniusium_
-  icon: nuko06.png
-  position: 会計
-  belong: 所属：理工学部 物理科学科 4回生
-  from: 出身地：大阪府の郊外
-  hobby: 趣味：ソシャゲ
-  free-1: 好きなもの：ステーキ、チョコ、豚骨醤油
-  free-2: 座右の銘：迷ったらやらない
-  free-3: 過去のテーマ：ゼータ関数
-  anime: 極上のアニメ：苺ましまろ、わたてん
-  massage: 一言：2次元と10次元に興味があります。
+- name    : 嬢@(っ'ヮ'c)
+  url     : # null is OK!
+  position: 副会長 # null is OK!
+  icon    : jou.png # defalt is vuccaken logo
+  item1   : 所属：理工学部 機械工学科 2回生
+  item2   : 出身地：京都
+  item3   : 趣味：自転車、山、オーディオ
+  item4   : 好きなもの：ベルヌーイの定理
+  item5   : 座右の銘：
+  item6   : 将来の野望：
+  item7   : 極上のアニメ：けいおん、PSYCHO-PASS
+  massage : 一言：自由の刑に処されている。
 
-- name: your name.
-  url: # null is OK!
+- name    : にっしー
+  url     : # null is OK!
+  position: 会長 # null is OK!
+  icon    : kumakinntore.png # defalt is vuccaken logo
+  item1   : 所属：理工学部 物理科学科 4回生
+  item2   : 出身地：Zipangu
+  item3   : 趣味：睡眠・将棋
+  item4   : 好きなもの：カレーメシ、ビーフジャーキー
+  item5   : 研究分野：物理
+  item6   : いつかやりたいこと：熊本県で馬刺しを食べたい！！
+  item7   : 極上のアニメ：美味しんぼ
+  massage : 一言：よーし、みんな集合だ☆
+
+- name    : nukoyama
+  url     : https://twitter.com/geniusium_
+  icon    : nuko06.png
+  position: 会計
+  item1   : 所属：理工学部 物理科学科 4回生
+  item2   : 出身地：大阪府の郊外
+  item3   : 趣味：ソシャゲ
+  item4   : 好きなもの：ステーキ、チョコ、豚骨醤油
+  item5   : 座右の銘：迷ったらやらない
+  item6   : 過去のテーマ：ゼータ関数
+  item7   : 極上のアニメ：苺ましまろ、わたてん
+  massage : 一言：2次元と10次元に興味があります。
+
+- name    : くま
+  url     : # null is OK!
+  position: 名誉会長 # null is OK!
+  icon    : # defalt is vuccaken logo
+  item1   : 所属：理工学研究科 基礎理工学専攻 物理科学コース 1回生
+  item2   : 出生地：アメリカ合衆国ピッツバーグ
+  item3   : 趣味：思考実験、旅行
+  item4   : 好きなもの：おもしろそうなもの
+  item5   : 座右の銘：まだ未定
+  item6   : 将来の野望：世界のあらゆるものを作る
+  item7   : 極上のアニメ：ノーゲームノーライフ
+  massage : 一言：物理楽しいー
+
+- name    : HD
+  url     : # null is OK!
   position: # null is OK!
-  icon: # defalt is vuccaken logo
-  belong: 所属：
-  from: 出身地：
-  hobby: 趣味：
-  free-1: 好きなもの：
-  free-2: 座右の銘：
-  free-3: 将来の野望：
-  anime: 極上のアニメ：
-  massage: 一言：
+  icon    : HD.png # defalt is vuccaken logo
+  item1   : 所属：理工学部 ロボティクス学科 4回生
+  item2   : 出身地：にぼ次郎
+  item3   : 趣味：ロボット製作
+  item4   : 好きなもの：にぼ次郎
+  item5   : 座右の銘：ないから作るんですよ
+  item6   : 将来の野望：地球征服
+  item7   : 極上のアニメ：ケロロ軍曹
+  massage : 一言：行きます行きます行きますゝゝゝゝ......
+
+- name    : 藤木
+  url     : # null is OK!
+  position: # null is OK!
+  icon    : # defalt is vuccaken logo
+  item1   : 所属：理工学部 物理科学科 1回生
+  item2   : 出身地：広島
+  item3   : 趣味：ゲーム
+  item4   : 好きなもの：入間人間さんの小説
+  item5   : 座右の銘：単純な 馬鹿でありたい
+  item6   : 将来の野望：教職員になってダラダラ暮らしたい
+  item7   : 極上のアニメ：あっちこっち
+  massage : 一言：日々、私たちが過ごしている日常は、実は奇跡の連続かもしれない。
+
+- name    : なすび
+  url     : # null is OK!
+  position: # null is OK!
+  icon    : # defalt is vuccaken logo
+  item1   : 所属：理工学部 物理科学科 1回生
+  item2   : 出身地：栃木
+  item3   : 趣味：同人誌漁り
+  item4   : 好きなもの：天文学
+  item5   : 座右の銘：失敗から学ぶのは失敗の仕方だけ
+  item6   : ギレンの野望：好きだけどクリア出来ん...
+  item7   : 極上のアニメ：コードギアス
+  massage : 一言：パーカーは至高
+
+- name    : こうき
+  url     : # null is OK!
+  position: # null is OK!
+  icon    : # defalt is vuccaken logo
+  item1   : 所属：理工学部 機械工学科 1回生
+  item2   : 出身地：こうべ
+  item3   : 特技：ルーブックキューブ
+  item4   : 信仰：Apple
+  item5   : 座右の銘：Life isn't worth living, unless it's lived for someone else.
+  item6   : 将来の野望：
+  item7   : 極上のアニメ：レールガン
+  massage : 一言：BKC遠い
+
+- name    : NMB
+  url     : # null is OK!
+  position: # null is OK!
+  icon    : # defalt is vuccaken logo
+  item1   : 所属：理工学部 物理科学科 1回生
+  item2   : 出身地：岡山
+  item3   : 趣味：歳差運動
+  item4   : 好きなもの：蚊
+  item5   : 座右の銘：強く生きる
+  item6   : 将来の野望：
+  item7   : 極上のアニメ：星のカービィ
+  massage : 一言：
+
+- name    : Y君
+  url     : # null is OK!
+  position: # null is OK!
+  icon    : # defalt is vuccaken logo
+  item1   : 所属：理工学部 物理科学科 1回生
+  item2   : 出身地：滋賀
+  item3   : 趣味：旅
+  item4   : 好きなもの：公理
+  item5   : 座右の銘：格物究理
+  item6   : 将来の野望：
+  item7   : 極上のアニメ：ねこぢる劇場
+  massage : 一言：無明の闇
+
+
+
+# - name    : your name.
+#   url     : # null is OK!
+#   position: # null is OK!
+#   icon    : # defalt is vuccaken logo
+#   item1   : 所属：
+#   item2   : 出身地：
+#   item3   : 趣味：
+#   item4   : 好きなもの：
+#   item5   : 座右の銘：
+#   item6   : 将来の野望：
+#   item7   : 極上のアニメ：
+#   massage : 一言：
+
+
+
+
+
+
+

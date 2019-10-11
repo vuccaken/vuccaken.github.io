@@ -1,0 +1,14 @@
+{% assign isGrade = true %}
+{% for item in include.grade %}
+  {% if isGrade == true %}
+    <tr class="grade">
+      <td rowspan="{{ include.grade | size }}">{{ include.gradename }}</td>
+      <td>{{ item[0] }}</td><td>{{ item[1] }}</td><td>{{ item[2] }}</td>
+    </tr>
+    {% assign isGrade = false %}
+  {% else %}
+    <tr>
+      <td>{{ item[0] }}</td><td>{{ item[1] }}</td><td>{{ item[2] }}</td>
+    </tr>
+  {% endif %}
+{% endfor %}

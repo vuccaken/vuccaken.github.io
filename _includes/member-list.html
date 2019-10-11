@@ -1,20 +1,20 @@
-{% for member in site.data.members %}
+{% for member in include.member-src %}
 <h3>
   {% if member.position %}{{ member.position }}：{% endif %}{% if member.url %}<a href="{{ member.url }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
 </h3>
 <div class="member-list">
   <div class="member-info">
     <div class="member-info-icon">
-    {% if member.icon %}<img class="member-icon" src="{{ site.baseurl }}/assets/img/icon/{{ member.icon }}" />{% else %}<img class="member-icon" src="{{ site.baseurl }}/assets/img/logo.png" />{% endif %}
+      <img class="member-icon" src="{{ site.baseurl }}/assets/img/{% if member.icon %}icon/{{ member.icon }}{% else %}logo.png{% endif %}" alt="{{ member.name }}'s icon"/>
     </div>
     <ul class="member-info-list">
-      <li>{{ member.belong }}</li>
-      <li>{{ member.from }}</li>
-      <li>{{ member.hobby }}</li>
-      <li>{{ member.free-1 }}</li>
-      <li>{{ member.free-2 }}</li>
-      <li>{{ member.free-3 }}</li>
-      <li>{{ member.anime }}</li>
+      <li>{{ member.item1 }}</li>
+      <li>{{ member.item2 }}</li>
+      <li>{{ member.item3 }}</li>
+      <li>{{ member.item4 }}</li>
+      <li>{{ member.item5 }}</li>
+      <li>{{ member.item6 }}</li>
+      <li>{{ member.item7 }}</li>
     </ul>
   </div>
   <p class="member-massage">{{ member.massage }}</p>
