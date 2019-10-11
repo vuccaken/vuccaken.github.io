@@ -1,11 +1,13 @@
 ---
 # layout: default
 title: About
+active_plan:
+  - [例会, 毎週水曜日 18時〜]
+  - [ゼミ, 元気があれば開催]
+  - [学園祭, 12月1日（日） @BKC]
 ---
 
-こんにちabout
-
-<h2 id="what-is-vuccaken">物理科学研究会とは</h2>
+## 物理科学研究会とは
 
 このサークルは立命館大学BKCにて、物理科学全般について日々研究・学習を行っている学術本部公認団体です。
 
@@ -21,9 +23,20 @@ title: About
 
 2019年度の活動日程は以下の通りです。
 
-- 例会（秋期）：毎週水曜日 18時〜
+<!-- - 例会（秋期）：毎週水曜日 18時〜
 - ゼミ：元気があれば開催
-- 学園祭（BKC）：12月1日（日）
+- 学園祭（BKC）：12月1日（日） -->
+
+<div class="table-space">
+<table>
+{% for item in page.active_plan %}
+  <tr>
+    <td style="text-align: right;">{{ item[0] }}：</td>
+    <td>{{ item[1] }}</td>
+  </tr>
+{% endfor %}
+</table>
+</div>
 
 ## 会費
 
