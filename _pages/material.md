@@ -1,8 +1,5 @@
 ---
 title: Material
-# jump:
-#   name: 会誌
-#   link: kaishi
 toc: true
 ---
 
