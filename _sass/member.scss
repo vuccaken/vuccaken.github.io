@@ -11,6 +11,8 @@
 }
 .member-info {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .member-info-icon {
   margin: auto 0;
