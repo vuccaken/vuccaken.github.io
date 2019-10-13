@@ -20,17 +20,19 @@
 }
 
 // info
-.home-info {
+.home_info-p {
   padding: 2.5% 0;
   display: flex;
+  flex-wrap: wrap;
   // flex-direction: row;
-  // justify-content: space-evenly;
-  // margin-bottom: 30px;
+  justify-content: space-evenly;
 }
-.info-block{ // each news and twitter
-  width: 40%;
-  margin: auto;
+.home_info-c { // each news and twitter
   // background-color: aqua;
+  max-width: 400px;
+  flex: 1 0 300px;
+  margin: 20px;
+  
 }
 .info-title {
   text-align: center;
@@ -38,8 +40,6 @@
 .info-frame {
   // background: aqua;
   height: 300px;
-  min-width: 300px;
-  max-width: 400px;
   border: 2px solid tomato;
   border-radius: 6px;
   overflow: auto;

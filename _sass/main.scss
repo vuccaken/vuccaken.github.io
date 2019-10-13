@@ -1,6 +1,7 @@
 .wrapper{
   max-width: 1000px;
-  min-width: 700px;
+  // min-width: 400px;
+  // min-width: device-width;
   margin: 0 auto;
 }
 
@@ -14,7 +15,7 @@ header {
 .img-logo {
   width: 130px;
   margin-bottom: -80px;
-  margin-right: -60px;
+  // margin-right: -60px;
   position: relative;
   z-index: 1; // 無いとcontentの下敷きに...
 }
@@ -28,10 +29,11 @@ header {
   // width: 700px;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   // background-color: aqua;
 }
 .nav-menu {
-  // background-color: #333;
+  // background-color: aqua;
   text-align: center;
   margin: 0 5px;
 }
@@ -75,30 +77,29 @@ footer .copyright {
 .toc-area {
   display: flex;
   // background-color: greenyellow;
-  // border-top: solid 2px tomato;
-  // border-bottom: solid 2px tomato;
-  // width: 70%;
-  // max-width: 500px;
-  // min-width: 500px;
-  // margin: auto;
 }
 .toc-ul { // <ul>
-  // background-color: #fff;
+  // background-color: #999;
   border-top: solid 2px tomato;
   border-bottom: solid 2px tomato;
   padding: 0;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .toc-li { // <li>
   // border: 1px solid aqua;
+  padding: 0px 10px;
   list-style: none;
-  text-align: center;
+  // text-align: center;
   font-size: 10.5pt;
+  flex: 1 0 1;
+  // margin: auto;
 }
 .toc-a{
   // color: tomato;
   // border: 1px solid tomato;
-  padding: 0px 15px;
+  // padding: 0px 15px;
 }
 
