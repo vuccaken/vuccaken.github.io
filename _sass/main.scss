@@ -1,12 +1,12 @@
 .wrapper{
   max-width: 1000px;
-  // min-width: 400px;
+  min-width: 375px;
   // min-width: device-width;
   margin: 0 auto;
 }
 
 header {
-  background: tomato;
+  // background: tomato;
   // border-bottom: solid 1px blue;
 }
 .nav-area {
@@ -15,9 +15,11 @@ header {
 .img-logo {
   width: 130px;
   margin-bottom: -80px;
-  // margin-right: -60px;
+  margin-right: -35px;
   position: relative;
   z-index: 1; // 無いとcontentの下敷きに...
+  // width: 80px;
+  // margin: 0px;
 }
 .img-logo:hover{
   text-decoration: none;
@@ -26,32 +28,31 @@ header {
   // -ms-filter: "alpha( opacity=80 )";
 }
 .nav-list {
-  // width: 700px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   // background-color: aqua;
 }
 .nav-menu {
   // background-color: aqua;
   text-align: center;
-  margin: 0 5px;
+  margin: 5px 5px;
 }
 .nav-menu a{
-  color: black;
-  background-color: #fff;
-  // padding-right: 10px;
+  // background-color: #fff;
+  color: #fff;
   padding: 5px 10px;
-  // border-radius: 100px;
+  border-radius: 100px;
   font-size: 14pt;
 }
 .nav-menu a:hover{
-  background-color: aquamarine;
+  background-color: white;
   color: #333;
 }
 .nav-menu .current {
-  color: white;
-  background-color: #333;
+  background-color: white;
+  color: #333;
 }
 
 // .content {
@@ -64,13 +65,17 @@ header {
 }
 
 footer {
-  background: tomato;
-  color: #111;
+  // background: tomato;
+  // color: #111;
   margin-top: 30px;
+  min-height: 50px;
+  border-top: solid 2px tomato;
 }
-footer .copyright {
+.copyright {
+  // background: aqua;
   text-align: center;
-  font-size: 80%;
+  font-size: 10pt;
+  padding: 20px 0;
 }
 
 // TOC
