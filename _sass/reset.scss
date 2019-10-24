@@ -1,47 +1,46 @@
+$bg-color: #333;
+$bg-color-sub: #555;
+$text-color: #fff;
+$thm-color: tomato;
+$a-color: skyblue;
+
 body {
   font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
   margin: 0;
   padding: 0;
-  background-color: #333;
-  // background-color: #000;
-  color: #fff;
+  // background-color: #333;
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: 12pt;
 }
-// ul {
-//   list-style: none;
-// }
+
 p {
   margin: 10px 0;
 }
 a {
   text-decoration: none;
-  color: skyblue;
+  color: $a-color;
 }
 a:hover {
-  color: tomato;
+  color: $thm-color;
 }
 h1 {
   text-align: center;
   margin-bottom: 0;
 }
 h2 {
-  border-left: solid 8px tomato;
+  border-left: solid 8px $thm-color;
   padding-left: 15px;
   line-height: 1.2em;
   font-size: 17pt;
 }
 h3 {
-  border-bottom: solid 2px tomato;
+  border-bottom: solid 2px $thm-color;
 }
-tr, td{
-  // border: solid 1px tomato;
-  // margin: 0;
-}
-td {
-  padding: 3px 8px;
-}
+
 .table-space {
   // background-color: aqua;
-  background-color: #555;
+  background-color: $bg-color-sub;
   // width: 0;
   max-width: 700px;
   margin: auto;
@@ -59,4 +58,11 @@ table {
   // background-color: aqua;
   // border-radius: 30px;
   // padding: 10px;
+}
+tr, td{
+  // border: solid 1px tomato;
+  // margin: 0;
+}
+td {
+  padding: 3px 8px;
 }

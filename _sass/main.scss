@@ -6,58 +6,56 @@
 }
 
 header {
-  // background: tomato;
+  // background: $thm-color;
   // border-bottom: solid 1px blue;
 }
-.nav-area {
+nav {
   display: flex;
-}
-.img-logo {
-  width: 130px;
-  margin-bottom: -80px;
-  margin-right: -35px;
-  position: relative;
-  z-index: 1; // 無いとcontentの下敷きに...
-  // width: 80px;
-  // margin: 0px;
-}
-.img-logo:hover{
-  text-decoration: none;
-  opacity:0.9;
-  // filter:alpha(opacity=80);
-  // -ms-filter: "alpha( opacity=80 )";
-}
-.nav-list {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  // background-color: aqua;
-}
-.nav-menu {
-  // background-color: aqua;
-  text-align: center;
-  margin: 5px 5px;
-}
-.nav-menu a{
-  // background-color: #fff;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 100px;
-  font-size: 14pt;
-}
-.nav-menu a:hover{
-  background-color: white;
-  color: #333;
-}
-.nav-menu .current {
-  background-color: white;
-  color: #333;
+  .logo {
+    width: 130px;
+    margin-bottom: -80px;
+    margin-right: -35px;
+    position: relative;
+    z-index: 1; // 無いとcontentの下敷きに...
+    // width: 80px;
+    // margin: 0px;
+  }
+  .logo:hover{
+    text-decoration: none;
+    opacity:0.9;
+    // filter:alpha(opacity=80);
+    // -ms-filter: "alpha( opacity=80 )";
+  }
+  .menu-list {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    // background-color: aqua;
+    .menu {
+      // background-color: aqua;
+      text-align: center;
+      margin: 5px 5px;
+      a{
+        // background-color: #fff;
+        color: $text-color;
+        padding: 2px 10px;
+        border-radius: 100px;
+        font-size: 14pt;
+      }
+      a:hover{
+        background-color: $text-color;
+        color: $bg-color;
+      }
+      .current {
+        background-color: $text-color;
+        color: $bg-color;
+      }
+    }
+  }
 }
 
-// .content {
-//   display: flex;
-// }
+
 .contents {
   width: 90%;
   margin: auto;
@@ -65,18 +63,18 @@ header {
 }
 
 footer {
-  // background: tomato;
+  // background: $thm-color;
   // color: #111;
   margin-top: 30px;
-  min-height: 50px;
-  border-top: solid 2px tomato;
+  border-top: solid 2px $thm-color;
+  .copyright {
+    // background: aqua;
+    text-align: center;
+    font-size: 10pt;
+    padding: 20px 0;
+  }
 }
-.copyright {
-  // background: aqua;
-  text-align: center;
-  font-size: 10pt;
-  padding: 20px 0;
-}
+
 
 // TOC
 .toc-area {
@@ -85,8 +83,8 @@ footer {
 }
 .toc-ul { // <ul>
   // background-color: #999;
-  border-top: solid 2px tomato;
-  border-bottom: solid 2px tomato;
+  border-top: solid 2px $thm-color;
+  border-bottom: solid 2px $thm-color;
   padding: 0;
   margin: auto;
   display: flex;
@@ -103,8 +101,8 @@ footer {
   // margin: auto;
 }
 .toc-a{
-  // color: tomato;
-  // border: 1px solid tomato;
+  // color: $thm-color;
+  // border: 1px solid $thm-color;
   // padding: 0px 15px;
 }
 

@@ -1,6 +1,6 @@
-{% if include.isOB == false %}
 <div class="table-space">
-  <table>
+  <table class="member_table">
+{% if include.isOB == false %}
     <thead>
       <tr>
         <th>学年</th><th>学部</th><th>学科</th><th>人数</th>
@@ -14,11 +14,7 @@
       {% include member-str-table.html grade=page.M1 gradename='M1' %}
       {% include member-str-table.html grade=page.M2 gradename='M2' %}
     </tbody>
-  </table>
-</div>
 {% else %}
-<div class="table-space">
-  <table>
     <thead>
       <tr>
         <th>卒業年</th><th>学部</th><th>学科</th><th>人数</th>
@@ -29,6 +25,6 @@
       {% include member-str-table.html grade=page.OB19 gradename='19年度卒' %}
       {% include member-str-table.html grade=page.OB20 gradename='20年度卒' %}
     </tbody>
+{% endif %}
   </table>
 </div>
-{% endif %}

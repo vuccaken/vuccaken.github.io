@@ -1,14 +1,12 @@
 <header>
   <nav>
-    <div class="nav-area">
-      <a href="{{ site.baseurl }}/"><img class="img-logo" src="{{ site.baseurl }}/assets/img/logo.png"/></a>
-      <div class="nav-list">
-        {% for item in site.data.navigation %}
-        <div class="nav-menu">
-          <a href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-        </div>
-        {% endfor %}
+    <a href="{{ site.baseurl }}/"><img class="logo" src="{{ site.baseurl }}/assets/img/logo.png"/></a>
+    <div class="menu-list">
+      {% for item in site.data.navigation %}
+      <div class="menu">
+        <a href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
       </div>
+      {% endfor %}
     </div>
   </nav>
 </header>

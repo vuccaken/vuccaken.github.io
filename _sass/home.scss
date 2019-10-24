@@ -1,15 +1,16 @@
 //
 // HOME
 //
-.home-img {
+.home_top-img {
   position: relative;
+  img {
+    width: 100%;
+    position: relative;
+    z-index: -5;
+  }
 }
-.home-tesla {
-  width: 100%;
-  position: relative;
-  z-index: -5;
-}
-.home-text {
+
+.home_text {
   color: aqua;
   position: absolute;
   top: 20%;
@@ -20,51 +21,50 @@
 }
 
 // info
-.home_info-p {
+.home_info {
   padding: 2.5% 0;
   display: flex;
   flex-wrap: wrap;
   // flex-direction: row;
   justify-content: space-evenly;
+  .info-block { // each news and twitter
+    // background-color: aqua;
+    max-width: 400px;
+    flex: 1 0 300px;
+    margin: 20px;
+    .info-title {
+      text-align: center;
+    }
+    .info-frame {
+      // background: aqua;
+      height: 300px;
+      border: 2px solid $thm-color;
+      border-radius: 6px;
+      overflow: auto;
+      -ms-overflow-style: none;    /* IE, Edge 対応 */
+      scrollbar-width: none;       /* Firefox 対応 */
+    }
+    .info-frame::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+      display:none;
+    }
+  }
 }
-.home_info-c { // each news and twitter
-  // background-color: aqua;
-  max-width: 400px;
-  flex: 1 0 300px;
-  margin: 20px;
-  
-}
-.info-title {
-  text-align: center;
-}
-.info-frame {
-  // background: aqua;
-  height: 300px;
-  border: 2px solid tomato;
-  border-radius: 6px;
-  overflow: auto;
-  // overflow-y: hidden;
-  -ms-overflow-style: none;    /* IE, Edge 対応 */
-  scrollbar-width: none;       /* Firefox 対応 */
-}
-.info-frame::-webkit-scrollbar {  /* Chrome, Safari 対応 */
-  display:none;
-}
-.home-news {
+
+
+.home_news {
   padding: 5px 10px;
   padding-bottom: 7px;
   // border-bottom: solid 1px #aaa;
+  .news-date {
+    color: $thm-color;
+    font-size: 10pt;
+  }
+  .news-title {
+    color: #fff;
+    font-size: 12pt;
+  }
 }
-.news-list_date {
-  color: tomato;
-  font-size: 10pt;
-}
-.news-list_title {
-  color: #fff;
-  font-size: 12pt;
-}
-
-.home-news:hover {
+.home_news:hover {
   // background-color: aqua;
   background-color: rgba(0,0,0,0.3);
 }
