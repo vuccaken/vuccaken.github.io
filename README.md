@@ -1,7 +1,7 @@
 # new-hp
 developing new homepage......
 
-Access: https://vuccaken.github.io/new-hp/
+Access: https://vuccaken.github.io
 
 
 ## developing
