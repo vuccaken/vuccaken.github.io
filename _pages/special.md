@@ -1,6 +1,11 @@
 ---
 title: Special
+chirashi2019:
+  - chirashi19sj.jpg
+  - chirashi19nk1-th.jpg
 ---
+
+
 
 ## 特設ベージ
 
@@ -28,5 +33,15 @@ title: Special
 
 #### 2019年度
 
-![19sj]({{ site.baseurl }}/assets/img/gallery/chirashi2019/chirashi19sj.jpg){:width="200px"}
-![19sj]({{ site.baseurl }}/assets\img\gallery\chirashi2019\chirashi19nk1-th.jpg){:width="200px"}
+<div class="gallery">
+  {% for img in page.chirashi2019 %}
+  <div>
+    <a>
+      <img src="{{ site.baseurl }}/assets/img/gallery/chirashi2019/{{ img }}">
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- ![19sj]({{ site.baseurl }}/assets/img/gallery/chirashi2019/chirashi19sj.jpg){:width="200px"}
+![19sj]({{ site.baseurl }}/assets\img\gallery\chirashi2019\chirashi19nk1-th.jpg){:width="200px"} -->
