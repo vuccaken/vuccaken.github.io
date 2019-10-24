@@ -1,11 +1,12 @@
-title: Your awesome title
-email: your-email@example.com
+title : 立命館大学 物理科学研究会 公式HP
+author: 立命館大学物理科学研究会
+email : vuccaken@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Now developing......
 baseurl: "/new-hp" # the subpath of your site, e.g. /blog
-url: "http://vuccaken.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "http://vuccaken.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vuccaken
-github_username:  vuccaken
+github_username : vuccaken
 
 collections:
   members:
