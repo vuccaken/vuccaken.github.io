@@ -19,7 +19,11 @@
   // border: solid 2px tomato;
   background-color: $bg-color-sub;
   border-radius: 30px;
-  padding: 10px 20px;
+  // padding: 10px 20px;
+  padding: 0px 10px;
+  width: 80%;
+  margin: auto;
+  font-size: 11pt;
   li {
     list-style: none;
   }
@@ -29,26 +33,27 @@
     justify-content: space-evenly;
     .icon {
       // border: solid 1px aqua;
+      text-align: center;
+      padding-top: 7px;
       margin: auto 0;
-      margin-bottom: 10px;
-      margin-right: 10px;
-      height: 150px;
-      width: 150px;
+      min-width: 150px;
+      flex: 1 1 150px;
       img {
-        // max-height: 150px;
-        width: 100%;
+        // border: solid 1px tomato;
+        max-height: 150px;
+        max-width: 100%;
       }
     }
     .intro { // ul
-      margin: 0;
-      padding: 0;
-      width: 450px;
+      // border: solid 1px aqua;
+      flex: 4 1 280px;
+      margin: 10px;
+      padding: 0px;
     }
   }
   .massage {
-    border-top: solid 1px #aaa;
     margin: 0px;
-    margin-top: 5px;
-    padding-top: 5px;
+    border-top: solid 1px #aaa;
+    padding: 10px 10px;
   }
 }
