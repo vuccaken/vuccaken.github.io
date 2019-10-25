@@ -15,10 +15,27 @@ active_plan:
 
 ## 活動場所
 
+### 部室（サークルルーム）
+
 立命館大学　びわこ・くさつキャンパス　アクトα　2F
 
 {: style="text-align: center;"}
 ![act alpha]({{ site.baseurl }}/assets/img/pages/actalpha_th.jpg)
+
+### 連絡先
+
+<div class="table-space">
+  <table>
+    <tr>
+      <td style="text-align: right;">e-mail:</td>
+      <td>{{ site.email }}</td>
+    </tr>
+    <tr>
+      <td style="text-align: right;">Twitter:</td>
+      <td><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">@{{ site.twitter_username }}</a></td>
+    </tr>
+  </table>
+</div>
 
 ## 活動日程
 
@@ -29,14 +46,14 @@ active_plan:
 - 学園祭（BKC）：12月1日（日） -->
 
 <div class="table-space">
-<table>
-{% for item in page.active_plan %}
-  <tr>
-    <td style="text-align: right;">{{ item[0] }}：</td>
-    <td>{{ item[1] }}</td>
-  </tr>
-{% endfor %}
-</table>
+  <table>
+  {% for item in page.active_plan %}
+    <tr>
+      <td style="text-align: right;">{{ item[0] }}：</td>
+      <td>{{ item[1] }}</td>
+    </tr>
+  {% endfor %}
+  </table>
 </div>
 
 ## 会費
@@ -46,12 +63,12 @@ active_plan:
 ## 年間予定
 
 <div class="table-space">
-<table>
-{% for item in site.data.about-schedule %}
-  <tr>
-    <td>{{ item.month }}</td>
-    <td>{{ item.plan }}</td>
-  </tr>
-{% endfor %}
-</table>
+  <table>
+  {% for item in site.data.about-schedule %}
+    <tr>
+      <td>{{ item.month }}</td>
+      <td>{{ item.plan }}</td>
+    </tr>
+  {% endfor %}
+  </table>
 </div>
