@@ -80,7 +80,7 @@
 - name    : なすび
   url     : # null is OK!
   position: # null is OK!
-  icon    : # defalt is vuccaken logo
+  icon    : graph.GIF # defalt is vuccaken logo
   item1   : 所属：理工学部 物理科学科 1回生
   item2   : 出身地：栃木
   item3   : 趣味：同人誌漁り
@@ -93,7 +93,7 @@
 - name    : こうき
   url     : # null is OK!
   position: # null is OK!
-  icon    : # defalt is vuccaken logo
+  icon    : yohane.jpg # defalt is vuccaken logo
   item1   : 所属：理工学部 機械工学科 1回生
   item2   : 出身地：こうべ
   item3   : 特技：ルーブックキューブ
