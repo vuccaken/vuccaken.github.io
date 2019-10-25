@@ -17,6 +17,7 @@ active_plan:
 
 立命館大学　びわこ・くさつキャンパス　アクトα　2F
 
+{: style="text-align: center;"}
 ![act alpha]({{ site.baseurl }}/assets/img/pages/actalpha_th.jpg)
 
 ## 活動日程
