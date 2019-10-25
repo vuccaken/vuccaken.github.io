@@ -18,11 +18,11 @@
 .member_list {
   // border: solid 2px tomato;
   background-color: $bg-color-sub;
-  border-radius: 30px;
-  // padding: 10px 20px;
-  padding: 0px 10px;
+  margin: 0 auto;
   width: 80%;
-  margin: auto;
+  border-radius: 30px;
+  padding: 10px;
+  // padding: 0px 10px;
   font-size: 11pt;
   li {
     list-style: none;
@@ -33,27 +33,35 @@
     justify-content: space-evenly;
     .icon {
       // border: solid 1px aqua;
-      text-align: center;
-      padding-top: 7px;
       margin: auto 0;
-      min-width: 150px;
+      padding: 10px;
+      height: 160px;
       flex: 1 1 150px;
+      display: flex;
       img {
         // border: solid 1px tomato;
-        max-height: 150px;
+        display: block;
+        margin: auto;
+        max-height: 100%;
         max-width: 100%;
       }
     }
     .intro { // ul
       // border: solid 1px aqua;
       flex: 4 1 280px;
-      margin: 10px;
-      padding: 0px;
+      margin: auto;
+      padding: 0px 5px;
+      li {
+        line-height: 1.2em;
+        padding: 0.2em 0;
+      }
     }
   }
   .massage {
     margin: 0px;
+    margin-top: 0.2em;
     border-top: solid 1px #aaa;
-    padding: 10px 10px;
+    padding: 0px 10px;
+    padding-top: 0.2em;
   }
 }

@@ -3,6 +3,8 @@ title: Special
 chirashi2019:
   - chirashi19sj.jpg
   - chirashi19nk1-th.jpg
+  - chirashi19nm-th.jpg
+  - chirashi19nk2-th.jpg
 ---
 
 
@@ -35,7 +37,7 @@ chirashi2019:
 
 <div class="gallery">
   {% for img in page.chirashi2019 %}
-  <div>
+  <div class="item">
     <a>
       <img src="{{ site.baseurl }}/assets/img/gallery/chirashi2019/{{ img }}">
     </a>
