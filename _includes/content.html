@@ -1,3 +1,4 @@
+{% comment %}
 {% if page.url == '/' %}
   {{ content }}
 {% else %}
@@ -11,3 +12,8 @@
     {{ content }}
   </div>
 {% endif %}
+{% endcomment %}
+
+<div class="contents">
+{{ content }}
+</div>

@@ -1,6 +1,8 @@
 <header>
   <nav>
-    <a href="{{ site.baseurl }}/"><img class="logo" src="{{ site.baseurl }}/assets/img/logo.png"/></a>
+    <a href="{{ site.baseurl }}/">
+      <img class="logo" src="{{ site.baseurl }}/assets/img/logo.png"/>
+    </a>
     <div class="menu-list">
       {% for item in site.data.navigation %}
       <div class="menu">
@@ -9,4 +11,12 @@
       {% endfor %}
     </div>
   </nav>
+  {% if page.url != '/' %}
+      <h1>{{ page.title }}</h1>
+      {% if page.toc == true %}
+        <div class="toc-area">
+          {% include toc.html html=content h_min=2 h_max=2 class="toc-ul" item_class="toc-li" anchor_class="toc-a" %}
+        </div>
+      {% endif %}
+  {% endif %}
 </header>
