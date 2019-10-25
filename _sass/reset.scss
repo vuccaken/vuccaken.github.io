@@ -1,8 +1,11 @@
 $bg-color: #333;
 $bg-color-sub: #555;
+// $bg-color-sub: #333;
 $text-color: #fff;
 $thm-color: tomato;
-$a-color: skyblue;
+$a-color: #7f9;
+$aho-color: tomato;
+
 
 body {
   font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
@@ -22,27 +25,39 @@ a {
   color: $a-color;
 }
 a:hover {
-  color: $thm-color;
+  color: $aho-color;
 }
 h1 {
   text-align: center;
   margin-bottom: 0;
+  // background-color: aqua;
 }
 h2 {
-  border-left: solid 8px $thm-color;
-  padding-left: 15px;
-  line-height: 1.2em;
+  // border-left: solid 8px $thm-color;
+  // padding-left: 15px;
+  // color: #0F9;
+  background-color: $thm-color;
+  border: solid 2px $thm-color;
+  border-radius: 10px;
+  padding: 5px;
+  line-height: 1em;
   font-size: 17pt;
 }
+h2:before, h2:after{
+  // content: '💩';
+  // padding-right: 0.5em;
+}
 h3 {
-  border-bottom: solid 2px $thm-color;
+  // border-bottom: solid 2px $thm-color;
+  border-left: solid 8px $thm-color;
+  padding-left: 15px;
 }
 
 .table-space {
   // background-color: aqua;
   background-color: $bg-color-sub;
-  // width: 0;
-  max-width: 700px;
+  width: 80%;
+  max-width: 500px;
   margin: auto;
   padding: 10px;
   border-radius: 30px;
@@ -51,11 +66,11 @@ table {
   empty-cells: hide;
   border-collapse: collapse;
   border-spacing: 0;
-  // border: solid 2px tomato;
+  // border: solid 2px #fff;
   // width: 70%;
   width: 100%;
   margin: auto;
-  // background-color: aqua;
+  // background-color: #00d;
   // border-radius: 30px;
   // padding: 10px;
 }
