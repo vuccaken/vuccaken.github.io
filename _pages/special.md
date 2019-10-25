@@ -13,7 +13,7 @@ chirashi2019:
 
 学園祭の団体企画内容などが書いてあります。
 
-- 2019年度 学園祭！
+- [2019年度 学園祭！]({{ site.baseurl }}/pages/events/fes2019.html)
 - [2018年度 学園祭！](festival2018.html)
 - [2017年度 学園祭！](festival2017.html)
 
