@@ -1,9 +1,9 @@
 .gallery {
-  border: solid 1px tomato;
+  // border: solid 1px tomato;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   .item{
-    border: solid 1px aqua;
+    // border: solid 1px aqua;
     // text-align: center;
     margin: auto;
     img {
@@ -11,7 +11,11 @@
       // max-width: 100%;
       max-width: 200px;
       max-height: 200px;
-      border: solid 1px tomato;
+      border: solid 1px $thm-color;
+    }
+    p {
+      margin: 0;
+      text-align: center;
     }
   }
 }
