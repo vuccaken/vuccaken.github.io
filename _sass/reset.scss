@@ -19,8 +19,8 @@ body {
   font-size: 16px;
 }
 
-p {
-  margin: 10px 0;
+li {
+  line-height: 1.6em;
 }
 a {
   text-decoration: none;
@@ -29,8 +29,15 @@ a {
 a:hover {
   color: $aho-color;
 }
+
+
+p {
+  margin: 10px;
+  line-height: 1.6em;
+}
 h1 {
   text-align: center;
+  line-height: 1.6em;
   margin-bottom: 0;
   // background-color: aqua;
 }
@@ -61,25 +68,22 @@ h3 {
   width: 80%;
   max-width: 500px;
   margin: auto;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 30px;
 }
 table {
+  // background-color: #00d;
+  // border: solid 2px #fff;
   empty-cells: hide;
   border-collapse: collapse;
   border-spacing: 0;
-  // border: solid 2px #fff;
-  // width: 70%;
   width: 100%;
   margin: auto;
-  // background-color: #00d;
-  // border-radius: 30px;
-  // padding: 10px;
 }
-tr, td{
+tr {
+  // border: solid 1px aqua;
+}
+th, td {
+  padding: 5px 8px;
   // border: solid 1px tomato;
-  // margin: 0;
-}
-td {
-  padding: 3px 8px;
 }
