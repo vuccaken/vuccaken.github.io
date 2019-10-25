@@ -8,10 +8,10 @@ $aho-color: tomato;
 
 
 body {
+  -webkit-text-size-adjust: 100%;
   font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
   margin: 0;
   padding: 0;
-  width: 100%;
   // background-color: #333;
   background-color: $bg-color;
   color: $text-color;
