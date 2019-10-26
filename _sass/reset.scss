@@ -44,10 +44,10 @@ h1 {
 }
 h2 {
   // color: #0F9;
-  background-color: $thm-color;
+  // background-color: $thm-color;
   border: solid 2px $thm-color;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   line-height: 1em;
   font-size: 17pt;
   // margin-top: 2em;
@@ -72,6 +72,15 @@ h4:after {
   content: '★';
   padding-left: 0.5em;
   color: yellow;
+}
+h5 {
+  margin-bottom: 10px;
+}
+h5:before {
+  // content: '★';
+  content: '●';
+  padding-right: 0.5em;
+  color: tomato;
 }
 
 .table-space {

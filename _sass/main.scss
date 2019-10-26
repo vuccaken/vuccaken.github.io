@@ -72,10 +72,20 @@ section{
 }
 
 footer {
-  // background: $thm-color;
-  // color: #111;
-  // margin-top: 30px;
   border-top: solid 2px $thm-color;
+  .wrap {
+    // border: solid 1px aqua;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .block {
+      // border: solid 1px yellow;
+      // margin: 0 10px;
+      padding: 20px;
+      .item {
+        line-height: 1.6em;
+      }
+    }
+  }
   .copyright {
     // background: aqua;
     text-align: center;
