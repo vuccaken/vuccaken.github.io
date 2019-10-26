@@ -6,21 +6,26 @@ $thm-color: tomato;
 $a-color: #7f9;
 $aho-color: tomato;
 
+html {
+  font-size: 625%;
+  // font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
+  font-family:Helvetica Neue, Helvetica, Arial, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, ＭＳ\ Ｐゴシック, MS PGothic, sans-serif
+}
 
 body {
   -webkit-text-size-adjust: 100%;
-  font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
-  margin: 0;
+  max-width: 1000px;
+  min-width: 250px;
+  margin: 0 auto;
   padding: 0;
-  // background-color: #333;
   background-color: $bg-color;
   color: $text-color;
-  // font-size: 12pt;
-  font-size: 16px;
+  font-size: .16em;
 }
 
 li {
-  line-height: 1.6em;
+  // border: solid 1px tomato;
+  margin: .07rem 0;
 }
 a {
   text-decoration: none;
@@ -32,55 +37,65 @@ a:hover {
 
 
 p {
+  font-size: .14rem;
   margin: 5px 10px;
   padding: 0;
   line-height: 1.6em;
 }
 h1 {
-  text-align: center;
-  line-height: 1.6em;
-  margin-bottom: 0;
   // background-color: aqua;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: .3rem;
 }
 h2 {
   // color: #0F9;
-  // background-color: $thm-color;
+  // background-color: $bg-color-sub;
+  margin-top: .20rem;
   border: solid 2px $thm-color;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 5px 15px;
-  line-height: 1em;
-  font-size: 17pt;
-  // margin-top: 2em;
+  font-size: .20rem;
+  
   // margin: 0;
 }
-h2:before, h2:after{
-  // content: '💩';
+h2:before {
+  // border-right: solid 2px $thm-color;
+  // color: $thm-color;
+  // content: '●';
   // padding-right: 0.5em;
 }
 h3 {
   // border-bottom: solid 2px $thm-color;
   border-left: solid 8px $thm-color;
   padding-left: 15px;
+  font-size: .18rem;
+}
+h4 {
+  font-size: .16rem;
 }
 h4:before {
   content: '★';
   // content: '●';
-  padding-right: 0.5em;
+  padding-right: 7px;
   color: yellow;
 }
 h4:after {
   content: '★';
-  padding-left: 0.5em;
+  padding-left: 7px;
   color: yellow;
 }
 h5 {
+  // border: solid 1px $thm-color;
   margin-bottom: 10px;
+  font-size: .16rem;
 }
 h5:before {
   // content: '★';
   content: '●';
   padding-right: 0.5em;
-  color: tomato;
+  color: greenyellow;
 }
 
 .table-space {

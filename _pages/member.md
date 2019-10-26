@@ -20,15 +20,15 @@ OB18:
 
 ## 会員構成
 
-{% include member-str.html isOB=false %}
+{% include pages/member-str.html isOB=false %}
 
 ## 会員リスト
 
-{% include member-list.html member-src=site.data.members %}
+{% include pages/member-list.html member-src=site.data.members %}
 
 
 ## 名誉会員（OB）
 
-{% include member-str.html isOB=true %}
+{% include pages/member-str.html isOB=true %}
 
-{% include member-list.html member-src=site.data.members-ob %}
+{% include pages/member-list.html member-src=site.data.members-ob %}

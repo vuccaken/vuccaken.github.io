@@ -5,7 +5,7 @@
 <div class="member_list">
   <div class="intro-block">
     <div class="icon">
-        <img src="{{ site.baseurl }}/assets/img/{% if member.icon %}icon/{{ member.icon }}{% else %}logo.png{% endif %}" alt="{{ member.name }}'s icon"/>
+        <img src="{{ site.baseurl }}/assets/img/member-icon/{% if member.icon %}{{ member.icon }}{% else %}_default.png{% endif %}" alt="{{ member.name }}'s icon"/>
     </div>
     <ul class="intro">
       <li>{{ member.item1 }}</li>

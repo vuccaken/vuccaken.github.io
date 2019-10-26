@@ -1,11 +1,4 @@
 
-.wrapper{
-  max-width: 1000px;
-  min-width: 250px;
-  // min-width: device-width;
-  margin: 0 auto;
-}
-
 header {
   // background: $thm-color;
   // border-bottom: solid 1px blue;
@@ -48,7 +41,7 @@ nav {
         color: $text-color;
         padding: 2px 10px;
         border-radius: 100px;
-        font-size: 14pt;
+        font-size: .18rem;
       }
       a:hover{
         background-color: $text-color;

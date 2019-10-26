@@ -16,4 +16,4 @@ toc: true
 
 リンクをクリックするとGoogle Driveに飛びます。
 
-{% include kaishi-list.html %}
+{% include pages/kaishi-list.html %}
