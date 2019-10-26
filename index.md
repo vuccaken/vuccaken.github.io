@@ -4,4 +4,4 @@ layout: home
 # toc: false
 ---
 
-NEW HOME PAGE HE YOU KOSO!!
+WELCOME TO THE NEW HOME PAGE!!
