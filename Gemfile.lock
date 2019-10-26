@@ -252,6 +252,7 @@ DEPENDENCIES
   github-pages
   jekyll
   redcarpet
+  rouge
 
 BUNDLED WITH
    1.17.2

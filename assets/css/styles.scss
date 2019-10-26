@@ -3,6 +3,26 @@
 @import "reset";
 @import "main";
 @import "home";
-@import "member";
 @import "news";
+@import "member";
 @import "special";
+
+
+// code block style
+@import url(monokai.css);
+// @import url(github.css);
+.highlight{
+  margin: 0;
+}
+pre {
+  // border: solid 1px aqua;
+  margin: 0;
+  padding: 1em 1ex;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px;
+}
+.highlighter-rouge {
+  margin: 5px 0;
+  // border: solid 1px tomato;
+}
