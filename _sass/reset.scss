@@ -20,7 +20,7 @@ body {
   padding: 0;
   background-color: $bg-color;
   color: $text-color;
-  font-size: .16em;
+  font-size: .15em;
 }
 
 li {
@@ -37,7 +37,6 @@ a:hover {
 
 
 p {
-  font-size: .14rem;
   margin: 5px 10px;
   padding: 0;
   line-height: 1.6em;
@@ -105,7 +104,7 @@ h5:before {
   max-width: 500px;
   margin: auto;
   padding: 5px 10px;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 table {
   // background-color: #00d;

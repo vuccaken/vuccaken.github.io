@@ -20,21 +20,16 @@
   background-color: $bg-color-sub;
   margin: 0 auto;
   width: 90%;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 10px;
-  // padding: 0px 10px;
-  font-size: 11pt;
-  li {
-    list-style: none;
-  }
   .intro-block {
+    // border: solid 1px tomato;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     .icon {
       // border: solid 1px aqua;
-      margin: auto 0;
-      padding: 10px;
+      margin: auto 10px;
       height: 160px;
       flex: 1 1 150px;
       display: flex;
@@ -46,22 +41,20 @@
         max-width: 100%;
       }
     }
-    .intro { // ul
+    .intro {
       // border: solid 1px aqua;
       flex: 4 1 280px;
       margin: auto;
       padding: 0px 5px;
-      li {
-        line-height: 1.2em;
-        padding: 0.2em 0;
+      .item {
+        margin: .07rem 0;
       }
     }
   }
   .massage {
-    margin: 0px;
-    margin-top: 0.4em;
+    margin-top: 5px;
     border-top: solid 1px #aaa;
     padding: 0px 10px;
-    padding-top: 0.4em;
+    padding-top: 8px;
   }
 }

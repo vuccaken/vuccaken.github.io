@@ -38,6 +38,14 @@
     margin: 20px;
     .info-title {
       text-align: center;
+      padding: 8px;
+      font-size: .18rem;
+      a {
+        color: $text-color;
+      }
+      a:hover {
+        color: $thm-color;
+      }
     }
     .info-frame {
       // background: aqua;

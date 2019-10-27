@@ -5,18 +5,18 @@
 <div class="member_list">
   <div class="intro-block">
     <div class="icon">
-        <img src="{{ site.baseurl }}/assets/img/member-icon/{% if member.icon %}{{ member.icon }}{% else %}_default.png{% endif %}" alt="{{ member.name }}'s icon"/>
+        <img src="{{ site.baseurl }}/assets/img/member-icon/{% if member.icon %}{{ member.icon }}{% else %}default.png{% endif %}" alt="{{ member.name }}'s icon"/>
     </div>
-    <ul class="intro">
-      <li>{{ member.item1 }}</li>
-      <li>{{ member.item2 }}</li>
-      <li>{{ member.item3 }}</li>
-      <li>{{ member.item4 }}</li>
-      <li>{{ member.item5 }}</li>
-      <li>{{ member.item6 }}</li>
-      <li>{{ member.item7 }}</li>
-    </ul>
+    <div class="intro">
+      <div class="item">{{ member.item1 }}</div>
+      <div class="item">{{ member.item2 }}</div>
+      <div class="item">{{ member.item3 }}</div>
+      <div class="item">{{ member.item4 }}</div>
+      <div class="item">{{ member.item5 }}</div>
+      <div class="item">{{ member.item6 }}</div>
+      <div class="item">{{ member.item7 }}</div>
+    </div>
   </div>
-  <p class="massage">{{ member.massage }}</p>
+  <div class="item massage">{{ member.massage }}</div>
 </div>
 {% endfor %}
