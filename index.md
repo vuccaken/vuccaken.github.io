@@ -4,4 +4,6 @@ layout: home
 # toc: false
 ---
 
-WELCOME TO THE NEW HOME PAGE!!
+ようこそ！！！
+
+[今年もやるお！　学園祭！]({{ site.baseurl }}/pages/events/fes2019.html)

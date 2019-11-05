@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/site-icon/favicon.ico">
 
     <!-- title -->
-    <title>{{ page.title }}</title>
+    <title>{% if page.subtitle %}{{ page.subtitle }}{% endif %} {{ page.title }}</title>
 
   </head>
   <body>

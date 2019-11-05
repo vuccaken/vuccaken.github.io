@@ -33,9 +33,4 @@ defaults:
     values:
       layout: "default"
       toc: true
-  # - scope:
-  #     path: ""
-  #     type: "pages"
-  #   values:
-  #     toc: false
 

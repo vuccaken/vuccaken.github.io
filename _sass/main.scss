@@ -2,19 +2,20 @@
 header {
   // background: $thm-color;
   // border-bottom: solid 1px blue;
-  padding: 10px 20px;
+  padding: 10px;
+  .subtitle {
+    font-size: 90%;
+    padding-bottom: 5px;
+  }
 }
 nav {
   // background-color: burlywood;
+  margin: 0 10px;
   display: flex;
   .logo {
     // border: solid 1px aqua;
-    // padding: 10px 0px 0px 20px;
-    height: 100px;
-    margin: 0px 10px -80px 0px;
-    // margin-top: 0;
-    // margin-bottom: -80px;
-    // margin-right: -35px;
+    height: 90px;
+    margin-bottom: -70px;
     position: relative;
     z-index: 10; // 無いとcontentの下敷きに...
   }
@@ -27,12 +28,9 @@ nav {
   .menu-list {
     // border: solid 1px aqua;
     margin: auto;
-    width: 80%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
     .menu {
       // border: solid 1px aqua;
       text-align: center;
@@ -40,8 +38,8 @@ nav {
       a{
         color: $text-color;
         padding: 2px 10px;
-        border-radius: 100px;
-        font-size: .18rem;
+        border-radius: 30px;
+        font-size: .17rem;
       }
       a:hover{
         background-color: $text-color;
@@ -65,26 +63,46 @@ section{
 }
 
 footer {
-  border-top: solid 2px $thm-color;
-  padding-bottom: 30px;
+  // margin: 0 10px;
+  margin: 30px 0px;
+  // padding-bottom: 30px;
   .wrap {
-    // border: solid 1px aqua;
+    // background-color: $bg-color-sub;
+    border-top: solid 1px $thm-color;
+    // border-bottom: solid 1px $thm-color;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    // grid-template-columns: 150px 300px;
+    // grid-gap: 10px;
+    padding:10px;
     .block {
       // border: solid 1px yellow;
-      // margin: 0 10px;
-      padding: 20px;
+      text-align: center;
       .item {
-        line-height: 1.6em;
+        margin: 3px 0;
+      }
+      .item-r {
+        // border: solid 1px yellow;
+        margin: 20px 0;
+        // margin-bottom: 20px;
+        .address:before {
+          content: '◆';
+          padding-right: 5px;
+          font-size: 80%;
+        }
+        .address:after {
+          content: '◆';
+          padding-left: 5px;
+          font-size: 80%;
+        }
       }
     }
-  }
+  } // wrap
   .copyright {
     // background: aqua;
     text-align: center;
-    font-size: 10pt;
-    padding: 20px 0;
+    font-size: .12rem;
+    margin: 10px 0;
   }
 }
 
@@ -119,3 +137,19 @@ footer {
   // padding: 0px 15px;
 }
 
+//
+// code block style
+//
+@import url(monokai.css);
+// @import url(github.css);
+.highlight, .highlighter-rouge{
+  margin: 5px 0;
+}
+pre {
+  // border: solid 1px aqua;
+  margin: 0;
+  padding: 10px 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px;
+}

@@ -2,9 +2,23 @@
 # layout: default
 title: About
 active_plan:
-  - [例会, 毎週水曜日 18時〜]
+  - [例会, 毎週水曜日 18時〜 （後期）]
   - [ゼミ, 元気があれば開催]
   - [学園祭, 12月1日（日） @BKC]
+  - [OB会, 12月14日（土） @BKC]
+schedule:
+  - [4月,新入生歓迎および実験・ゼミのテーマ決め]
+  - [5月,ゼミ活動および実験についての学習]
+  - [6月,ゼミ活動および実験についての学習]
+  - [7月,定期試験により活動休止]
+  - [8月,夏期休暇・実験]
+  - [9月,夏期休暇・実験]
+  - [10月,会誌の製作・OB会にむけた準備]
+  - [11月,学園祭]
+  - [12月,OB会・業務引き継ぎ]
+  - [1月,定期試験により活動休止]
+  - [2月,春期休暇・予算会議]
+  - [3月,春期休暇・新歓の作戦会議]
 ---
 
 ## 物理科学研究会とは
@@ -27,11 +41,11 @@ active_plan:
 <div class="table-space">
   <table>
     <tr>
-      <td style="text-align: right;">e-mail:</td>
+      <td class="right">e-mail:</td>
       <td>{{ site.email }}</td>
     </tr>
     <tr>
-      <td style="text-align: right;">Twitter:</td>
+      <td class="right">Twitter:</td>
       <td><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">@{{ site.twitter_username }}</a></td>
     </tr>
   </table>
@@ -49,7 +63,7 @@ active_plan:
   <table>
   {% for item in page.active_plan %}
     <tr>
-      <td style="text-align: right;">{{ item[0] }}：</td>
+      <td class="right active">{{ item[0] }}：</td>
       <td>{{ item[1] }}</td>
     </tr>
   {% endfor %}
@@ -64,10 +78,10 @@ active_plan:
 
 <div class="table-space">
   <table>
-  {% for item in site.data.about-schedule %}
+  {% for item in page.schedule %}
     <tr>
-      <td>{{ item.month }}</td>
-      <td>{{ item.plan }}</td>
+      <td class="right month">{{ item[0] }}</td>
+      <td>{{ item[1] }}</td>
     </tr>
   {% endfor %}
   </table>

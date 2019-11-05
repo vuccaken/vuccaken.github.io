@@ -2,8 +2,6 @@
 // HOME
 //
 
-
-
 .home_top-img {
   position: relative;
   margin: -20px; // .contents の margin
@@ -39,7 +37,7 @@
     .info-title {
       text-align: center;
       padding: 8px;
-      font-size: .18rem;
+      font-size: .17rem;
       a {
         color: $text-color;
       }
@@ -68,12 +66,12 @@
   padding-bottom: 7px;
   // border-bottom: solid 1px #aaa;
   .news-date {
-    color: $thm-color;
-    font-size: 10pt;
+    color: $text-color-sub;
+    font-size: .14rem;
   }
   .news-title {
-    color: #fff;
-    font-size: 12pt;
+    color: $text-color;
+    font-size: .14rem;
   }
 }
 .home_news:hover {

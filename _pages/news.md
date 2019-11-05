@@ -4,12 +4,12 @@ toc: false
 ---
 
 {% for post in site.posts %}
-<article class="news_article" id="{{ post.url }}">
-  <div class="news_date">{{ post.date | date_to_string }}</div>
+<div class="news_article" id="{{ post.url }}">
+  <div class="news_date">{{ post.date | date: "%Y.%m.%d" }}</div>
   <h1 class="news_title">{{ post.title }}</h1>
   <!-- <h1 class="news_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1> -->
   <div class="news_content">
   {{ post.content }}
   </div>
-</article>
+</div>
 {% endfor %}

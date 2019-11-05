@@ -2,10 +2,10 @@
 title: Special
 rp2017xy: https://vuccaken.github.io/rp2017xy/
 chirashi2019:
-  - [sj.jpg, sj]
-  - [nsmr.jpg, nsmr]
-  - [nkym1.jpg, nkym]
-  - [nkym2.jpg, nkym]
+  - [sj.jpg, sj, moe]
+  - [nsmr.jpg, nsmr, フリー素材]
+  - [nkym1.jpg, nkym, ラ！]
+  - [nkym2.jpg, nkym, インターネット黎明期]
 ---
 
 
@@ -42,8 +42,14 @@ chirashi2019:
     <a href="{{ site.baseurl }}/assets/img/gallery/chirashi2019/{{ img[0] }}">
       <img src="{{ site.baseurl }}/assets/img/gallery/chirashi2019/th-{{ img[0] }}" alt="{{ img[1] }}'s chirashi">
     </a>
-    <p>作：{{ img[1] }}</p>
+    <!-- <div class="info">テーマ：{{ img[2] }}</div> -->
+    <!-- <div class="info">　　作：{{ img[1] }}</div> -->
+    <table>
+      <tr><td class="row1">テーマ：</td><td class="row2">{{ img[2] }}</td></tr>
+      <tr><td class="row1">作：</td><td class="row2">{{ img[1] }}</td></tr>
+    </table>
   </div>
+  
   {% endfor %}
 </div>
 

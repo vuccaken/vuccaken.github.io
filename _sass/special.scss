@@ -2,13 +2,14 @@
   // border: solid 1px tomato;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
   .item{
     // border: solid 1px aqua;
     // text-align: center;
     margin: auto;
     img {
       display: block;
-      // max-width: 100%;
+      margin: auto;
       max-width: 200px;
       max-height: 200px;
       border: solid 1px $thm-color;
@@ -16,9 +17,19 @@
     img:hover {
       opacity: 0.8;
     }
-    p {
-      margin: 0;
-      text-align: center;
+    table{
+      margin-top: 3px;
+      tr, td {
+        font-size: .12rem;
+        padding: 0;
+        // border: solid 1px $thm-color;
+      }
+      .row1 {
+        text-align: right;
+      }
+      .row2 {
+        min-width: 50px; // 50%
+      }
     }
   }
 }

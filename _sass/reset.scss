@@ -1,15 +1,19 @@
-$bg-color: #333;
-$bg-color-sub: #555;
+$bg-color: #222;
+$bg-color-sub: #444;
 // $bg-color-sub: #333;
 $text-color: #fff;
-$thm-color: tomato;
-$a-color: #7f9;
-$aho-color: tomato;
+// $text-color-sub: #7f9;
+$text-color-sub: #59f;
+$thm-color: #f82;
+$thm-color-sub: #59f;
+$a-color: #59f;
+// $aho-color: #fa5;
+$aho-color: #f82;
 
 html {
   font-size: 625%;
   // font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
-  font-family:Helvetica Neue, Helvetica, Arial, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, ＭＳ\ Ｐゴシック, MS PGothic, sans-serif
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, MS PGothic, sans-serif
 }
 
 body {
@@ -20,7 +24,7 @@ body {
   padding: 0;
   background-color: $bg-color;
   color: $text-color;
-  font-size: .15em;
+  font-size: .15rem;
 }
 
 li {
@@ -37,16 +41,16 @@ a:hover {
 
 
 p {
-  margin: 5px 10px;
+  margin: 10px 10px;
   padding: 0;
-  line-height: 1.6em;
+  line-height: .2rem;
 }
 h1 {
   // background-color: aqua;
   margin-top: 25px;
   margin-bottom: 5px;
   text-align: center;
-  font-size: .3rem;
+  font-size: .25rem;
 }
 h2 {
   // color: #0F9;
@@ -66,8 +70,7 @@ h2:before {
   // padding-right: 0.5em;
 }
 h3 {
-  // border-bottom: solid 2px $thm-color;
-  border-left: solid 8px $thm-color;
+  border-left: solid 8px $thm-color-sub;
   padding-left: 15px;
   font-size: .18rem;
 }
@@ -102,8 +105,8 @@ h5:before {
   background-color: $bg-color-sub;
   width: 80%;
   max-width: 500px;
-  margin: auto;
-  padding: 5px 10px;
+  margin: 10px auto;
+  padding: 10px 10px;
   border-radius: 20px;
 }
 table {
