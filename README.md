@@ -8,6 +8,7 @@ Access: https://vuccaken.github.io
 
 - 作成開始：2019-09-30
 - git init: 2019-10-07
+- 一応完成：2019-11-06
 
 
 ## 部員へ
