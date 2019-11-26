@@ -2,12 +2,14 @@
 // News
 //
 
+$side-margin: 20px;
+
 .news_article {
   background-color: $bg-color-sub;
   margin-top: 10px;
   margin-bottom: 30px;
   border-radius: 20px;
-  padding: 15px 15px;
+  padding: 15px $side-margin;
   .news_date {
     color: $text-color-sub;
     font-size: .16rem;
@@ -28,7 +30,7 @@
     // code block
     .highlight{
       font-size: 95%;
-      margin: 5px -15px;
+      margin: 5px -1*$side-margin;
       pre {
         margin: 0 15px;
         padding: 5px 0;
