@@ -157,3 +157,14 @@ pre {
   overflow-y: auto;
   max-height: 500px;
 }
+
+.img-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+  img{
+    display: block;
+    margin: auto;
+    max-width: 300px;
+  }
+}
