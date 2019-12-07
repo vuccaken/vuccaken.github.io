@@ -1,13 +1,7 @@
 ---
-layout: default
+layout: pages
 ---
 
-<p>
-  {{ page.date | date_to_string }}
-  <!-- {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %} -->
-</p>
-
+<div class="news_date">{{ page.date | date: "%Y.%m.%d" }}</div>
+<!-- <h1 class="news_title">{{ page.title }}</h1> -->
 {{ content }}
