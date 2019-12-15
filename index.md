@@ -6,4 +6,6 @@ layout: home
 
 ようこそ！！！
 
+{% comment %}
 [今年もやるお！　学園祭！]({{ site.baseurl }}/pages/events/fes2019.html)
+{% endcomment %}

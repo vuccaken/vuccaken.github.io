@@ -1,0 +1,5 @@
+<div class="img-list">
+  {% for item in page.images %}
+    <img src="{{ site.baseurl }}/assets/img/{{ item[1] }}" alt="{{ item[0] }}">
+  {% endfor %}
+</div>
