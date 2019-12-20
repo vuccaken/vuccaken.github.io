@@ -36,7 +36,12 @@ title: Link
   - [vuccaken/kaishi2019](https://github.com/vuccaken/kaishi2019){:target="_blank"}
 - [宮内庁](https://www.kunaicho.go.jp){:target="_blank"}
 
+
 ## 一部会員向けリンク
+
+#### 2020劇場
+- [「劇場版 ハイスクール・フリート」公式サイト](https://www.hai-furi.com){:target="_blank"}
+- [『プリンセス・プリンシパル Crown Handler』公式サイト](https://pripri-anime.jp){:target="_blank"}
 
 #### 2020冬
 - [TVアニメ「恋する小惑星」公式サイト](http://koiastv.com){:target="_blank"}

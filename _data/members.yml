@@ -1,6 +1,6 @@
 
 - name    : 嬢@(っ'ヮ'c)
-  url     : # null is OK!
+  url     : https://twitter.com/haru_pianissimo # null is OK!
   position: 副会長 # null is OK!
   icon    : jou.png # defalt is vuccaken logo
   item1   : 所属：理工学部 機械工学科 2回生
@@ -34,7 +34,7 @@
   item3   : 趣味：ソシャゲ
   item4   : 好きなもの：ステーキ、チョコ、豚骨醤油
   item5   : 座右の銘：迷ったらやらない
-  item6   : 過去のテーマ：ゼータ関数
+  item6   : 過去のテーマ：ゼータ関数、隠れた変数理論
   item7   : 極上のアニメ：苺ましまろ、わたてん
   massage : 一言：2次元と10次元に興味があります。
 
@@ -52,7 +52,7 @@
   massage : 一言：物理楽しいー
 
 - name    : HD
-  url     : # null is OK!
+  url     : https://twitter.com/1panpkins # null is OK!
   position: 実験工房スタップ
   icon    : HD.png 
   item1   : 所属：理工学部 ロボティクス学科 4回生
@@ -91,7 +91,7 @@
   massage : 一言：パーカーは至高
 
 - name    : こうき
-  url     : # null is OK!
+  url     : https://twitter.com/kfuji4138 # null is OK!
   position: # null is OK!
   icon    : yohane.jpg # defalt is vuccaken logo
   item1   : 所属：理工学部 機械工学科 1回生
