@@ -13,14 +13,15 @@ title: Link
 - [実験工房@Rits](https://rits-kobo.jpn.org){:target="_blank"}
 
 ### 弊研究会
+- [Twitter](https://twitter.com/vuccaken){:target="_blank"}
+- [YouTube](https://www.youtube.com/channel/UCKO7a5YVCnFAquUzLKeIrMg){:target="_blank"}
+- [@wiki](https://w.atwiki.jp/vuccaken/){:target="_blank"}
 - [(旧)物理科学研究会HP (2014~2016)](http://ritsmeibuturikagaku2014.web.fc2.com/index.html){:target="_blank"}
 - [(旧)物理科学研究会HP (2009~2013)](http://vuccaken.web.fc2.com){:target="_blank"}
 - [(旧)物理科学研究会HP (2009~2013)](http://vuccaken.web.fc2.com){:target="_blank"}
 - [(旧)物理科学研究会HP (2001~2008)](http://www.geocities.co.jp/CollegeLife-Club/9131/){:target="_blank"}
 - [(旧)物理科学研究会HP (2017~2019)](http://rp2017xy.starfree.jp){:target="_blank"}
   - [GitHub Pages 版](http://vuccaken.github.io/rp2017xy/){:target="_blank"}
-- [物理科学研究会 @立命館大学 - Twitter](https://twitter.com/vuccaken){:target="_blank"}
-- [立命館大学物理科学研究会 - YouTube](https://www.youtube.com/channel/UCKO7a5YVCnFAquUzLKeIrMg){:target="_blank"}
 
 
 ## 会員向けリンク
@@ -40,6 +41,7 @@ title: Link
 ## 一部会員向けリンク
 
 #### 2020劇場
+- [劇場版「メイドインアビス」-深き魂の黎明- 公式サイト](http://miabyss.com){:target="_blank"}
 - [「劇場版 ハイスクール・フリート」公式サイト](https://www.hai-furi.com){:target="_blank"}
 - [『プリンセス・プリンシパル Crown Handler』公式サイト](https://pripri-anime.jp){:target="_blank"}
 
