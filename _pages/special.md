@@ -24,6 +24,7 @@ chirashi2019:
 
 新歓イベント情報が書いてあります。見てね。
 
+- [2020年度 新歓！！]({{ site.baseurl }}/pages/events/sin2020.html)
 - [2019年度 新歓！！]({{page.rp2017xy}}/shinkan2019.html){:target="_blank"}
 - [2018年度 新歓！！]({{page.rp2017xy}}/shinkan2018.html){:target="_blank"}
 
