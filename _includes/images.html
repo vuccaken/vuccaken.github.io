@@ -1,5 +1,14 @@
+{%- comment -%}
 <div class="img-list">
   {% for item in page.images %}
+    <img src="{{ site.baseurl }}/assets/img/{{ item[1] }}" alt="{{ item[0] }}">
+  {% endfor %}
+</div>
+{%- endcomment -%}
+
+
+<div class="img-list">
+  {% for item in include.src %}
     <img src="{{ site.baseurl }}/assets/img/{{ item[1] }}" alt="{{ item[0] }}">
   {% endfor %}
 </div>
