@@ -3,7 +3,7 @@
   url     : # null is OK!
   position: 会長 # null is OK!
   icon    : graph.GIF # defalt is vuccaken logo
-  item1   : 所属：理工学部 物理科学科 1回生
+  item1   : 所属：理工学部 物理科学科 2回生
   item2   : 出身地：栃木
   item3   : 趣味：同人誌漁り
   item4   : 好きなもの：天文学
@@ -16,7 +16,7 @@
   url     : # null is OK!
   position: 会計 # null is OK!
   icon    : # defalt is vuccaken logo
-  item1   : 所属：理工学部 物理科学科 1回生
+  item1   : 所属：理工学部 物理科学科 2回生
   item2   : 出身地：滋賀
   item3   : 趣味：旅
   item4   : 好きなもの：公理
@@ -29,7 +29,7 @@
   url     : # null is OK!
   position: 副会長 # null is OK!
   icon    : # defalt is vuccaken logo
-  item1   : 所属：理工学部 物理科学科 1回生
+  item1   : 所属：理工学部 物理科学科 2回生
   item2   : 出身地：岡山
   item3   : 趣味：歳差運動
   item4   : 好きなもの：蚊
@@ -42,7 +42,7 @@
   url     : https://twitter.com/kfuji4138 # null is OK!
   position: 広報・備品管理・OB担当・会計補佐・HP担当・SNS担当 # null is OK!
   icon    : yohane.jpg # defalt is vuccaken logo
-  item1   : 所属：理工学部 機械工学科 1回生
+  item1   : 所属：理工学部 機械工学科 2回生
   item2   : 出身地：こうべ
   item3   : 特技：ルーブックキューブ
   item4   : 信仰：Apple
@@ -54,8 +54,8 @@
 - name    : 藤木
   url     : # null is OK!
   position: # null is OK!
-  icon    : # defalt is vuccaken logo
-  item1   : 所属：理工学部 物理科学科 1回生
+  icon    : invader.jpg # defalt is vuccaken logo
+  item1   : 所属：理工学部 物理科学科 2回生
   item2   : 出身地：広島
   item3   : 趣味：ゲーム
   item4   : 好きなもの：入間人間さんの小説
@@ -68,7 +68,7 @@
   url     : https://twitter.com/haru_pianissimo # null is OK!
   position: # null is OK!
   icon    : jou.png # defalt is vuccaken logo
-  item1   : 所属：理工学部 機械工学科 2回生
+  item1   : 所属：理工学部 機械工学科 3回生
   item2   : 出身地：京都
   item3   : 趣味：自転車、山、オーディオ
   item4   : 好きなもの：ベルヌーイの定理
@@ -81,7 +81,7 @@
   url     : http://www.ritsumei.ac.jp/se/~m-tkzw/index.htm # null is OK!
   position: # null is OK!
   icon    : kumakinntore.png # defalt is vuccaken logo
-  item1   : 所属：理工学部 物理科学科 4回生
+  item1   : 所属：理工学研究科 基礎理工学専攻 物理科学コース 1回生
   item2   : 出身地：Zipangu
   item3   : 趣味：睡眠・将棋
   item4   : 好きなもの：カレーメシ、ビーフジャーキー
@@ -93,8 +93,8 @@
 - name    : nukoyama
   url     : https://twitter.com/geniusium_
   icon    : nuko06.png
-  position: ようじょ
-  item1   : 所属：理工学部 物理科学科 4回生
+  position: 参謀
+  item1   : 所属：理工学研究科 基礎理工学専攻 物理科学コース 1回生
   item2   : 出身地：大阪府の郊外
   item3   : 趣味：ソシャゲ
   item4   : 好きなもの：ステーキ、チョコ、豚骨醤油
@@ -107,7 +107,7 @@
   url     : https://twitter.com/1panpkins # null is OK!
   position: 実験工房スタップ
   icon    : HD.png
-  item1   : 所属：理工学部 ロボティクス学科 4回生
+  item1   : 所属：理工学研究科 機械システム専攻 ロボティクスコース 1回生
   item2   : 出身地：にぼ次郎
   item3   : 趣味：ロボット製作
   item4   : 好きなもの：にぼ次郎
@@ -120,7 +120,7 @@
   url     : https://twitter.com/shi_robo
   position: 名誉会長 # null is OK!
   icon    : kadono.jpg
-  item1   : 所属：理工学研究科 基礎理工学専攻 物理科学コース 1回生
+  item1   : 所属：理工学研究科 基礎理工学専攻 物理科学コース 2回生
   item2   : 出生地：アメリカ合衆国ピッツバーグ
   item3   : 趣味：思考実験、旅行
   item4   : 好きなもの：おもしろそうなもの
