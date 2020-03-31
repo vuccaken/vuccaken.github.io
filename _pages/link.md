@@ -8,6 +8,8 @@ title: Link
 
 ### 大学
 - [立命館大学](http://www.ritsumei.ac.jp){:target="_blank"}
+  - [理工学部](http://www.ritsumei.ac.jp/se2017/){:target="_blank"}
+    - [物理科学科](http://www.ritsumei.ac.jp/se/rp/physics/index.html){:target="_blank"}
 - [立命館大学学友会](http://www.ritsumei.club){:target="_blank"}
 - [立命館大学校友会](https://alumni.ritsumei.jp){:target="_blank"}
 - [実験工房@Rits](https://rits-kobo.jpn.org){:target="_blank"}
@@ -26,16 +28,25 @@ title: Link
 
 ## 会員向けリンク
 
+### 大学
+- [manaba+R](https://ct.ritsumei.ac.jp/ct/home){:target="_blank"}
+- [English Expeditions](https://www.ee.ritsumei.ac.jp/index.htm){:target="_blank"}
 - [休講連絡](http://www.ritsumei.ac.jp/academic-affairs/status/){:target="_blank"}
 - [図書館 RUNNERS](https://runners.ritsumei.ac.jp/opac/odr_stat/?lang=0){:target="_blank"}
-- [manaba+R](https://ct.ritsumei.ac.jp/ct/home){:target="_blank"}
+
+### その他
 - [Google Drive](https://drive.google.com/drive/u/1/my-drive){:target="_blank"}
-- [Google Console](https://www.google.com/webmasters/tools/home?hl=ja){:target="_blank"}
 - [Slack](https://r-physics.slack.com){:target="_blank"}
+- [宮内庁](https://www.kunaicho.go.jp){:target="_blank"}
+
+### developer
+- [Google Console](https://www.google.com/webmasters/tools/home?hl=ja){:target="_blank"}
 - [GitHub](https://github.com/vuccaken){:target="_blank"}
   - [vuccaken/vuccaken.github.io](https://github.com/vuccaken/vuccaken.github.io){:target="_blank"}
   - [vuccaken/kaishi2019](https://github.com/vuccaken/kaishi2019){:target="_blank"}
-- [宮内庁](https://www.kunaicho.go.jp){:target="_blank"}
+- [Jekyll ja](http://jekyllrb-ja.github.io){:target="_blank"}
+- まにゅある
+  - [このサイトのテンプレ]({{ site.baseurl }}/pages/template.html)
 
 
 ## 一部会員向けリンク
