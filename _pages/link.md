@@ -10,6 +10,7 @@ title: Link
 - [立命館大学](http://www.ritsumei.ac.jp){:target="_blank"}
   - [理工学部](http://www.ritsumei.ac.jp/se2017/){:target="_blank"}
     - [物理科学科](http://www.ritsumei.ac.jp/se/rp/physics/index.html){:target="_blank"}
+  - [理工研究科](http://www.ritsumei.ac.jp/gsse/){:target="_blank"}
 - [立命館大学学友会](http://www.ritsumei.club){:target="_blank"}
 - [立命館大学校友会](https://alumni.ritsumei.jp){:target="_blank"}
 - [実験工房@Rits](https://rits-kobo.jpn.org){:target="_blank"}
@@ -18,10 +19,9 @@ title: Link
 - [Twitter](https://twitter.com/vuccaken){:target="_blank"}
 - [YouTube](https://www.youtube.com/channel/UCKO7a5YVCnFAquUzLKeIrMg){:target="_blank"}
 - [@wiki](https://w.atwiki.jp/vuccaken/){:target="_blank"}
-- [(旧)物理科学研究会HP (2014~2016)](http://ritsmeibuturikagaku2014.web.fc2.com/index.html){:target="_blank"}
-- [(旧)物理科学研究会HP (2009~2013)](http://vuccaken.web.fc2.com){:target="_blank"}
-- [(旧)物理科学研究会HP (2009~2013)](http://vuccaken.web.fc2.com){:target="_blank"}
 - [(旧)物理科学研究会HP (2001~2008)](http://www.geocities.co.jp/CollegeLife-Club/9131/){:target="_blank"}
+- [(旧)物理科学研究会HP (2009~2013)](http://vuccaken.web.fc2.com){:target="_blank"}
+- [(旧)物理科学研究会HP (2014~2016)](http://ritsmeibuturikagaku2014.web.fc2.com/index.html){:target="_blank"}
 - [(旧)物理科学研究会HP (2017~2019)](http://rp2017xy.starfree.jp){:target="_blank"}
   - [GitHub Pages 版](http://vuccaken.github.io/rp2017xy/){:target="_blank"}
 
