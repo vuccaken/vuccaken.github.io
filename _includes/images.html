@@ -9,6 +9,6 @@
 
 <div class="img-list">
   {% for item in include.src %}
-    <img src="{{ site.baseurl }}/assets/img/{{ item[1] }}" alt="{{ item[0] }}">
+    <img src="{{ site.baseurl }}/assets/img/{{ include.path }}{{ item[1] }}" alt="{{ item[0] }}">
   {% endfor %}
 </div>
