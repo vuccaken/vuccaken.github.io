@@ -1,11 +1,19 @@
 ---
 # layout: default
 title: About
+
+act_alpha:
+  - [act alpha,pages/actalpha_th.jpg]
+  - [OB2,posts/2019-12-14-OB/2019-OB-2.jpg]
+
+year: 2020年度
 active_plan:
-  - [例会, 毎週水曜日 18時〜 （後期）]
+  - [例会, 毎週？曜日 18時〜 （前期）]
   - [ゼミ, 元気があれば開催]
-  - [学園祭, 12月1日（日） @BKC]
-  - [OB会, 12月14日（土） @BKC]
+  - [新歓セミナー, 5月？]
+  - [学園祭, 11月頃 @BKC]
+  - [OB会, 次回開催時期未定]
+  # - [OB会, 12月14日（土） @BKC]
 schedule:
   - [4月,新入生歓迎および実験・ゼミのテーマ決め]
   - [5月,ゼミ活動および実験についての学習]
@@ -33,8 +41,7 @@ schedule:
 
 立命館大学　びわこ・くさつキャンパス　アクトα　2F
 
-{: style="text-align: center;"}
-![act alpha]({{ site.baseurl }}/assets/img/pages/actalpha_th.jpg)
+{% include images.html src=page.act_alpha %}
 
 ### 連絡先
 
@@ -53,7 +60,7 @@ schedule:
 
 ## 活動日程
 
-2019年度の活動日程は以下の通りです。
+{{ page.year }}の活動日程は以下の通りです。
 
 <!-- - 例会（秋期）：毎週水曜日 18時〜
 - ゼミ：元気があれば開催
