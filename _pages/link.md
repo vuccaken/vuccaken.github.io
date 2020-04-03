@@ -20,10 +20,11 @@ title: Link
 - [YouTube](https://www.youtube.com/channel/UCKO7a5YVCnFAquUzLKeIrMg){:target="_blank"}
 - [@wiki](https://w.atwiki.jp/vuccaken/){:target="_blank"}
 - [(旧)物理科学研究会HP (2001~2008)](http://www.geocities.co.jp/CollegeLife-Club/9131/){:target="_blank"}
+  - [GitHub Pages 移行版](https://vuccaken.github.io/ritssnp/){:target="_blank"}
 - [(旧)物理科学研究会HP (2009~2013)](http://vuccaken.web.fc2.com){:target="_blank"}
 - [(旧)物理科学研究会HP (2014~2016)](http://ritsmeibuturikagaku2014.web.fc2.com/index.html){:target="_blank"}
 - [(旧)物理科学研究会HP (2017~2019)](http://rp2017xy.starfree.jp){:target="_blank"}
-  - [GitHub Pages 版](http://vuccaken.github.io/rp2017xy/){:target="_blank"}
+  - [GitHub Pages 移行版](http://vuccaken.github.io/rp2017xy/){:target="_blank"}
 
 
 ## 会員向けリンク
@@ -33,13 +34,15 @@ title: Link
 - [English Expeditions](https://www.ee.ritsumei.ac.jp/index.htm){:target="_blank"}
 - [休講連絡](http://www.ritsumei.ac.jp/academic-affairs/status/){:target="_blank"}
 - [図書館 RUNNERS](https://runners.ritsumei.ac.jp/opac/odr_stat/?lang=0){:target="_blank"}
+- [立命館生活協同組合](https://www.ritsco-op.jp/){:target="_blank"}
+  - [BKC 営業時間](https://www.ritsco-op.jp/shopinformation/bkc.html){:target="_blank"}
 
 ### その他
 - [Google Drive](https://drive.google.com/drive/u/1/my-drive){:target="_blank"}
 - [Slack](https://r-physics.slack.com){:target="_blank"}
 - [宮内庁](https://www.kunaicho.go.jp){:target="_blank"}
 
-### developer
+### for developers
 - [Google Console](https://www.google.com/webmasters/tools/home?hl=ja){:target="_blank"}
 - [GitHub](https://github.com/vuccaken){:target="_blank"}
   - [vuccaken/vuccaken.github.io](https://github.com/vuccaken/vuccaken.github.io){:target="_blank"}
@@ -59,7 +62,6 @@ title: Link
 #### 2020冬
 - [TVアニメ「恋する小惑星」公式サイト](http://koiastv.com){:target="_blank"}
 - [とある科学の超電磁砲T アニメ公式サイト](https://toaru-project.com/railgun_t/){:target="_blank"}
-- [TVアニメ「ネコぱら」公式サイト](https://nekopara-anime.com/ja/){:target="_blank"}
 - [TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝」公式サイト](https://anime.magireco.com){:target="_blank"}
 
 #### 2019秋
