@@ -1,3 +1,7 @@
+//
+//  main.scss
+//  共通設定的な。
+//
 
 header {
   // background: $thm-color;
@@ -111,7 +115,8 @@ footer {
 }
 
 
-// TOC
+// 目次
+// _includes/general/toc.html
 .toc-area {
   display: flex;
   // background-color: greenyellow;
@@ -158,6 +163,8 @@ pre {
   max-height: 500px;
 }
 
+// 画像を横に並べる
+// _includes/images.html
 .img-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
