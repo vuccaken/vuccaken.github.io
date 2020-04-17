@@ -1,9 +1,15 @@
 {%- comment -%}
-<div class="img-list">
-  {% for item in page.images %}
-    <img src="{{ site.baseurl }}/assets/img/{{ item[1] }}" alt="{{ item[0] }}">
-  {% endfor %}
-</div>
+
+%%%%%    使い方    %%%%%
+
+---
+path2images1: posts/2019-12-14-OB/
+images1:
+- [OB1,2019-OB-1.jpg]
+- [OB2,2019-OB-2.jpg]
+---
+{% include images.html path=page.path2images1 src=page.images1 %}
+
 {%- endcomment -%}
 
 
