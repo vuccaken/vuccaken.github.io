@@ -2,7 +2,7 @@
 title: Member
 
 B1:
-  - ["null", "null", NAN名]
+  - [大, 募集, 中！]
 B2:
   - [理工, 物理, 4名]
   - [理工, 機械, 1名]
@@ -19,9 +19,9 @@ OB18:
   - [理工, 電気電子, 2名]
 ---
 
-
 ## 会員構成
 
+新規入会はいつでも大歓迎です！！
 {% include pages/member-str.html isOB=false %}
 
 ## 会員リスト
