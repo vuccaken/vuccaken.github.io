@@ -1,14 +1,20 @@
 ---
 title: Special
 rp2017xy: https://vuccaken.github.io/rp2017xy/
+# チラシ
+path2chirashi2018: gallery/chirashi2018/
+chirashi2018:
+  - [nkym1.jpg, nkym, Feinman]
+path2chirashi2019: gallery/chirashi2019/
 chirashi2019:
   - [sj.jpg, sj, moe]
   - [nsmr.jpg, nsmr, フリー素材]
   - [nkym1.jpg, nkym, ラ！]
   - [nkym2.jpg, nkym, インターネット黎明期]
+path2chirashi2020: gallery/chirashi2020/
+chirashi2020:
+  - [fkd.jpg, fkd, シンプルイズ至高]
 ---
-
-
 
 ## 特設ベージ
 
@@ -31,28 +37,13 @@ chirashi2019:
 
 ## ギャラリー
 
-
-
 ### 新歓チラシ
 
+#### 2020年度
+{% include pages/gallery.html path=page.path2chirashi2020 src=page.chirashi2020 %}
+
 #### 2019年度
+{% include pages/gallery.html path=page.path2chirashi2019 src=page.chirashi2019 %}
 
-<div class="gallery">
-  {% for img in page.chirashi2019 %}
-  <div class="item">
-    <a href="{{ site.baseurl }}/assets/img/gallery/chirashi2019/{{ img[0] }}">
-      <img src="{{ site.baseurl }}/assets/img/gallery/chirashi2019/th-{{ img[0] }}" alt="{{ img[1] }}'s chirashi">
-    </a>
-    <!-- <div class="info">テーマ：{{ img[2] }}</div> -->
-    <!-- <div class="info">　　作：{{ img[1] }}</div> -->
-    <table>
-      <tr><td class="row1">テーマ：</td><td class="row2">{{ img[2] }}</td></tr>
-      <tr><td class="row1">作：</td><td class="row2">{{ img[1] }}</td></tr>
-    </table>
-  </div>
-  
-  {% endfor %}
-</div>
-
-<!-- ![19sj]({{ site.baseurl }}/assets/img/gallery/chirashi2019/chirashi19sj.jpg){:width="200px"}
-![19sj]({{ site.baseurl }}/assets\img\gallery\chirashi2019\chirashi19nk1-th.jpg){:width="200px"} -->
+#### 2018年度
+{% include pages/gallery.html path=page.path2chirashi2018 src=page.chirashi2018 %}
