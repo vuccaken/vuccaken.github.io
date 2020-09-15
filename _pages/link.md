@@ -65,6 +65,11 @@ title: Link
 - [アニメ「ストライクウィッチーズ ROAD to BERLIN」公式サイト](http://w-witch.jp/strike_witches-rtb/){:target="_blank"}
 - [せいぜいがんばれ！魔法少女くるみ公式ウェブサイト](https://www.seizeiganbare.jp){:target="_blank"}
 - [オリジナルアニメーション「戦翼のシグルドリーヴァ」公式サイト](https://sigururi.com){:target="_blank"}
+- [TVアニメ「ひぐらしのなく頃に」公式サイト](https://higurashianime.com){:target="_blank"}
+- [TVアニメ『魔王城でおやすみ』公式サイト](https://maoujo-anime.com){:target="_blank"}
+- [TVアニメ『魔女の旅々』公式サイト](https://majotabi.jp){:target="_blank"}
+- [魔法科高校の劣等生 来訪者編](https://mahouka.jp){:target="_blank"}
+- [TVアニメーション『レヱル・ロマネスク』公式サイト](https://railromanesque.jp){:target="_blank"}
 
 #### 2020夏
 - [TVアニメ「魔王学院の不適合者」公式サイト](https://maohgakuin.com){:target="_blank"}
