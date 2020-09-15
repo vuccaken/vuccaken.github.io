@@ -11,8 +11,14 @@
       {% endfor %}
     </div>
     <div class="block">
-      <div class="item-r"><div class="address">e-mail</div>{{ site.email }}</div>
-      <div class="item-r"><div class="address">Twitter</div><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">@{{ site.twitter_username }}</a></div>
+      <div class="sub-block">
+        <div class="item"><div class="address">e-mail</div></div>
+        <div class="item">{{ site.email }}</div>
+      </div>
+      <div class="sub-block">
+        <div class="item"><div class="address">Twitter</div></div>
+        <div class="item"><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">@{{ site.twitter_username }}</a></div>
+      </div>
       <!-- <div class="item">GitHub:</div>
       <div class="item">YouTube:</div> -->
     </div>
