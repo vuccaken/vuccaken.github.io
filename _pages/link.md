@@ -68,7 +68,7 @@ title: Link
 
 #### 2020夏
 - [TVアニメ「魔王学院の不適合者」公式サイト](https://maohgakuin.com){:target="_blank"}
-- [オリジナルアニメ「天晴爛漫！」 | 公式サイト](http://appareranman.com){:target="_blank"}
+- [オリジナルアニメ「天晴爛漫！」公式サイト](http://appareranman.com){:target="_blank"}
 - [TVアニメ「ド級編隊エグゼロス」公式サイト](https://hxeros.com){:target="_blank"}
 
 #### 2020春
