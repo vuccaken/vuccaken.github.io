@@ -52,6 +52,7 @@ title: Link
   - [このサイトのテンプレ]({{ site.baseurl }}/pages/template.html)
 
 
+{:id="anime"}
 ## 一部会員向けリンク
 
 #### 2020秋

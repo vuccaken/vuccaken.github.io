@@ -3,7 +3,8 @@ title: Material
 toc: true
 ---
 
-<h2 id="seminar">セミナー資料</h2>
+{:id="seminar"}
+## セミナー資料
 
 準備中
 
@@ -12,8 +13,8 @@ toc: true
 - aaaaa
 - bbbbb
 
-
-<h2 id="poster">ポスター</h2>
+{:id="poster"}
+## ポスター
 
 学園祭で展示したポスターです。
 
@@ -24,7 +25,8 @@ toc: true
 - [実在論と量子論 - rp4](https://drive.google.com/open?id=1rMOfJ9ld3o_7dso2ZYEjJDwrYGL8BdxR){:target="_blank"}
 
 
-<h2 id="kaishi">会誌</h2>
+{:id="kaishi"}
+## 会誌
 
 歴代の会誌をスキャンしてデータ化しました。
 

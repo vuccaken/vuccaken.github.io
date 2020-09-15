@@ -19,16 +19,19 @@ OB18:
   - [理工, 電気電子, 2名]
 ---
 
+{:id="hierarchy”}
 ## 会員構成
 
 新規入会はいつでも大歓迎です！！
 {% include pages/member-str.html isOB=false %}
 
+{:id="list"}
 ## 会員リスト
 
 {% include pages/member-list.html member-src=site.data.members %}
 
 
+{:id="OB"}
 ## 名誉会員（OB）
 
 {% include pages/member-str.html isOB=true %}

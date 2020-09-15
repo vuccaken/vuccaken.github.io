@@ -36,8 +36,10 @@ chirashi2020:
 - [2018年度 新歓！！]({{page.rp2017xy}}/shinkan2018.html){:target="_blank"}
 
 
+{:id="gallery"}
 ## ギャラリー
 
+{:id="chirashi"}
 ### 新歓チラシ
 
 #### 2020年度
