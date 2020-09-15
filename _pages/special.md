@@ -22,6 +22,7 @@ chirashi2020:
 
 学園祭の団体企画内容などが書いてあります。
 
+- 2020年度 学園祭！　は中止になりました (T_T)
 - [2019年度 学園祭！]({{ site.baseurl }}/pages/events/fes2019.html)
 - [2018年度 学園祭！]({{page.rp2017xy}}/festival2018.html){:target="_blank"}
 - [2017年度 学園祭！]({{page.rp2017xy}}/festival2017.html){:target="_blank"}
