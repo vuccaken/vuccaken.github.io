@@ -54,15 +54,37 @@ title: Link
 
 ## 一部会員向けリンク
 
-#### 2020劇場
-- [劇場版「メイドインアビス」-深き魂の黎明- 公式サイト](http://miabyss.com){:target="_blank"}
-- [「劇場版 ハイスクール・フリート」公式サイト](https://www.hai-furi.com){:target="_blank"}
-- [『プリンセス・プリンシパル Crown Handler』公式サイト](https://pripri-anime.jp){:target="_blank"}
+#### 2020秋
+- [アサルトリリィBOUQUET(ブーケ) アニメ公式サイト](https://anime.assaultlily-pj.com){:target="_blank"}
+- [TVアニメ「安達としまむら」公式サイト](https://www.tbs.co.jp/anime/adashima/){:target="_blank"}
+- [TVアニメ「おちこぼれフルーツタルト」公式サイト](http://ochifuru-anime.com){:target="_blank"}
+- [TVアニメ「神様になった日」公式サイト](https://kamisama-day.jp){:target="_blank"}
+- [TVアニメ「くまクマ熊ベアー」公式サイト](https://kumakumakumabear.com){:target="_blank"}
+- [TVアニメ「ご注文はうさぎですか？BLOOM」公式サイト](https://gochiusa.com/bloom/){:target="_blank"}
+- [TVアニメ「進撃の巨人」The Final Season](https://shingeki.tv/final/){:target="_blank"}
+- [アニメ「ストライクウィッチーズ ROAD to BERLIN」公式サイト](http://w-witch.jp/strike_witches-rtb/){:target="_blank"}
+- [せいぜいがんばれ！魔法少女くるみ公式ウェブサイト](https://www.seizeiganbare.jp){:target="_blank"}
+- [オリジナルアニメーション「戦翼のシグルドリーヴァ」公式サイト](https://sigururi.com){:target="_blank"}
+
+#### 2020夏
+- [TVアニメ「魔王学院の不適合者」公式サイト](https://maohgakuin.com){:target="_blank"}
+- [オリジナルアニメ「天晴爛漫！」 | 公式サイト](http://appareranman.com){:target="_blank"}
+- [TVアニメ「ド級編隊エグゼロス」公式サイト](https://hxeros.com){:target="_blank"}
+
+#### 2020春
+- [TVアニメ「放課後ていぼう日誌」公式サイト](https://teibotv.com){:target="_blank"}
+- [TVアニメ『かぐや様は告らせたい？～天才たちの恋愛頭脳戦～』公式サイト](https://kaguya.love){:target="_blank"}
+- [「ギャルと恐竜」公式サイト](http://galkyo.com){:target="_blank"}
 
 #### 2020冬
 - [TVアニメ「恋する小惑星」公式サイト](http://koiastv.com){:target="_blank"}
 - [とある科学の超電磁砲T アニメ公式サイト](https://toaru-project.com/railgun_t/){:target="_blank"}
 - [TVアニメ「マギアレコード 魔法少女まどか☆マギカ外伝」公式サイト](https://anime.magireco.com){:target="_blank"}
+
+#### 2020劇場
+- [劇場版「メイドインアビス」-深き魂の黎明- 公式サイト](http://miabyss.com){:target="_blank"}
+- [「劇場版 ハイスクール・フリート」公式サイト](https://www.hai-furi.com){:target="_blank"}
+- [『プリンセス・プリンシパル Crown Handler』公式サイト](https://pripri-anime.jp){:target="_blank"}
 
 #### 2019秋
 - [TVアニメ「ハイスコアガール」公式サイト](http://hi-score-girl.com){:target="_blank"}
