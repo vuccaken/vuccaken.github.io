@@ -32,13 +32,33 @@ toc: true
 
 リンクをクリックするとGoogle Driveに飛びます。
 
-<div class="kaishi-list">
-  {% for era in site.data.kaishi-list %}
-    <h3>{{ era[0] }}年代</h3>
-    <ul>
-      {% for item in era[1] %}
-        <li><a href="{{ item[1] }}" target="_blank">{{ item[0] }}</a></li>
-      {% endfor %}
-    </ul>
+### 2020年代
+- 2020年
+  - Now developing!!
+  - [vuccaken/kaishi2020](https://github.com/vuccaken/kaishi2020){:target="_blank"}
+
+### 2010年代
+- 2019年
+  - [PDF用](https://drive.google.com/open?id=1UCpxurvCyks9gRxq1Ta_ksFUvRxqG2Ii){:target="_blank"}
+  - [印刷用](https://drive.google.com/file/d/1IQUG_vhy3ADPJoONHCy8eErvq4_lrDU0/view?usp=sharing){:target="_blank"}
+  - [Releases · vuccaken/kaishi2019](https://github.com/vuccaken/kaishi2019/releases){:target="_blank"}
+- 2018年
+  - [第2版](https://drive.google.com/open?id=1KNeHDLP9s7586BG6uY42DuQ9gFHv2WNW){:target="_blank"}
+  - [初版 学園祭配布分](https://drive.google.com/open?id=1LfdiW9qgEplCvxJ42t2oVGk3iYqWVQba){:target="_blank"}
+  - [Release · vuccaken/kaishi2018](https://github.com/vuccaken/kaishi2018/releases/){:target="_blank"}
+- [2017年](https://drive.google.com/open?id=1h_Z2RLaUeMzO6ROQNH5QBDRMWc6zHM_J){:target="_blank"}
+  - [Releases · vuccaken/kaishi2017](https://github.com/vuccaken/kaishi2017/releases){:target="_blank"}
+- [2017年 OB会](https://drive.google.com/open?id=1W3qF2oLdtIJV4Jv3-C3Wnf_zq-0FDnEY){:target="_blank"}
+  - [Releases · vuccaken/kaishi2017ob](https://github.com/vuccaken/kaishi2017ob/releases){:target="_blank"}
+- [2016年](https://drive.google.com/open?id=10TqCUYV5C5vuD146Ep1Cf0EPRXDvEqw1){:target="_blank"}
+- [2015年](https://drive.google.com/open?id=0BweCineGGD_haXRPejB6NTJqalE){:target="_blank"}{:target="_blank"}
+
+
+{% for era in site.data.kaishi-list %}
+<h3>{{ era[0] }}年代</h3>
+<ul>
+  {% for item in era[1] %}
+    <li><a href="{{ item[1] }}" target="_blank">{{ item[0] }}</a></li>
   {% endfor %}
-</div>
+</ul>
+{% endfor %}
