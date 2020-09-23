@@ -33,7 +33,9 @@ title: Link
 - [manaba+R](https://ct.ritsumei.ac.jp/ct/home){:target="_blank"}
 - [English Expeditions](https://www.ee.ritsumei.ac.jp/index.htm){:target="_blank"}
 - [休講連絡](http://www.ritsumei.ac.jp/academic-affairs/status/){:target="_blank"}
-- [図書館 RUNNERS](https://runners.ritsumei.ac.jp/opac/odr_stat/?lang=0){:target="_blank"}
+- [立命館大学図書館](http://www.ritsumei.ac.jp/lib/){:target="_blank"}
+  - [RUNNERS](https://runners.ritsumei.ac.jp/opac/odr_stat/?lang=0){:target="_blank"}
+  - [開館日程](http://www.ritsumei.ac.jp/lib/a03/010/){:target="_blank"}
 - [立命館生活協同組合](https://www.ritsco-op.jp/){:target="_blank"}
   - [BKC 営業時間](https://www.ritsco-op.jp/shopinformation/bkc.html){:target="_blank"}
 
@@ -41,12 +43,19 @@ title: Link
 - [Google Drive](https://drive.google.com/drive/u/1/my-drive){:target="_blank"}
 - [Slack](https://r-physics.slack.com){:target="_blank"}
 - [宮内庁](https://www.kunaicho.go.jp){:target="_blank"}
+- [河野太郎公式サイト](https://www.taro.org){:target="_blank"}
+- [Apple](https://www.apple.com/jp/){:target="_blank"}
+- [雀魂 -じゃんたま-](https://game.mahjongsoul.com){:target="_blank"}
+- [DeepL翻訳](https://www.deepl.com/translator){:target="_blank"}
+- [arXiv.org e-Print archive](https://arxiv.org){:target="_blank"}
 
 ### for developers
 - [Google Console](https://www.google.com/webmasters/tools/home?hl=ja){:target="_blank"}
 - [GitHub](https://github.com/vuccaken){:target="_blank"}
   - [vuccaken/vuccaken.github.io](https://github.com/vuccaken/vuccaken.github.io){:target="_blank"}
   - [vuccaken/kaishi2019](https://github.com/vuccaken/kaishi2019){:target="_blank"}
+  - [vuccaken/kaishi2020](https://github.com/vuccaken/kaishi2020){:target="_blank"}
+- [Progate](https://prog-8.com){:target="_blank"}
 - [Jekyll ja](http://jekyllrb-ja.github.io){:target="_blank"}
 - まにゅある
   - [このサイトのテンプレ]({{ site.baseurl }}/pages/template.html)
