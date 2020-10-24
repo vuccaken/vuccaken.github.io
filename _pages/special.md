@@ -4,7 +4,7 @@ rp2017xy: https://vuccaken.github.io/rp2017xy/
 # チラシ
 path2chirashi2018: gallery/chirashi2018/
 chirashi2018:
-  - [nkym1.jpg, nkym, Feinman]
+  - [nkym1.jpg, nkym, Feynman]
 path2chirashi2019: gallery/chirashi2019/
 chirashi2019:
   - [sj.jpg, sj, moe]
