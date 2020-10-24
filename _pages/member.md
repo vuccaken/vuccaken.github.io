@@ -2,7 +2,7 @@
 title: Member
 
 B1:
-  - [理工, 物理, 1名]
+  - [理工, 物理, 2名]
 B2:
   - [理工, 物理, 4名]
   - [理工, 機械, 1名]
@@ -20,7 +20,7 @@ OB18:
 ---
 
 {:id="hierarchy”}
-## 会員構成
+## 会員構成（2020年度）
 
 新規入会はいつでも大歓迎です！！
 {% include pages/member-str.html isOB=false %}
