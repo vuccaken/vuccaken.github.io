@@ -41,6 +41,20 @@ winだと（？）上のような `''` ではなく `` `' `` じゃないとダ�
 bundle exec jekyll s --baseurl `'
 ```
 
+### Gemfile
+
+`gemfile.lock` を生成：
+
+```
+bundle install
+```
+
+gem version を更新；
+
+```
+bundle update
+```
+
 ## 注意
 
 - Github Pagesでは、未来の記事も表示される。
