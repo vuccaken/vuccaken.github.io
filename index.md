@@ -6,7 +6,7 @@ layout: home
 
 ようこそ！！！
 
-新入部員！　大募集中です！！！！！！
+新入部員！　大募集中です！！
 
 {% comment %}
 [今年もやるお！　学園祭！]({{ site.baseurl }}/pages/events/fes2019.html)
