@@ -8,7 +8,9 @@ copyright: 2019-2020 立命館大学 物理科学研究会
 email : vuccaken@gmail.com
 keywords: 立命館大学, 物理科学研究会
 description: >- # this means to ignore newlines until "baseurl:"
-  「立命館大学 物理科学研究会」の公式ホームページです。
+  こちらは「立命館大学 物理科学研究会」の公式ホームページです。
+  物理科学研究会は、立命館大学BKCにて、物理学を中心として科学全般についての研究活動を行っている学友会学術部公認のサークル団体です。
+  このホームページでは日々の活動や、各部員の研究成果をまとめた「会誌」の公開などをしています。
 baseurl: "/" # the subpath of your site, e.g. /blog
 url    : "http://vuccaken.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vuccaken
