@@ -38,6 +38,8 @@ title: Link
   - [開館日程](http://www.ritsumei.ac.jp/lib/a03/010/){:target="_blank"}
 - [立命館生活協同組合](https://www.ritsco-op.jp/){:target="_blank"}
   - [BKC 営業時間](https://www.ritsco-op.jp/shopinformation/bkc.html){:target="_blank"}
+- [キャリアセンター](https://secure.ritsumei.ac.jp/career/){:target="_blank"}
+  - [在校生の皆さま](https://secure.ritsumei.ac.jp/students/career/current/){:target="_blank"}
 
 ### その他
 - [Google Drive](https://drive.google.com/drive/u/1/my-drive){:target="_blank"}
@@ -65,6 +67,7 @@ title: Link
 ## 一部会員向けリンク
 
 #### 2020秋
+- [ラブライブ！虹ヶ咲学園スクールアイドル同好会](http://www.lovelive-anime.jp/nijigasaki/){:target="_blank"}
 - [アサルトリリィBOUQUET(ブーケ) アニメ公式サイト](https://anime.assaultlily-pj.com){:target="_blank"}
 - [TVアニメ「安達としまむら」公式サイト](https://www.tbs.co.jp/anime/adashima/){:target="_blank"}
 - [TVアニメ「おちこぼれフルーツタルト」公式サイト](http://ochifuru-anime.com){:target="_blank"}
@@ -75,11 +78,14 @@ title: Link
 - [アニメ「ストライクウィッチーズ ROAD to BERLIN」公式サイト](http://w-witch.jp/strike_witches-rtb/){:target="_blank"}
 - [せいぜいがんばれ！魔法少女くるみ公式ウェブサイト](https://www.seizeiganbare.jp){:target="_blank"}
 - [オリジナルアニメーション「戦翼のシグルドリーヴァ」公式サイト](https://sigururi.com){:target="_blank"}
-- [TVアニメ「ひぐらしのなく頃に」公式サイト](https://higurashianime.com){:target="_blank"}
+- [TVアニメ「ひぐらしのなく頃に 業」公式サイト](https://higurashianime.com){:target="_blank"}
 - [TVアニメ『魔王城でおやすみ』公式サイト](https://maoujo-anime.com){:target="_blank"}
 - [TVアニメ『魔女の旅々』公式サイト](https://majotabi.jp){:target="_blank"}
 - [魔法科高校の劣等生 来訪者編](https://mahouka.jp){:target="_blank"}
 - [TVアニメーション『レヱル・ロマネスク』公式サイト](https://railromanesque.jp){:target="_blank"}
+- [TVアニメ「まえせつ！」公式サイト](https://maesetsu.jp){:target="_blank"}
+- [TVアニメ「体操ザムライ」公式サイト](https://taiso-samurai.com){:target="_blank"}
+- [TVアニメ「いわかける！- Sport Climbing Girls -」公式サイト](http://iwakakeru-anime.com){:target="_blank"}
 
 #### 2020夏
 - [TVアニメ「魔王学院の不適合者」公式サイト](https://maohgakuin.com){:target="_blank"}
@@ -100,6 +106,7 @@ title: Link
 - [劇場版「メイドインアビス」-深き魂の黎明- 公式サイト](http://miabyss.com){:target="_blank"}
 - [「劇場版 ハイスクール・フリート」公式サイト](https://www.hai-furi.com){:target="_blank"}
 - [『プリンセス・プリンシパル Crown Handler』公式サイト](https://pripri-anime.jp){:target="_blank"}
+- [映画『魔女見習いをさがして』公式サイト](https://www.lookingfor-magical-doremi.com){:target="_blank"}
 
 #### 2019秋
 - [TVアニメ「ハイスコアガール」公式サイト](http://hi-score-girl.com){:target="_blank"}
@@ -107,4 +114,10 @@ title: Link
 - [TVアニメ「私、能力は平均値でって言ったよね！」公式サイト](https://noukin-anime.com){:target="_blank"}
 
 
+## 全国民向けリンク
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q7SbeF3Oqu8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gknDmz_5AFo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ksf_gq6fZZM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
