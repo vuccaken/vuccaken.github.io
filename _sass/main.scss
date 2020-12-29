@@ -176,3 +176,18 @@ pre {
     max-width: 300px;
   }
 }
+
+// youtube レスポンシブ
+.youtube {
+  position: relative;
+  width: 90%;
+  padding-top: calc(90% * 9 / 16);
+  margin: 20px auto;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
