@@ -44,6 +44,7 @@ title: Link
 ### その他
 - [Google Drive](https://drive.google.com/drive/u/1/my-drive){:target="_blank"}
 - [Slack](https://r-physics.slack.com){:target="_blank"}
+- [Amazon](https://www.amazon.co.jp){:target="_blank"}
 - [宮内庁](https://www.kunaicho.go.jp){:target="_blank"}
 - [河野太郎公式サイト](https://www.taro.org){:target="_blank"}
 - [Apple](https://www.apple.com/jp/){:target="_blank"}
@@ -65,6 +66,42 @@ title: Link
 
 {:id="anime"}
 ## 一部会員向けリンク
+
+#### 2021冬
+- [アイドールズ！ 公式サイト](https://wsy-idolls.com){:target="_blank"}
+- [TVアニメ「IDOLY PRIDE」公式サイト](https://anime.idolypride.jp){:target="_blank"}
+- [TVアニメ「アズールレーン びそくぜんしんっ！」公式サイト](https://www.azurlane-bisoku.jp){:target="_blank"}
+- [TVアニメ『WIXOSS DIVA(A)LIVE』公式サイト](http://wixoss-diva.com){:target="_blank"}
+- [TVアニメ『ウマ娘 プリティーダービー Season 2』公式サイト](https://anime-umamusume.jp){:target="_blank"}
+- [TVアニメ「裏世界ピクニック」公式サイト](https://www.othersidepicnic.com){:target="_blank"}
+<!-- - [TVアニメ「SK∞ エスケーエイト」公式サイト](https://sk8-project.com/?skip){:target="_blank"} -->
+- [GANMA!アニメ『おとなの防具屋さん』](https://ganma.jp/g/anime/otonabougu/){:target="_blank"}
+- [TVアニメ「オルタンシア・サーガ」公式サイト](https://animehorsaga.jp){:target="_blank"}
+- [TVアニメ「俺だけ入れる隠しダンジョン」公式サイト](https://kakushidungeon-anime.jp){:target="_blank"}
+- [TVアニメ『回復術士のやり直し』公式サイト](http://kaiyari.com){:target="_blank"}
+- [TVアニメ「蜘蛛ですが、なにか？」公式サイト](https://kumo-anime.com){:target="_blank"}
+- [TVアニメ「ゲキドル」公式サイト](http://gekidol.com){:target="_blank"}
+- [TVアニメ『怪物事変』公式サイト](https://kemonojihen-anime.com){:target="_blank"}
+- [TVアニメ「五等分の花嫁∬」公式ホームページ](https://www.tbs.co.jp/anime/5hanayome/){:target="_blank"}
+- [TVアニメ「弱キャラ友崎くん」公式サイト](http://tomozaki-koushiki.com){:target="_blank"}
+- [TVアニメ「SHOW BY ROCK!! STARS!!」公式サイト](https://showbyrock-anime-s.com/){:target="_blank"}
+- [装甲娘戦機【アニメ】](http://soukou-musume-senki.com){:target="_blank"}
+- [「たとえばラストダンジョン前の村の少年が序盤の街で暮らすような物語」TVアニメ公式サイト](https://lasdan.com){:target="_blank"}
+- [【公式】アニメ 「転生したらスライムだった件」](https://www.ten-sura.com/anime/tensura){:target="_blank"}
+- [TVアニメ『2.43　清陰高校男子バレー部』公式サイト](https://243anime.com){:target="_blank"}
+- [TVアニメ『のんのんびより のんすとっぷ』公式サイト](https://nonnontv.com/tvanime/){:target="_blank"}
+- [TVアニメ「はたらく細胞!!」](https://hataraku-saibou.com/){:target="_blank"}
+- [TVアニメ「はたらく細胞BLACK」 公式サイト](https://saibou-black.com/){:target="_blank"}
+- [PUI PUI モルカー【公式】](https://molcar-anime.com){:target="_blank"}
+- [TVアニメ「文豪ストレイドッグス わん！」公式サイト](https://bungo-stray-dogs-wan.com){:target="_blank"}
+- [TVアニメ「ホリミヤ」公式サイト](https://horimiya-anime.com){:target="_blank"}
+- [TVアニメ「無職転生 ～異世界行ったら本気だす」公式サイト](https://mushokutensei.jp){:target="_blank"}
+- [TVアニメ『八十亀ちゃんかんさつにっき　３さつめ』](https://yatogame.nagoya){:target="_blank"}
+- [TVアニメ『ゆるキャン△ SEASON２』公式サイト](https://yurucamp.jp/second/){:target="_blank"}
+- [アニメ幼女社長](https://www.mujina-company.com){:target="_blank"}
+- [TVアニメ『Re:ゼロから始める異世界生活』オフィシャルサイト](http://re-zero-anime.jp/tv/){:target="_blank"}
+- [アニメ「ワールドウィッチーズ発進しますっ！」公式サイト](http://w-witch.jp/ww_takeoff/){:target="_blank"}
+- [TVアニメ「ワンダーエッグ・プライオリティ」公式サイト](https://wonder-egg-priority.com){:target="_blank"}
 
 #### 2020秋
 - [ラブライブ！虹ヶ咲学園スクールアイドル同好会](http://www.lovelive-anime.jp/nijigasaki/){:target="_blank"}
@@ -107,6 +144,7 @@ title: Link
 - [「劇場版 ハイスクール・フリート」公式サイト](https://www.hai-furi.com){:target="_blank"}
 - [『プリンセス・プリンシパル Crown Handler』公式サイト](https://pripri-anime.jp){:target="_blank"}
 - [映画『魔女見習いをさがして』公式サイト](https://www.lookingfor-magical-doremi.com){:target="_blank"}
+- [映画 『羅小黒戦記（ロシャオヘイセンキ） ぼくが選ぶ未来』 公式サイト](https://luoxiaohei-movie.com){:target="_blank"}
 
 #### 2019秋
 - [TVアニメ「ハイスコアガール」公式サイト](http://hi-score-girl.com){:target="_blank"}
