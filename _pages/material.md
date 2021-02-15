@@ -57,8 +57,8 @@ toc: true
 {% for era in site.data.kaishi-list %}
 <h3>{{ era[0] }}年代</h3>
 <ul>
-  {% for item in era[1] %}
+  {%- for item in era[1] %}
     <li><a href="{{ item[1] }}" target="_blank">{{ item[0] }}</a></li>
-  {% endfor %}
+  {%- endfor %}
 </ul>
 {% endfor %}

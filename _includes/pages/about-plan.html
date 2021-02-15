@@ -1,0 +1,10 @@
+<div class="table-space">
+  <table>
+  {% for item in site.data.about.active_plan %}
+    <tr>
+      <td class="right active">{{ item.name }}：</td>
+      <td>{{ item.date }}</td>
+    </tr>
+  {% endfor %}
+  </table>
+</div>

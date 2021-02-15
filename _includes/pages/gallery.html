@@ -15,23 +15,21 @@ chirashi2019:
 {%- endcomment -%}
 
 <div class="gallery">
-  {% for img in include.src %}
+  {%- for img in include.src %}
   <div class="item">
-    <a href="{{ site.baseurl }}/assets/img/{{ include.path }}{{ img[0] }}">
-      <img src="{{ site.baseurl }}/assets/img/{{ include.path }}th-{{ img[0] }}" alt="image by {{ img[1] }}">
+    <a href="{{ site.baseurl }}/assets/img/{{ include.dir }}{{ img[0] }}">
+      <img src="{{ site.baseurl }}/assets/img/{{ include.dir }}th-{{ img[0] }}" alt="image by {{ img[1] }}">
     </a>
-    <!-- <div class="info">テーマ：{{ img[2] }}</div> -->
-    <!-- <div class="info">　　作：{{ img[1] }}</div> -->
     <table>
       <tr>
         <td class="row1">テーマ：</td>
         <td class="row2">{{ img[2] }}</td>
       </tr>
       <tr>
-        <td class="row1">作：</td>
+        <td class="row1">作者：</td>
         <td class="row2">{{ img[1] }}</td>
       </tr>
     </table>
   </div>
-  {% endfor %}
+  {%- endfor %}
 </div>

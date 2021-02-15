@@ -4,11 +4,11 @@
       <div class="item">
         <a href="/" {% if page.url == / %}class="current"{% endif %}>Top</a>
       </div>
-      {% for item in site.data.navigation %}
+{%- for item in site.data.navigation %}
       <div class="item">
         <a href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
       </div>
-      {% endfor %}
+{%- endfor %}
     </div>
     <div class="block">
       <div class="sub-block">
