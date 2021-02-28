@@ -1,0 +1,54 @@
+{%- if include.isOB == false -%}
+  {% assign grade_head = "学年" %}
+  {% assign grade_unit = "回生" %}
+  {% assign items = site.data.members.hierarchy.active %}
+{%- else -%}
+  {% assign grade_head = "卒業年" %}
+  {% assign grade_unit = "年度卒" %}
+  {% assign items = site.data.members.hierarchy.OB %}
+{%- endif -%}
+
+{%- assign yaer = site.data.members.yaer -%}
+
+<div class="table-space">
+  <table class="member_table">
+    <thead>
+      <tr>
+        <th>{{ grade_head }}</th><th>学部</th><th>学科</th><th>人数</th>
+      </tr>
+    </thead>
+    <tbody>
+{%- for item in items %}
+
+  {%- if include.isOB == false -%}
+    {% if item.doctor %}
+      {% assign grade = yaer | minus: item.doctor | plus: 1 | prepend: "D" %}
+    {% elsif item.master %}
+      {% assign grade = yaer | minus: item.master | plus: 1 | prepend: "M" %}
+    {% else %}
+      {% assign grade = yaer | minus: item.enroll | plus: 1 %}
+    {% endif %}
+  {%- else -%}
+    {% assign grade = item.graduate | minus: 2000 %}
+  {%- endif -%}
+
+  {%- assign isFirst = true %}
+  {%- for belong in item.belong %}
+    {%- if isFirst == true %}
+      <tr class="grade">
+        <td rowspan="{{ item.belong | size }}">
+          {{- grade | append: grade_unit -}}
+        </td>
+      {%- assign isFirst = false %}
+    {%- else %}
+      <tr>
+    {%- endif %}
+        <td>{{ belong[0] }}</td>  {%- comment -%} 学部 {%- endcomment -%}
+        <td>{{ belong[1] }}</td>  {%- comment -%} 学科 {%- endcomment -%}
+        <td>{{ belong[2] }}名</td>{%- comment -%} 人数 {%- endcomment -%}
+      </tr>
+  {%- endfor %}
+{%- endfor %}
+    </tbody>
+  </table>
+</div>

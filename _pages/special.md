@@ -2,18 +2,18 @@
 title: Special
 rp2017xy: https://vuccaken.github.io/rp2017xy/
 # チラシ
-path2chirashi2018: gallery/chirashi2018/
-chirashi2018:
-  - [nkym1.jpg, nkym, Feynman]
-path2chirashi2019: gallery/chirashi2019/
-chirashi2019:
-  - [sj.jpg, sj, moe]
-  - [nsmr.jpg, nsmr, フリー素材]
-  - [nkym1.jpg, nkym, ラ！]
-  - [nkym2.jpg, nkym, インターネット黎明期]
-path2chirashi2020: gallery/chirashi2020/
-chirashi2020:
-  - [fkd.jpg, fkd, シンプルイズ至高]
+# path2chirashi2018: gallery/chirashi2018/
+# chirashi2018:
+#   - [nkym1.jpg, nkym, Feynman]
+# path2chirashi2019: gallery/chirashi2019/
+# chirashi2019:
+#   - [sj.jpg, sj, moe]
+#   - [nsmr.jpg, nsmr, フリー素材]
+#   - [nkym1.jpg, nkym, ラ！]
+#   - [nkym2.jpg, nkym, インターネット黎明期]
+# path2chirashi2020: gallery/chirashi2020/
+# chirashi2020:
+#   - [fkd.jpg, fkd, シンプルイズ至高]
 ---
 
 ## 特設ベージ
@@ -42,11 +42,7 @@ chirashi2020:
 {:id="chirashi"}
 ### 新歓チラシ
 
-#### 2020年度
-{% include pages/gallery.html path=page.path2chirashi2020 src=page.chirashi2020 %}
-
-#### 2019年度
-{% include pages/gallery.html path=page.path2chirashi2019 src=page.chirashi2019 %}
-
-#### 2018年度
-{% include pages/gallery.html path=page.path2chirashi2018 src=page.chirashi2018 %}
+{% for item in site.data.special.gallery.chirashi %}
+#### {{ item.year }}年度
+  {% include pages/gallery.html dir=item.dir src=item.src %}
+{% endfor %}

@@ -1,10 +1,10 @@
 
-{% for post in site.posts %}
+{%- for post in site.posts %}
 <a href="{{ site.baseurl }}/pages/news.html#{{ post.url }}">
   <div class="home_news">
     <span class="news-date">{{ post.date | date: "%Y.%m.%d" }}</span>
     <div class="news-title">{{ post.title }}</div>
-    {%- comment -%} <p>{{ post.excerpt }}</p> {%- endcomment -%}
+    {%- comment -%} <p>{{ post.excerpt }}</p> {%- endcomment %}
   </div>
 </a>
-{% endfor %}
+{%- endfor %}

@@ -3,18 +3,20 @@
 %%%%%    使い方    %%%%%
 
 ---
-path2images1: posts/2019-12-14-OB/
+images1_dir: posts/2019-12-14-OB/
 images1:
-- [OB1,2019-OB-1.jpg]
-- [OB2,2019-OB-2.jpg]
+  - [OB1, posts/2019-12-14-OB/2019-OB-1.jpg]
+  - [OB2, posts/2019-12-14-OB/2019-OB-2.jpg]
 ---
-{% include images.html path=page.path2images1 src=page.images1 %}
+{% include images.html dir=page.images1_dir src=page.images1 %}
 
 {%- endcomment -%}
 
 
 <div class="img-list">
-  {% for item in include.src %}
-    <img src="{{ site.baseurl }}/assets/img/{{ include.path }}{{ item[1] }}" alt="{{ item[0] }}">
-  {% endfor %}
+{% for item in include.src %}
+  {%- assign file_name = item[1] -%}
+  {%- assign alt = item[0] -%}
+  <img src="{{ site.baseurl }}/assets/img/{{ include.dir }}{{ file_name }}" alt="{{ alt }}">
+{% endfor -%}
 </div>
