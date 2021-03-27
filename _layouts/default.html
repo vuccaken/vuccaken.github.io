@@ -24,7 +24,14 @@
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/site-icon/favicon.ico">
 
     <!-- title -->
-    <title>{% if page.subtitle %}{{ page.subtitle }}{% endif %} {{ page.title }}</title>
+    <title>
+      {%- if page.subtitle %}{{ page.subtitle | append: " " }}{% endif -%}
+      {%- if page.url == '/' -%}
+        {{- page.title -}}
+      {%- else -%}
+        {{- page.title | append: " - 物理科学研究会" -}}
+      {%- endif -%}
+    </title>
 
   </head>
   <body>
