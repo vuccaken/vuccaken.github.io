@@ -13,11 +13,15 @@ title: Member
 {:id="list"}
 ## 会員リスト
 
+個性豊かで愉快な仲間たちのプロフィールです。
+
 {% include pages/member-list.html isOB=false %}
 
 
 {:id="OB"}
 ## 名誉会員（OB）
+
+最近ご卒業された先輩方です。
 
 {% include pages/member-hierarchy.html isOB=true %}
 
