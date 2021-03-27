@@ -61,6 +61,7 @@ title: Link
   - [vuccaken/kaishi2020](https://github.com/vuccaken/kaishi2020){:target="_blank"}
 - [Progate](https://prog-8.com){:target="_blank"}
 - [Jekyll ja](http://jekyllrb-ja.github.io){:target="_blank"}
+- [Liquid template language](https://shopify.github.io/liquid/){:target="_blank"}
 - まにゅある
   - [このサイトのテンプレ]({{ site.baseurl }}/pages/template.html)
 
