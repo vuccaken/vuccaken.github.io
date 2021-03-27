@@ -8,6 +8,7 @@ title: Link
 
 ### 大学
 - [立命館大学](http://www.ritsumei.ac.jp){:target="_blank"}
+  - [在学生の方へ](http://www.ritsumei.ac.jp/infostudents/){:target="_blank"}
   - [理工学部](http://www.ritsumei.ac.jp/se2017/){:target="_blank"}
     - [物理科学科](http://www.ritsumei.ac.jp/se/rp/physics/index.html){:target="_blank"}
   - [理工研究科](http://www.ritsumei.ac.jp/gsse/){:target="_blank"}
@@ -66,6 +67,9 @@ title: Link
 
 {:id="anime"}
 ## 一部会員向けリンク
+
+#### 2021春
+- 調査中
 
 #### 2021冬
 - [アイドールズ！ 公式サイト](https://wsy-idolls.com){:target="_blank"}
@@ -164,4 +168,12 @@ title: Link
 
 <div class="youtube">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Ksf_gq6fZZM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="youtube">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6bnaBnd4kyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="youtube">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/65MVxnJbS0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
