@@ -34,6 +34,7 @@ title: Link
 - [manaba+R](https://ct.ritsumei.ac.jp/ct/home){:target="_blank"}
 - [English Expeditions](https://www.ee.ritsumei.ac.jp/index.htm){:target="_blank"}
 - [休講連絡](http://www.ritsumei.ac.jp/academic-affairs/status/){:target="_blank"}
+- [2021年度授業時間](http://www.ritsumei.ac.jp/pathways-future/course/calendar.html/){:target="_blank"}
 - [立命館大学図書館](http://www.ritsumei.ac.jp/lib/){:target="_blank"}
   - [RUNNERS](https://runners.ritsumei.ac.jp/opac/odr_stat/?lang=0){:target="_blank"}
   - [開館日程](http://www.ritsumei.ac.jp/lib/a03/010/){:target="_blank"}
