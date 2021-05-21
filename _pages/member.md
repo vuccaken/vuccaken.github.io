@@ -3,7 +3,7 @@ title: Member
 ---
 
 {:id="hierarchy”}
-## 会員構成（{{ site.data.members.yaer }}年度）
+## 会員構成（{{ site.data.members.current-year }}年度）
 
 新規入会はいつでも大歓迎です！！
 

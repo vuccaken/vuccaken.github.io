@@ -15,46 +15,72 @@
   }
 }
 
-.member_list {
-  // border: solid 2px tomato;
-  background-color: $bg-color-sub;
-  margin: 0 auto;
-  width: 90%;
-  border-radius: 20px;
-  padding: 10px;
-  .intro-block {
-    // border: solid 1px tomato;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    .icon {
-      // border: solid 1px aqua;
-      margin: auto 10px;
-      height: 160px;
-      flex: 1 1 150px;
-      display: flex;
+.member-card-area{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  // grid-gap: 15px;
+  justify-items: center;
+
+  .member-card{
+    background-color: $bg-color-sub;
+    // max-width: 350px;
+    width: 310px;
+    margin: 10px;
+    padding: 10px 17px;
+    border-radius: 10px;
+
+    h3 {
+      margin: 0;
+      border: none;
+      text-align: center;
+      .position {
+        padding: 5px 10px;
+        margin-right: 10px;
+        // border: solid 1px $thm-color;
+        border-radius: 8px;
+        font-size: 90%;
+        background-color: $bg-color;
+      }
+    }
+
+    .icon-area {
+      margin: 10px 0;
       img {
-        // border: solid 1px tomato;
-        display: block;
-        margin: auto;
-        max-height: 100%;
-        max-width: 100%;
-      }
-    }
-    .intro {
-      // border: solid 1px aqua;
-      flex: 4 1 280px;
+      display: block;
       margin: auto;
-      padding: 0px 5px;
-      .item {
-        margin: .07rem 0;
+      height: 160px;
       }
     }
-  }
-  .massage {
-    margin-top: 5px;
-    border-top: solid 1px #aaa;
-    padding: 0px 10px;
-    padding-top: 8px;
+
+    .profile-text{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        margin: 5px 0;
+        margin-right: 1em;
+        span{
+          display: inline-block;
+          background-color: $bg-color;
+          padding: 3px 7px;
+          margin-left: -7px;
+          margin-right: 5px;
+          border-radius: 8px;
+          font-size: 90%;
+        }
+      }
+    }
+
+    .links-area {
+      text-align: right;
+      
+      .fa-stack-1x {
+        color: white;
+      }
+      .fa-stack-2x {
+        color: $bg-color;
+      }
+    }
+
   }
 }
