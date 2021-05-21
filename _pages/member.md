@@ -15,6 +15,8 @@ title: Member
 
 個性豊かで愉快な仲間たちのプロフィールです。
 
+{% include pages/member-list-new.html isOB=false %}
+
 {% include pages/member-list.html isOB=false %}
 
 
@@ -24,5 +26,7 @@ title: Member
 最近ご卒業された先輩方です。
 
 {% include pages/member-hierarchy.html isOB=true %}
+
+{% include pages/member-list-new.html isOB=true %}
 
 {% include pages/member-list.html isOB=true %}
