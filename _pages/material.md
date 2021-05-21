@@ -48,9 +48,8 @@ toc: true
   - [Release · vuccaken/kaishi2018](https://github.com/vuccaken/kaishi2018/releases/){:target="_blank"}
 - [2017年度](https://drive.google.com/open?id=1h_Z2RLaUeMzO6ROQNH5QBDRMWc6zHM_J){:target="_blank"}
   - [Releases · vuccaken/kaishi2017](https://github.com/vuccaken/kaishi2017/releases){:target="_blank"}
-- [2017年度 OB会](https://drive.google.com/open?id=1W3qF2oLdtIJV4Jv3-C3Wnf_zq-0FDnEY){:target="_blank"}
-  - [Releases · vuccaken/kaishi2017ob](https://github.com/vuccaken/kaishi2017ob/releases){:target="_blank"}
-- [2016年度](https://drive.google.com/open?id=10TqCUYV5C5vuD146Ep1Cf0EPRXDvEqw1){:target="_blank"}
+- [2017年度 OB会](https://drive.google.com/file/d/1LNKDmo2k4GF8TphcTuUn5Cxs8avPfP5C/view?usp=sharing){:target="_blank"}
+- [2016年度](https://drive.google.com/file/d/1AJiBLoblQc61pyOC5jfFJyW0B95KehsU/view?usp=sharing){:target="_blank"}
 - [2015年度](https://drive.google.com/open?id=0BweCineGGD_haXRPejB6NTJqalE){:target="_blank"}{:target="_blank"}
 
 
