@@ -73,48 +73,41 @@ section{
 }
 
 footer {
-  // margin: 0 10px;
   margin: 30px 0px;
-  // padding-bottom: 30px;
-  .wrap {
-    // background-color: $bg-color-sub;
-    border-top: solid 1px $thm-color;
-    // border-bottom: solid 1px $thm-color;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    // grid-template-columns: 150px 300px;
-    // grid-gap: 10px;
-    padding:10px;
-    .block {
-      // border: solid 1px yellow;
-      text-align: center;
-      .item {
-        margin: 6px 0;
-      }
-      .sub-block {
-        // border: solid 1px yellow;
-        margin: 20px 0;
-        // margin-bottom: 20px;
-        .address:before {
-          content: '◆';
-          padding-right: 5px;
-          font-size: 80%;
-        }
-        .address:after {
-          content: '◆';
-          padding-left: 5px;
-          font-size: 80%;
-        }
-      }
+  border-top: solid 1px $thm-color;
+  padding:10px;
+  nav {
+      display: block;
+    a {
+      display: inline-block;
+      margin: 6px 10px;
     }
-  } // wrap
+  }
+  @media screen and (max-width: 680px) {
+    nav{
+      text-align: center;
+    }
+    .sns {
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+  @media screen and (min-width: 680px) {
+    nav{
+      float: left;
+    }
+    .sns {
+      text-align: right;
+    }
+  }
   .copyright {
     // background: aqua;
     text-align: center;
     font-size: .12rem;
-    margin: 10px 0;
+    margin: 15px 0;
   }
 }
+
 
 
 // 目次
