@@ -1,21 +1,21 @@
 
-year: 2020年度
+year: 2021年度
 
 fee: 6,000円（年間）
 
 active_plan:
   - name: 例会
-    date: <del>自粛！！</del>　@Zoom
+    date: 毎週土曜日 @Zoom
   # - name: 例会
   #   date: 毎週？曜日 18時〜 （前期）
-  - name: ゼミ
-    date: 砂川『理論電磁気』輪読
   # - name: ゼミ
-  #   date: 元気があれば開催
-  - name: 新歓セミナー
-    date: <del>5月？</del>　未定
+  #   date: 砂川『理論電磁気』輪読
+  - name: ゼミ
+    date: 元気があれば開催
+  # - name: 新歓セミナー
+  #   date: <del>5月？</del>　未定
   - name: 学園祭
-    date: <del>11月頃 @BKC</del>　中止！
+    date: 11月頃 @BKC
   - name: OB会
     date: 次回開催時期未定
   # - name: OB会
