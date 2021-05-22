@@ -5,6 +5,51 @@
 
 header {
   // border: solid 1px tomato;
+  nav {
+    // border: solid 1px tomato;
+    margin: 20px;
+    display: flex;
+    .logo {
+      display: block;
+      // border: solid 1px aqua;
+      height: 90px;
+      margin-bottom: -90px;
+      position: relative;
+      z-index: 10; // 無いとcontentの下敷きに...
+    }
+    .logo:hover{
+      text-decoration: none;
+      opacity:0.9;
+      // filter:alpha(opacity=80);
+      // -ms-filter: "alpha( opacity=80 )";
+    }
+    .menu-list {
+      // border: solid 1px aqua;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+      .menu {
+        // border: solid 1px aqua;
+        text-align: center;
+        margin: 5px 5px;
+        a{
+          color: $text-color;
+          padding: 2px 10px;
+          border-radius: 30px;
+          font-size: .17rem;
+        }
+        a:hover{
+          background-color: $text-color;
+          color: $bg-color;
+        }
+        .current {
+          background-color: $text-color;
+          color: $bg-color;
+        }
+      }
+    }
+  }
+
   h1 {
     // border: solid 1px aqua;
     margin: 0px;
@@ -15,50 +60,38 @@ header {
     padding-bottom: 5px;
   }
 }
-nav {
-  // border: solid 1px tomato;
-  margin: 20px;
+
+// 目次
+// _includes/general/toc.html
+.toc-area {
   display: flex;
-  .logo {
-    display: block;
-    // border: solid 1px aqua;
-    height: 90px;
-    margin-bottom: -90px;
-    position: relative;
-    z-index: 10; // 無いとcontentの下敷きに...
-  }
-  .logo:hover{
-    text-decoration: none;
-    opacity:0.9;
-    // filter:alpha(opacity=80);
-    // -ms-filter: "alpha( opacity=80 )";
-  }
-  .menu-list {
-    // border: solid 1px aqua;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
-    .menu {
-      // border: solid 1px aqua;
-      text-align: center;
-      margin: 5px 5px;
-      a{
-        color: $text-color;
-        padding: 2px 10px;
-        border-radius: 30px;
-        font-size: .17rem;
-      }
-      a:hover{
-        background-color: $text-color;
-        color: $bg-color;
-      }
-      .current {
-        background-color: $text-color;
-        color: $bg-color;
-      }
-    }
-  }
+  // background-color: greenyellow;
 }
+.toc-ul { // <ul>
+  // background-color: red;
+  // border-top: solid 2px $thm-color;
+  // border-bottom: solid 2px $thm-color;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.toc-li { // <li>
+  // border: 1px solid aqua;
+  padding: 0px 10px;
+  list-style: none;
+  // text-align: center;
+  font-size: 10.5pt;
+  flex: 1 0 1;
+  // margin: auto;
+}
+.toc-a{
+  // color: $thm-color;
+  // border: 1px solid $thm-color;
+  // padding: 0px 15px;
+}
+
 
 .contents {
   // border: solid 1px yellow;
@@ -108,39 +141,6 @@ footer {
     font-size: .12rem;
     margin: 15px 0;
   }
-}
-
-
-
-// 目次
-// _includes/general/toc.html
-.toc-area {
-  display: flex;
-  // background-color: greenyellow;
-}
-.toc-ul { // <ul>
-  // background-color: red;
-  // border-top: solid 2px $thm-color;
-  // border-bottom: solid 2px $thm-color;
-  padding: 0;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.toc-li { // <li>
-  // border: 1px solid aqua;
-  padding: 0px 10px;
-  list-style: none;
-  // text-align: center;
-  font-size: 10.5pt;
-  flex: 1 0 1;
-  // margin: auto;
-}
-.toc-a{
-  // color: $thm-color;
-  // border: 1px solid $thm-color;
-  // padding: 0px 15px;
 }
 
 //
