@@ -2,32 +2,29 @@
 // HOME
 //
 
-// .home {
-//   margin-top: 20px;
-// }
-
-.home-top-img {
+.home-top-area {
   position: relative;
   margin: 0 -20px; // .contents の margin
+  display: grid;
+  justify-items: center;
+
   img {
     width: 100%;
-    position: relative;
     z-index: 0;
+  }
+
+  .top-text {
+    color: $text-color;
+    // background-color: tomato;
+    position: absolute;
+    top: 10%;
+    @media screen and (max-width: 400px) {
+      font-size: 80%;
+    }
   }
 }
 
-.top-text {
-  color: $text-color;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  @media screen and (max-width: 400px) {
-    font-size: 80%;
-  }
-}
+
 
 // info
 .home-info-area {
