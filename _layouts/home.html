@@ -2,23 +2,27 @@
 layout: default
 ---
 
-<div class="home_top-img">
+<div class="home-top-img">
   <img src="{{ site.baseurl }}/assets/img/pages/tesla.jpg" alt="">
-  <div class="home_text">
+  <div class="top-text">
     {{ content }}
   </div>
 </div>
 
-<div class="home_info">
-  <div class="info-block">
-    <div class="info-title"><a href="{{ site.baseurl }}/pages/news.html">News</a></div>
-    <div class="info-frame">
+<div class="home-info-area">
+  <div class="item">
+    <div class="title">
+      <a href="{{ site.baseurl }}/pages/news.html">News</a>
+    </div>
+    <div class="frame">
       {%- include home/news-list.html %}
     </div>
   </div>
-  <div class="info-block">
-    <div class="info-title"><a href="https://twitter.com/vuccaken">Twitter</a></div>
-    <div class="info-frame">
+  <div class="item">
+    <div class="title">
+      <a href="https://twitter.com/vuccaken">Twitter</a>
+    </div>
+    <div class="frame">
       {%- include home/twitter.html %}
     </div>
   </div>

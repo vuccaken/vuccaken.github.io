@@ -6,7 +6,7 @@
 //   margin-top: 20px;
 // }
 
-.home_top-img {
+.home-top-img {
   position: relative;
   margin: 0 -20px; // .contents の margin
   img {
@@ -16,7 +16,7 @@
   }
 }
 
-.home_text {
+.top-text {
   color: $text-color;
   position: absolute;
   top: 20%;
@@ -24,21 +24,24 @@
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+  @media screen and (max-width: 400px) {
+    font-size: 80%;
+  }
 }
 
 // info
-.home_info {
+.home-info-area {
   padding: 2.5% 0;
   display: flex;
   flex-wrap: wrap;
   // flex-direction: row;
   justify-content: space-evenly;
-  .info-block { // each news and twitter
+  .item { // each news and twitter
     // background-color: aqua;
     max-width: 400px;
     flex: 1 0 300px;
     margin: 20px;
-    .info-title {
+    .title {
       text-align: center;
       padding: 8px;
       font-size: .17rem;
@@ -49,7 +52,7 @@
         color: $thm-color;
       }
     }
-    .info-frame {
+    .frame {
       // background: aqua;
       height: 300px;
       border: 1px solid $thm-color;
@@ -58,7 +61,7 @@
       -ms-overflow-style: none;    /* IE, Edge 対応 */
       scrollbar-width: none;       /* Firefox 対応 */
     }
-    .info-frame::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+    .frame::-webkit-scrollbar {  /* Chrome, Safari 対応 */
       display:none;
     }
   }
