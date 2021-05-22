@@ -172,10 +172,20 @@ pre {
 }
 
 // youtube レスポンシブ
+
+.youtube-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  // grid-gap: 15px;
+  justify-items: center;
+}
+
+$youtube-width: 80%;
+
 .youtube {
   position: relative;
-  width: 90%;
-  padding-top: calc(90% * 9 / 16);
+  width: $youtube-width;
+  padding-top: calc(#{$youtube-width} * 9 / 16);
   margin: 20px auto;
 }
 .youtube iframe {

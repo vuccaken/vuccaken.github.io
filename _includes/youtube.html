@@ -1,0 +1,8 @@
+{%- if include.url -%}
+  {%- assign src = include.url -%}
+{%- elsif include.id -%}
+  {%- assign src = include.id | prepend: "https://www.youtube.com/embed/" -%}
+{%- endif -%}
+<div class="youtube">
+  <iframe width="560" height="315" src="{{ src }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

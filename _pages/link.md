@@ -160,22 +160,16 @@ title: Link
 
 ## 全国民向けリンク
 
-<div class="youtube">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/q7SbeF3Oqu8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% assign youtube_ids = "
+  q7SbeF3Oqu8
+  gknDmz_5AFo
+  Ksf_gq6fZZM
+  6bnaBnd4kyU
+  65MVxnJbS0c
+" | split: " " %}
 
-<div class="youtube">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/gknDmz_5AFo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="youtube">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ksf_gq6fZZM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="youtube">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/6bnaBnd4kyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="youtube">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/65MVxnJbS0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-grid">
+{%- for youtube_id in youtube_ids %}
+  {%- include youtube.html id = youtube_id -%}
+{%- endfor %}
 </div>
