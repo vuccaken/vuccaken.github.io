@@ -4,23 +4,26 @@
 //
 
 header {
-  // background: $thm-color;
-  // border-bottom: solid 1px blue;
-  padding: 20px 0;
+  // border: solid 1px tomato;
+  h1 {
+    // border: solid 1px aqua;
+    margin: 0px;
+    text-align: center;
+  }
   .subtitle {
     font-size: 90%;
     padding-bottom: 5px;
   }
 }
 nav {
-  // background-color: burlywood;
-  margin: 0 10px;
+  // border: solid 1px tomato;
+  margin: 20px;
   display: flex;
   .logo {
+    display: block;
     // border: solid 1px aqua;
     height: 90px;
-    padding-left: 15px;
-    margin-bottom: -70px;
+    margin-bottom: -90px;
     position: relative;
     z-index: 10; // 無いとcontentの下敷きに...
   }
@@ -32,7 +35,6 @@ nav {
   }
   .menu-list {
     // border: solid 1px aqua;
-    margin: auto;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
