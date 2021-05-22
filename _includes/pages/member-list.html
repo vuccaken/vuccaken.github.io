@@ -66,8 +66,8 @@
 
     <div class="member-card">
 
-      <h3 {%- if member.index-id -%}id="{{ member.index-id }}"{%- endif -%}>
-              {%- if member.positions.current -%}
+      <h3 {% if member.index-id %}id="{{ member.index-id }}"{% endif %}>
+      {%- if member.positions.current -%}
         <span class="position">{{ member.positions.current }}</span>
       {%- endif -%}
         <span>{{- member.name -}}</span>

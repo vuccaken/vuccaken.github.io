@@ -160,24 +160,31 @@ pre {
 
 // 画像を横に並べる
 // _includes/images.html
+
 .img-list {
+  margin: 0 5%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 15px;
-  img{
-    display: block;
-    margin: auto;
-    max-width: 300px;
+  @media screen and (min-width: 480px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
+  grid-gap: 15px;
+  justify-items: center;
+}
+.img-list img{
+  background-color: tomato;
+  width: 100%;
+  max-width: 300px;
 }
 
 // youtube レスポンシブ
 
-.youtube-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  // grid-gap: 15px;
-  justify-items: center;
+@media screen and (min-width: 480px) {
+  .youtube-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    // grid-gap: 15px;
+    justify-items: center;
+  }
 }
 
 $youtube-width: 80%;
