@@ -15,15 +15,35 @@ layout: default
       <a href="{{ site.baseurl }}/pages/news.html">News</a>
     </div>
     <div class="frame">
-      {%- include home/news-list.html %}
+      {%- for post in site.posts %}
+      <a href="{{ site.baseurl }}/pages/news.html#{{ post.url }}">
+        <div class="home_news">
+          <span class="news-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+          <div class="news-title">{{ post.title }}</div>
+          {%- comment -%} <p>{{ post.excerpt }}</p> {%- endcomment %}
+        </div>
+      </a>
+      {%- endfor %}
     </div>
   </div>
+
+  {% if site.twitter_username %}
   <div class="info-area">
     <div class="title">
-      <a href="https://twitter.com/vuccaken">Twitter</a>
+      <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
     </div>
     <div class="frame">
-      {%- include home/twitter.html %}
+      <a class="twitter-timeline" data-lang="ja"
+        data-theme="dark"
+        data-border-color="#333"
+        data-link-color="#f00"
+        data-chrome="noheader nofooter transparent noborders noscrollbar"
+        href="https://twitter.com/{{ site.twitter_username }}">
+        Tweets by {{ site.twitter_username }}
+      </a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
+  {% endif %}
+
 </div>
