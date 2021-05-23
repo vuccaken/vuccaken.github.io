@@ -3,7 +3,7 @@
     <a href="{{ site.baseurl }}/">
       <img class="logo" src="{{ site.baseurl }}/assets/img/logo.png"/>
     </a>
-    <div class="menu-list">
+    <div class="menu-area">
       {%- for item in site.data.navigation %}
       <div class="menu">
         <a href="{{ item.link | prepend: site.baseurl }}" {%- if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>

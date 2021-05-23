@@ -8,12 +8,17 @@ header {
   nav {
     // border: solid 1px tomato;
     margin: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 90px 1fr;
     .logo {
-      display: block;
       // border: solid 1px aqua;
-      height: 90px;
-      margin-bottom: -90px;
+      display: block;
+      width: 80%;
+      @media screen and (min-width: 635px) {
+        width: 100%;
+        margin-bottom: -100%;
+      }
+      
       position: relative;
       z-index: 10; // 無いとcontentの下敷きに...
     }
@@ -23,26 +28,26 @@ header {
       // filter:alpha(opacity=80);
       // -ms-filter: "alpha( opacity=80 )";
     }
-    .menu-list {
+    .menu-area {
       // border: solid 1px aqua;
+      margin: auto;
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+      grid-gap: 10px 0px;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
       .menu {
-        // border: solid 1px aqua;
+        // border: solid 1px tomato;
         text-align: center;
-        margin: 5px 5px;
         a{
+          // border: solid 1px aqua;
           color: $text-color;
           padding: 2px 10px;
-          border-radius: 30px;
+          border-radius: 20px;
           font-size: .17rem;
         }
-        a:hover{
-          background-color: $text-color;
-          color: $bg-color;
-        }
-        .current {
+        a:hover,
+        .current{
           background-color: $text-color;
           color: $bg-color;
         }
