@@ -59,16 +59,32 @@ header {
       }
     }
   }
+}
 
-  h1 {
-    // border: solid 1px aqua;
-    margin: 0px;
-    text-align: center;
+
+.contents {
+  // border: solid 1px yellow;
+  margin: 0px auto;
+  padding: 0 20px;
+  .content-pages{
+    max-width: 800px;
+    margin: 0px auto;
   }
-  .subtitle {
-    font-size: 90%;
-    padding-bottom: 5px;
-  }
+}
+
+.page-title-area {
+  // border: solid 1px aqua;
+  margin-bottom: 30px;
+}
+
+h1 {
+  // border: solid 1px aqua;
+  margin: 0px;
+  text-align: center;
+}
+.subtitle {
+  font-size: 90%;
+  padding-bottom: 5px;
 }
 
 // 目次
@@ -100,17 +116,6 @@ header {
   // color: $thm-color;
   // border: 1px solid $thm-color;
   // padding: 0px 15px;
-}
-
-
-.contents {
-  // border: solid 1px yellow;
-  margin: 0px auto;
-  padding: 0 20px;
-  .content-pages{
-    max-width: 800px;
-    margin: 0px auto;
-  }
 }
 
 section{

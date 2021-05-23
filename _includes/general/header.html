@@ -6,25 +6,11 @@
     <div class="menu-area">
       {%- for item in site.data.navigation %}
       <div class="menu">
-        <a href="{{ item.link | prepend: site.baseurl }}" {%- if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+        <a href="{{ site.baseurl }}{{ item.link }}"
+        {%- if page.url == item.link %}class="current"{% endif %}>
+        {{ item.name }}</a>
       </div>
       {%- endfor %}
     </div>
   </nav>
-
-{% if page.url != '/' %}
-  <h1>
-  {%- if page.subtitle %}
-    <div class="subtitle">{{ page.subtitle }}</div>
-  {%- endif %}
-    <div class="title">{{ page.title }}</div>
-  </h1>
-
-  {%- if page.toc == true %}
-  <div class="toc-area">
-    {% include general/toc.html html=content h_min=2 h_max=2 class="toc-ul" item_class="toc-li" anchor_class="toc-a" %}
-  </div>
-  {%- endif %}
-{% endif %}
-
 </header>
