@@ -75,8 +75,10 @@
     }
 
     .links-area {
-      text-align: right;
-      
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 35px);
+      justify-content: right;
+
       .fa-stack-1x {
         color: white;
       }

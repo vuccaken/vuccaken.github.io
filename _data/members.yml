@@ -44,6 +44,117 @@ hierarchy:
 
 members:
 ##
+
+  - name          : a
+    admissions:
+      bachelor:
+        year      : 2021
+        faculty   : 理工学部
+        department: 物理科学科
+    icon          : 
+    profile: # 7個程度を目安に
+      - q: 出身地
+        a: 
+      - q: 趣味
+        a: 
+      - q: 好きなもの
+        a: 
+      - q: 座右の銘
+        a: 
+      - q: 将来の野望
+        a: 
+      - q: 極上のアニメ
+        a: 
+      - q: 一言：
+
+  - name          : b
+    admissions:
+      bachelor:
+        year      : 2021
+        faculty   : 理工学部
+        department: 物理科学科
+    icon          : 
+    profile: # 7個程度を目安に
+      - q: 出身地
+        a: 
+      - q: 趣味
+        a: 
+      - q: 好きなもの
+        a: 
+      - q: 座右の銘
+        a: 
+      - q: 将来の野望
+        a: 
+      - q: 極上のアニメ
+        a: 
+      - q: 一言：
+
+  - name          : c
+    admissions:
+      bachelor:
+        year      : 2021
+        faculty   : 理工学部
+        department: 物理科学科
+    icon          : 
+    profile: # 7個程度を目安に
+      - q: 出身地
+        a: 
+      - q: 趣味
+        a: 
+      - q: 好きなもの
+        a: 
+      - q: 座右の銘
+        a: 
+      - q: 将来の野望
+        a: 
+      - q: 極上のアニメ
+        a: 
+      - q: 一言：
+
+  - name          : d
+    admissions:
+      bachelor:
+        year      : 2020
+        faculty   : 理工学部
+        department: 物理科学科
+    icon          : 
+    profile: # 7個程度を目安に
+      - q: 出身地
+        a: 
+      - q: 趣味
+        a: 
+      - q: 好きなもの
+        a: 
+      - q: 座右の銘
+        a: 
+      - q: 将来の野望
+        a: 
+      - q: 極上のアニメ
+        a: 
+      - q: 一言：
+
+  - name          : e
+    admissions:
+      bachelor:
+        year      : 2020
+        faculty   : 理工学部
+        department: 物理科学科
+    icon          : 
+    profile: # 7個程度を目安に
+      - q: 出身地
+        a: 
+      - q: 趣味
+        a: 
+      - q: 好きなもの
+        a: 
+      - q: 座右の銘
+        a: 
+      - q: 将来の野望
+        a: 
+      - q: 極上のアニメ
+        a: 
+      - q: 一言：
+
   - name: なすび
     admissions:
       bachelor:
@@ -113,7 +224,7 @@ members:
       - q: 極上のアニメ
         a: 星のカービィ
       - q: 一言
-        a: 
+        a: ....
 
   - name: 藤木
     admissions:
@@ -152,6 +263,7 @@ members:
     icon: negiR-1024.jpg
     links:
       twitter: koki547780
+      github: kfuji727
     profile:
       - q: 編入先
         a: 神戸大（3年次編入）
@@ -205,6 +317,8 @@ members:
         year: 2020
         faculty: 理工学研究科
         department: 基礎理工学専攻 物理科学コース
+      finish:
+        year:
     positions:
       past: 会長
     icon: kumakinntore.png
@@ -237,13 +351,16 @@ members:
         year: 2020
         faculty: 理工学研究科
         department: 基礎理工学専攻 物理科学コース
+      finish:
+        year:
     positions:
       current: HP管理人
       past: 会計
     icon: nuko06.png
     links:
-      homepage:
+      homepage: https://znuko.github.io/nukodocs/
       twitter: geniusium_
+      github: znuko
     profile:
       - q: 出身地
         a: 大阪府の郊外
@@ -271,6 +388,8 @@ members:
         year: 2020
         faculty: 理工学研究科
         department: 機械システム専攻 ロボティクスコース
+      finish:
+        year:
     positions:
       current: 実験工房スタップ
     icon: HD.png
@@ -309,6 +428,7 @@ members:
     icon: kadono.jpg
     links:
       twitter: shi_robo
+      github: physicskuma
     profile:
       - q: 出生地
         a: アメリカ合衆国ピッツバーグ
@@ -376,13 +496,13 @@ members:
 
 
 ## 最小版
-  # - name          : おなまえ # ハンドルネーム
+  # - name          : 
   #   admissions:
-  #     bachelor: # 学部
-  #       year      : 2021 # 入学年
-  #       faculty   : 理工学部 # 学部
-  #       department: 物理科学科 # 学科
-  #   icon          :  # アイコンの画像ファイル
+  #     bachelor:
+  #       year      : 2021
+  #       faculty   : 理工学部
+  #       department: 物理科学科
+  #   icon          : 
   #   profile: # 7個程度を目安に
   #     - q: 出身地
   #       a: 

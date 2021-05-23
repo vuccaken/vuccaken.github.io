@@ -15,9 +15,7 @@
   {%- if include.isOB == isOB -%}
 
     {%- capture icon_url -%}
-      {{- site.baseurl | append: '/assets/img/member-icon/' -}}
-
-        {{ member.icon | default: "default.png"}}
+      {{- site.baseurl }}/assets/img/member-icon/{{ member.icon | default: "default.png"}}
     {%- endcapture -%}
 
     {%- assign isBachelor = false -%}
@@ -99,10 +97,18 @@
         </a>
         {%- endif -%}
         {%- if member.links.twitter -%}
-        <a href="{{ member.links.twitter | prepend: 'https://twitter.com/' }}" target="_blank">
+        <a href="https://twitter.com/{{ member.links.twitter}}" target="_blank">
           <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        {%- endif -%}
+        {%- if member.links.github -%}
+        <a href="https://github.com/{{ member.links.github }}" target="_blank">
+          <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
           </span>
         </a>
         {%- endif -%}
