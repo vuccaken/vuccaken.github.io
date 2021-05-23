@@ -4,7 +4,7 @@
 
 .home-top-area {
   position: relative;
-  margin: 0 -20px; // .contents の margin
+  margin: 0 -20px; // margin of .wrapper
   display: grid;
   justify-items: center;
 
@@ -20,13 +20,12 @@
     top: 10%;
     @media screen and (max-width: 400px) {
       font-size: 80%;
+      top: 5%;
     }
   }
 }
 
-
-
-// info
+// news and twitter frames
 .home-info-section {
   // border: 1px solid aqua;
   margin: 20px;
@@ -75,6 +74,7 @@
   .news-date {
     color: $text-color-sub;
     font-size: .14rem;
+    margin-bottom: 3px;
   }
   .news-title {
     color: $text-color;

@@ -7,10 +7,12 @@ $side-margin: 20px;
 .news-wrap {
   display: grid;
   grid-gap: 20px;
+  // justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  @media screen and (max-width: 350px) {
-    grid-template-columns: none;
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 100%;
   }
+  // border: solid 1px tomato;
 }
 .news_article {
   background-color: $bg-color-sub;
@@ -44,4 +46,3 @@ $side-margin: 20px;
     }
   }
 }
-

@@ -69,10 +69,10 @@ header {
 
 .contents {
   // border: solid 1px yellow;
-  .content-pages{
-    max-width: 800px;
-    margin: 0px auto;
-  }
+  // .content-pages{
+  //   max-width: 800px;
+  //   margin: 0px auto;
+  // }
 }
 
 .page-title-area {
@@ -184,7 +184,6 @@ pre {
 // _includes/images.html
 
 .img-list {
-  margin: 0 5%;
   display: grid;
   @media screen and (min-width: 480px) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -222,4 +221,18 @@ $youtube-width: 80%;
   right: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+// twitter
+.twitter-tweet {
+  // background-color: green;
+  margin: auto;
+  max-width: 300px !important;
+  @media screen and (max-width: 350px) {
+    display: none !important;
+  }
+  iframe {
+    margin: 0 -20px;
+    
+  }
 }
