@@ -3,11 +3,16 @@
 //  共通設定的な。
 //
 
+.wrapper {
+  // background-color: darkgreen;
+  margin: 0 20px;
+}
+
 header {
-  // border: solid 1px tomato;
+  // border: solid 1px aqua;
+  margin: 20px 0;
   nav {
     // border: solid 1px tomato;
-    margin: 20px;
     display: grid;
     grid-row-gap: 10px;
     justify-items: center;
@@ -64,8 +69,6 @@ header {
 
 .contents {
   // border: solid 1px yellow;
-  margin: 0px auto;
-  padding: 0 20px;
   .content-pages{
     max-width: 800px;
     margin: 0px auto;
@@ -74,17 +77,19 @@ header {
 
 .page-title-area {
   // border: solid 1px aqua;
-  margin-bottom: 30px;
-}
-
-h1 {
-  // border: solid 1px aqua;
-  margin: 0px;
-  text-align: center;
-}
-.subtitle {
-  font-size: 90%;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  min-height: 70px;
+  display: grid;
+  align-content: center;
+  .subtitle {
+    font-size: 90%;
+    padding-bottom: 5px;
+  }
+  h1 {
+    // border: solid 1px tomato;
+    margin: 0px;
+    text-align: center;
+  }
 }
 
 // 目次
@@ -123,9 +128,9 @@ section{
 }
 
 footer {
-  margin: 30px 0px;
+  margin-top: 30px;
   border-top: solid 1px $thm-color;
-  padding:10px;
+  padding-top: 10px;
   nav {
       display: block;
     a {
@@ -154,7 +159,7 @@ footer {
     // background: aqua;
     text-align: center;
     font-size: .12rem;
-    margin: 15px 0;
+    margin-top: 15px;
   }
 }
 
@@ -188,7 +193,6 @@ pre {
   justify-items: center;
 }
 .img-list img{
-  background-color: tomato;
   width: 100%;
   max-width: 300px;
 }

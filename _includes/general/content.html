@@ -1,20 +1,22 @@
 <div class="contents">
-  {% if page.url != '/' %}
-    <div class="page-title-area">
-      <h1>
-        {%- if page.subtitle %}
-          <div class="subtitle">{{ page.subtitle }}</div>
+  <div class="wrapper">
+    {% if page.url != '/' %}
+      <div class="page-title-area">
+        <h1>
+          {%- if page.subtitle %}
+            <div class="subtitle">{{ page.subtitle }}</div>
+          {%- endif %}
+          <div class="title">{{ page.title }}</div>
+        </h1>
+
+        {%- if page.toc == true %}
+          <div class="toc-area">
+            {% include general/toc.html html=content h_min=2 h_max=2 class="toc-ul" item_class="toc-li" anchor_class="toc-a" %}
+          </div>
         {%- endif %}
-        <div class="title">{{ page.title }}</div>
-      </h1>
+      </div>
+    {% endif %}
 
-      {%- if page.toc == true %}
-        <div class="toc-area">
-          {% include general/toc.html html=content h_min=2 h_max=2 class="toc-ul" item_class="toc-li" anchor_class="toc-a" %}
-        </div>
-      {%- endif %}
-    </div>
-  {% endif %}
-
-  {{ content }}
+    {{ content }}
+  </div>
 </div>

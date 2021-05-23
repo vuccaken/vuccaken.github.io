@@ -1,16 +1,18 @@
 <header>
-  <nav>
-    <a href="{{ site.baseurl }}/">
-      <img class="logo" src="{{ site.baseurl }}/assets/img/logo.png"/>
-    </a>
-    <div class="menu-area">
-      {%- for item in site.data.navigation %}
-      <div class="menu">
-        <a href="{{ site.baseurl }}{{ item.link }}"
-        {%- if page.url == item.link %}class="current"{% endif %}>
-        {{ item.name }}</a>
+  <div class="wrapper">
+    <nav>
+      <a href="{{ site.baseurl }}/">
+        <img class="logo" src="{{ site.baseurl }}/assets/img/logo.png"/>
+      </a>
+      <div class="menu-area">
+        {%- for item in site.data.navigation %}
+        <div class="menu">
+          <a href="{{ site.baseurl }}{{ item.link }}"
+          {%- if page.url == item.link %}class="current"{% endif %}>
+          {{ item.name }}</a>
+        </div>
+        {%- endfor %}
       </div>
-      {%- endfor %}
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
