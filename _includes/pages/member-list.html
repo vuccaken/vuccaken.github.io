@@ -62,6 +62,7 @@
       {%- endif -%}
     {%- endcapture %}
 
+    {%- unless member.draft == true %}
     <div class="member-card">
 
       <h3 {% if member.index-id %}id="{{ member.index-id }}"{% endif %}>
@@ -115,6 +116,8 @@
       </div>
 
     </div>
-  {%- endif %}
+    {%- endunless -%}
+
+  {%- endif -%}
 {%- endfor -%}
 </div>

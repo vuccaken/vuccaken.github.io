@@ -65,7 +65,8 @@ members:
         a: 
       - q: 極上のアニメ
         a: 
-      - q: 一言：
+      - q: 一言
+        a: 
 
   - name          : b
     admissions:
@@ -87,7 +88,8 @@ members:
         a: 
       - q: 極上のアニメ
         a: 
-      - q: 一言：
+      - q: 一言
+        a: 
 
   - name          : c
     admissions:
@@ -109,7 +111,8 @@ members:
         a: 
       - q: 極上のアニメ
         a: 
-      - q: 一言：
+      - q: 一言
+        a: 
 
   - name          : d
     admissions:
@@ -131,7 +134,8 @@ members:
         a: 
       - q: 極上のアニメ
         a: 
-      - q: 一言：
+      - q: 一言
+        a: 
 
   - name          : e
     admissions:
@@ -153,7 +157,8 @@ members:
         a: 
       - q: 極上のアニメ
         a: 
-      - q: 一言：
+      - q: 一言
+        a: 
 
   - name: なすび
     admissions:
@@ -516,10 +521,12 @@ members:
   #       a: 
   #     - q: 極上のアニメ
   #       a: 
-  #     - q: 一言：
+  #     - q: 一言
+  #       a: 
 
 ## 完全版
   # - name          :  # ハンドルネーム
+  #   draft         : false # 下書き
   #   index-id      :  # HTMLの見出しのid
   #   admissions:
   #     bachelor: # 学部
@@ -560,4 +567,5 @@ members:
   #       a: 
   #     - q: 極上のアニメ
   #       a: 
-  #     - q: 一言：
+  #     - q: 一言
+  #       a: 
