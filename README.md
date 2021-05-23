@@ -70,7 +70,7 @@ bundle update
 
 開発の際、ファイルに変更があるたびにブラウザを自動リロードするためのノウハウ。
 
-[Brousersync](https://browsersync.io)というnpmのパッケージを利用する。
+[Browsersync](https://browsersync.io)というnpmのパッケージを利用する。
 
 npmでインストール；
 
