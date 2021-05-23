@@ -71,7 +71,31 @@ title: Link
 ## 一部会員向けリンク
 
 #### 2021春
-- 調査中
+- [TVアニメ『異世界魔王と召喚少女の奴隷魔術Ω』公式サイト](https://isekaimaou-anime.com)
+- [Vivy -Fluorite Eye’s Song-](https://vivy-portal.com)
+- [TVアニメ「８６―エイティシックス―」公式サイト](https://anime-86.com)
+- [ANIME - エデンズゼロ 公式サイト](https://edens-zero.net/anime/)
+- [アニメ「えとたま」~猫客万来~ 公式サイト](http://etotama.com/nyankyakubanrai/)
+- [TVアニメ「幼なじみが絶対に負けないラブコメ」公式サイト](https://osamake.com)
+- [TVアニメ「オッドタクシー」公式サイト](https://oddtaxi.jp)
+- [TVアニメ「究極進化したフルダイブRPGが現実よりもクソゲーだったら」](https://fulldive-rpg.com)
+- [TVアニメ「キングダム」公式サイト](https://kingdom-anime.com)
+- [TVアニメ「黒ギャルになったから親友としてみた。」公式サイト](https://kurogal.cf-anime.com)
+- [アニメ「恋と呼ぶには気持ち悪い」公式サイト](https://koikimo.jp)
+- [TVアニメ『さよなら私のクラマー』公式サイト](https://sayonara-cramer.com/tv/)
+- [TVアニメ「シャドーハウス」公式サイト](https://shadowshouse-anime.com)
+- [TVアニメ「スーパーカブ」公式サイト](https://supercub-anime.com)
+- [TVアニメ「スライム倒して300年、知らないうちにレベルMAXになってました」公式サイト](https://slime300-anime.com)
+- [TVアニメ「聖女の魔力は万能です」公式サイト](https://seijyonomaryoku.jp)
+- [TVアニメ「戦闘員、派遣します！」公式サイト](https://kisaragi-co.jp)
+- [TVアニメ「ゾンビランドサガ リベンジ」公式サイト](https://zombielandsaga.com)
+- [オリジナルアニメ「ダイナ荘びより」公式サイト](https://dinosaur-biyori.com)
+- [TVアニメ「ドラゴン、家を買う。」公式サイト](https://doraie.com)
+- [アニメ『ひげを剃る。そして女子高生を拾う。』公式サイト](http://higehiro-anime.com)
+<!-- - [アニメ「不滅のあなたへ」公式サイト](https://www.anime-fumetsunoanatae.com) -->
+- [TVアニメ『BLUE REFLECTION RAY/澪』](https://www.bluereflection-ray.com)
+- [TVアニメ＆実写『やくならマグカップも』](https://yakumo-project.com)
+- [結城友奈は勇者である　ちゅるっと](https://yuyuyu.tv/churutto/)
 
 #### 2021冬
 - [アイドールズ！ 公式サイト](https://wsy-idolls.com){:target="_blank"}
@@ -80,12 +104,10 @@ title: Link
 - [TVアニメ『WIXOSS DIVA(A)LIVE』公式サイト](http://wixoss-diva.com){:target="_blank"}
 - [TVアニメ『ウマ娘 プリティーダービー Season 2』公式サイト](https://anime-umamusume.jp){:target="_blank"}
 - [TVアニメ「裏世界ピクニック」公式サイト](https://www.othersidepicnic.com){:target="_blank"}
-<!-- - [TVアニメ「SK∞ エスケーエイト」公式サイト](https://sk8-project.com/?skip){:target="_blank"} -->
 - [GANMA!アニメ『おとなの防具屋さん』](https://ganma.jp/g/anime/otonabougu/){:target="_blank"}
 - [TVアニメ「オルタンシア・サーガ」公式サイト](https://animehorsaga.jp){:target="_blank"}
 - [TVアニメ「俺だけ入れる隠しダンジョン」公式サイト](https://kakushidungeon-anime.jp){:target="_blank"}
 - [TVアニメ『回復術士のやり直し』公式サイト](http://kaiyari.com){:target="_blank"}
-- [TVアニメ「蜘蛛ですが、なにか？」公式サイト](https://kumo-anime.com){:target="_blank"}
 - [TVアニメ「ゲキドル」公式サイト](http://gekidol.com){:target="_blank"}
 - [TVアニメ『怪物事変』公式サイト](https://kemonojihen-anime.com){:target="_blank"}
 - [TVアニメ「五等分の花嫁∬」公式ホームページ](https://www.tbs.co.jp/anime/5hanayome/){:target="_blank"}
@@ -94,7 +116,6 @@ title: Link
 - [装甲娘戦機【アニメ】](http://soukou-musume-senki.com){:target="_blank"}
 - [「たとえばラストダンジョン前の村の少年が序盤の街で暮らすような物語」TVアニメ公式サイト](https://lasdan.com){:target="_blank"}
 - [【公式】アニメ 「転生したらスライムだった件」](https://www.ten-sura.com/anime/tensura){:target="_blank"}
-- [TVアニメ『2.43　清陰高校男子バレー部』公式サイト](https://243anime.com){:target="_blank"}
 - [TVアニメ『のんのんびより のんすとっぷ』公式サイト](https://nonnontv.com/tvanime/){:target="_blank"}
 - [TVアニメ「はたらく細胞!!」](https://hataraku-saibou.com/){:target="_blank"}
 - [TVアニメ「はたらく細胞BLACK」 公式サイト](https://saibou-black.com/){:target="_blank"}
