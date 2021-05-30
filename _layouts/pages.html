@@ -2,6 +2,26 @@
 layout: default
 ---
 
-<div class="content-pages">
-  {{ content }}
+<div class="page-title-area">
+  <div class="wrapper">
+    <h1>
+      {%- if page.subtitle %}
+        <div class="subtitle">{{ page.subtitle }}</div>
+      {%- endif %}
+      <div class="title">{{ page.title }}</div>
+    </h1>
+
+    {%- if page.toc == true %}
+      <div class="toc-area">
+        {% include general/toc.html html=content h_min=2 h_max=2 class="toc-ul" item_class="toc-li" anchor_class="toc-a" %}
+      </div>
+    {%- endif %}
+  </div>
 </div>
+
+<div class="content">
+  <div class="wrapper">
+    {{ content }}
+  </div>
+</div>
+
