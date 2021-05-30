@@ -15,11 +15,12 @@
 
 <div class="gallery">
   {%- for img in include.files %}
-  <div class="item">
+  <figure class="item">
     <a href="{{ site.baseurl }}/assets/img/{{ include.dir }}{{ img.file }}">
       <img src="{{ site.baseurl }}/assets/img/{{ include.dir }}th-{{ img.file }}" alt="image by {{ img.author }}">
     </a>
-    <table>
+    <figcaption>
+      <table>
       {%- if img.title %}
       <tr>
         <td class="row1">テーマ：</td>
@@ -33,6 +34,8 @@
       </tr>
       {%- endif %}
     </table>
-  </div>
+    </figcaption>
+
+  </figure>
   {%- endfor %}
 </div>
