@@ -28,18 +28,25 @@ layout: default
         {%- endfor %}
       </div>
     </div>
-    <div class="frame">
-      <a class="twitter-timeline" data-lang="ja"
-        data-theme="dark"
-        data-border-color="#333"
-        data-link-color="#f00"
-        data-chrome="noheader nofooter transparent noborders noscrollbar"
-        href="https://twitter.com/{{ site.twitter_username }}">
-        Tweets by {{ site.twitter_username }}
-      </a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </div>
-  {% endif %}
 
+    {% if site.twitter_username %}
+    <div class="info-area">
+      <div class="title">
+        <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+      </div>
+      <div class="frame">
+        <a class="twitter-timeline" data-lang="ja"
+          data-theme="dark"
+          data-border-color="#333"
+          data-link-color="#f00"
+          data-chrome="noheader nofooter transparent noborders noscrollbar"
+          href="https://twitter.com/{{ site.twitter_username }}">
+          Tweets by {{ site.twitter_username }}
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
 </div>
