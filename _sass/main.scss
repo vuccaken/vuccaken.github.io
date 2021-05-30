@@ -11,6 +11,7 @@
 header {
   // border: solid 1px aqua;
   margin: 20px 0;
+
   nav {
     // border: solid 1px tomato;
     display: grid;
@@ -34,7 +35,7 @@ header {
     }
     .logo:hover{
       text-decoration: none;
-      opacity:0.9;
+      opacity: 0.9;
       // filter:alpha(opacity=80);
       // -ms-filter: "alpha( opacity=80 )";
     }
@@ -67,55 +68,75 @@ header {
 }
 
 .page-title-area {
-  // border: solid 1px aqua;
-  margin-bottom: 20px;
-  min-height: 70px;
-  display: grid;
-  align-content: center;
-  .subtitle {
-    font-size: 90%;
-    padding-bottom: 5px;
+  @media screen and (max-width: 635px) {
+    margin-top: -10px;
   }
-  h1 {
-    // border: solid 1px tomato;
-    margin: 0px;
-    text-align: center;
+  
+  .inner {
+    // border: solid 1px aqua;
+
+    @media screen and (min-width: 635px) {
+      min-height: 70px;
+      padding: 0 100px;
+    }
+
+    display: grid;
+    grid-row-gap: 10px;
+    align-content: center;
+
+    h1.page-title {
+      // border: solid 1px tomato;
+      margin: 0px;
+      text-align: center;
+      display: grid;
+      grid-row-gap: 5px;
+      .subtitle {
+        font-size: 90%;
+      }
+    }
+
+    // 目次
+    // _includes/general/toc.html
+    .toc-area {
+      // border: solid 1px tomato;
+      display: flex;
+      // @media screen and (max-width: 635px) {
+      //   display: none;
+      // }
+
+      ul.toc-ul {
+        // background-color: yellow;
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      li.toc-li {
+        // border: 1px solid aqua;
+        margin: 2px 10px;
+        list-style: none;
+        font-size: 90%;
+        // flex: 1 0 1;
+      }
+      .toc-a {
+        // color: $thm-color;
+        // border: 1px solid $thm-color;
+        // padding: 0px 10px;
+      }
+    }
   }
 }
 
-// 目次
-// _includes/general/toc.html
-.toc-area {
-  display: flex;
-  // background-color: greenyellow;
-}
-.toc-ul { // <ul>
-  // background-color: red;
-  // border-top: solid 2px $thm-color;
-  // border-bottom: solid 2px $thm-color;
-  padding: 0;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.toc-li { // <li>
-  // border: 1px solid aqua;
-  padding: 0px 10px;
-  list-style: none;
-  // text-align: center;
-  font-size: 10.5pt;
-  flex: 1 0 1;
-  // margin: auto;
-}
-.toc-a{
-  // color: $thm-color;
-  // border: 1px solid $thm-color;
-  // padding: 0px 15px;
-}
 
-.content {
+
+.content.pages .inner {
   // border: solid 1px greenyellow;
+  margin: 20px;
+  h2 {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 
 footer {
