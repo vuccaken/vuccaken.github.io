@@ -1,15 +1,31 @@
 <!doctype html>
 <html lang="ja">
-  <head>
+  <head prefix="og: http://ogp.me/ns#">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-    <!-- <meta name="viewport" content="initial-scale=1"> -->
+
+    <title>
+      {%- if page.subtitle %}{{ page.subtitle | append: " " }}{% endif -%}
+      {%- if page.url == '/' -%}
+        {{- page.title -}}
+      {%- else -%}
+        {{- page.title | append: " - " | append: site.short_title -}}
+      {%- endif -%}
+    </title>
+
     <meta name="author" content="{{ site.author }}">
-  {% if page.url == '/' %}
     <meta name="keywords" content="{{ site.keywords }}">
     <meta name="description" content="{{ site.description }}">
-  {% endif %}
+
+    <!-- OGP -->
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.baseurl }}/assets/img/logo.png">
+    <meta property="og:locale" content="ja">
+    <meta property="og:type" content="website">
 
     <!-- css -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/normalize.css">
@@ -25,16 +41,6 @@
     <!-- icon -->
     <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/img/site-icon/apple-touch-icon.png">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/site-icon/favicon.ico">
-
-    <!-- title -->
-    <title>
-      {%- if page.subtitle %}{{ page.subtitle | append: " " }}{% endif -%}
-      {%- if page.url == '/' -%}
-        {{- page.title -}}
-      {%- else -%}
-        {{- page.title | append: " - 物理科学研究会" -}}
-      {%- endif -%}
-    </title>
 
   </head>
   <body>
