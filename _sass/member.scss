@@ -16,7 +16,7 @@
 }
 
 .member-card-area{
-  margin: 20px;
+  margin: 20px 0;
   display: grid;
   @media screen and (min-width: 400px) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
