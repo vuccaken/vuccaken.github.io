@@ -1,17 +1,28 @@
-gallery:
-  chirashi:
-    - year: 2018
-      dir: gallery/chirashi2018/
-      src:
-        - [nkym1.jpg, nkym, Feynman]
-    - year: 2019
-      dir: gallery/chirashi2019/
-      src:
-        - [sj.jpg, sj, moe]
-        - [nsmr.jpg, nsmr, フリー素材]
-        - [nkym1.jpg, nkym, ラ！]
-        - [nkym2.jpg, nkym, インターネット黎明期]
-    - year: 2020
-      dir: gallery/chirashi2020/
-      src:
-        - [fkd.jpg, fkd, シンプルイズ至高]
+chirashi:
+  - year: 2018
+    dir: gallery/chirashi2018/
+    images:
+      - file: nkym1.jpg
+        author: nkym
+        title: Feynman
+  - year: 2019
+    dir: gallery/chirashi2019/
+    images:
+      - file: sj.jpg
+        author: sj
+        title: moe
+      - file: nsmr.jpg
+        author: nsmr
+        title: フリー素材
+      - file: nkym1.jpg
+        author: nkym
+        title: ラ！
+      - file: nkym2.jpg
+        author: nkym
+        title: インターネット黎明期
+  - year: 2020
+    dir: gallery/chirashi2020/
+    images:
+      - file: fkd.jpg
+        author: fkd
+        title: シンプルイズ至高
