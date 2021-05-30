@@ -4,11 +4,11 @@ $bg-color-sub: #444;
 $text-color: #eee;
 // $text-color-sub: #7f9;
 $text-color-sub: #59f;
-$thm-color: #f82;
+$thm-color: lighten(#f82, 5%);
 $thm-color-sub: #59f;
 $a-color: #59f;
 // $aho-color: #fa5;
-$aho-color: #f82;
+$aho-color: $thm-color;
 
 html {
   font-size: 625%;
