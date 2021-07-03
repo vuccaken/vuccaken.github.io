@@ -1,5 +1,6 @@
 ---
 title: Member
+permalink: member
 ---
 
 {:id="hierarchy”}

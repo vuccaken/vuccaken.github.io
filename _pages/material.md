@@ -1,5 +1,6 @@
 ---
 title: Material
+permalink: material
 toc: true
 ---
 

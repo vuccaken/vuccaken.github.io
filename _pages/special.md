@@ -1,5 +1,6 @@
 ---
 title: Special
+permalink: special
 rp2017xy: https://vuccaken.github.io/rp2017xy/
 ---
 

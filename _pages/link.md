@@ -1,5 +1,6 @@
 ---
 title: Link
+permalink: link
 ---
 
 <!-- [link](URL){:target="_blank"} -->
@@ -64,7 +65,7 @@ title: Link
 - [Jekyll ja](http://jekyllrb-ja.github.io){:target="_blank"}
 - [Liquid template language](https://shopify.github.io/liquid/){:target="_blank"}
 - まにゅある
-  - [このサイトのテンプレ]({{ site.baseurl }}/pages/template.html)
+  - [このサイトのテンプレ]({{ site.baseurl }}/template)
 
 
 {:id="anime"}
