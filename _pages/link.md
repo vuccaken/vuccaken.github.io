@@ -6,6 +6,7 @@ permalink: link
 <!-- [link](URL){:target="_blank"} -->
 
 ## リンク
+{: #rits}
 
 ### 大学
 - [立命館大学](http://www.ritsumei.ac.jp){:target="_blank"}
@@ -30,6 +31,7 @@ permalink: link
 
 
 ## 会員向けリンク
+{: #for-members}
 
 ### 大学
 - [manaba+R](https://ct.ritsumei.ac.jp/ct/home){:target="_blank"}
@@ -68,8 +70,8 @@ permalink: link
   - [このサイトのテンプレ]({{ site.baseurl }}/template)
 
 
-{:id="anime"}
 ## 一部会員向けリンク
+{: #anime}
 
 #### 2021春
 - [TVアニメ『異世界魔王と召喚少女の奴隷魔術Ω』公式サイト](https://isekaimaou-anime.com)

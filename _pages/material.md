@@ -4,8 +4,8 @@ permalink: material
 toc: true
 ---
 
-{:id="seminar"}
 ## セミナー資料
+{: #seminar}
 
 準備中
 
@@ -14,8 +14,8 @@ toc: true
 - aaaaa
 - bbbbb
 
-{:id="poster"}
 ## ポスター
+{: #poster}
 
 学園祭で展示したポスターです。
 
@@ -26,8 +26,8 @@ toc: true
 - [実在論と量子論 - rp4](https://drive.google.com/open?id=1rMOfJ9ld3o_7dso2ZYEjJDwrYGL8BdxR){:target="_blank"}
 
 
-{:id="kaishi"}
 ## 会誌
+{: #kaishi}
 
 歴代の会誌をスキャンしてデータ化しました。
 
