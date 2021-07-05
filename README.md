@@ -51,14 +51,18 @@ bundle update
 
 いつか作ります。お待ちを。
 
-## 注意
+## デプロイ環境での注意
 
 - Github Pagesでは、未来の記事も表示される。
+- yml中の文字列に `:` が含まれる場合はちゃんとクオーテーションで囲まないとエラーが出る。
 
-## 参考
+## プラグイン
 
-- https://github.com/allejo/jekyll-toc
-  - h2の目次はこれで出力。
+- 目次の出力
+  - https://github.com/allejo/jekyll-toc
+- 生成したhtmlのコードフォーマット
+  - https://github.com/apsislabs/jekyll-tidy
+  - https://github.com/threedaymonk/htmlbeautifier
 
 ---
 
