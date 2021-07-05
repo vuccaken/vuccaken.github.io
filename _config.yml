@@ -39,3 +39,14 @@ defaults:
       layout: "pages"
       toc: true
 
+## 変換対象から除外
+exclude:
+  - .vscode/*
+  - .gitignore
+  - bs-config.js
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - Procfile
+  - REAADME.md
+  - setup.sh
