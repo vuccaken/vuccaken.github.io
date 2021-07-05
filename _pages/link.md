@@ -75,11 +75,17 @@ permalink: link
 
 {% for item in site.data.anime %}
 <h4>{{ item.season }}</h4>
+{% if item.links %}
 <ul>
   {% for anime in item.links %}
   <li><a href="{{ anime[1] }}" target="_blank">{{ anime[0] }}</a></li>
   {% endfor %}
 </ul>
+{% else %}
+<ul>
+  <li>調査中</li>
+</ul>
+{% endif %}
 {% endfor %}
 
 
