@@ -50,3 +50,6 @@ exclude:
   - Procfile
   - REAADME.md
   - setup.sh
+
+plugins:
+  - jekyll-tidy
