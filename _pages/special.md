@@ -1,5 +1,6 @@
 ---
 title: Special
+permalink: special
 rp2017xy: https://vuccaken.github.io/rp2017xy/
 ---
 
@@ -23,11 +24,11 @@ rp2017xy: https://vuccaken.github.io/rp2017xy/
 - [2018年度 新歓！！]({{page.rp2017xy}}/shinkan2018.html){:target="_blank"}
 
 
-{:id="gallery"}
 ## ギャラリー
+{: #gallery}
 
-{:id="chirashi"}
 ### 新歓チラシ
+{: #chirashi}
 
 {% for item in site.data.special.chirashi reversed %}
 <h4>{{ item.year }}年度</h4>

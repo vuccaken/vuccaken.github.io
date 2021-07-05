@@ -1,5 +1,6 @@
 ---
 title: Template
+permalink: template
 
 path2images1: posts/2019-12-14-OB/
 images1:
