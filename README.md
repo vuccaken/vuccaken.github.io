@@ -55,6 +55,7 @@ bundle update
 
 - Github Pagesでは、未来の記事も表示される。
 - yml中の文字列に `:` が含まれる場合はちゃんとクオーテーションで囲まないとエラーが出る。
+- [ホワイトリスト](https://pages.github.com/versions/)に無いプラグインは無効化される。
 
 ## プラグイン
 
