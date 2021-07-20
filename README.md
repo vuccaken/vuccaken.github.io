@@ -1,8 +1,8 @@
 # vuccaken homepage
 
-This is NEW vucacken HOME PAGE !!!
+物科研のHPです。
 
-Access: https://vuccaken.github.io
+Access: https://vuccaken.github.io/
 
 ## 開発ログ
 - 2019-09-30 作成開始 ([nukoyama](https://github.com/znuko))
@@ -19,45 +19,54 @@ Access: https://vuccaken.github.io
 [Jekyll](http://jekyllrb-ja.github.io/docs/)という静的サイトジェネレータを使っています。
 
 
-## jekyll使い方メモ
+## jekyll使い方
 
-Gemsのインストール（初回）；
+### 開発環境の構築
+
+ローカルでビルドしたい場合は、下記のステップで環境を整える。
+
+0. リポジトリをクローン
+1. Rubyをインストール
+2. `jekyll` と `bundler` をインストール；
+
+   ```
+   gem install jekyll bundler
+   ```
+
+3. `Gemfile` に書いてあるGemsをインストール；
+
+   ```
+   bundle install
+   ```
+
+### サイトの生成
+
+リモートリポジトリにpushすればgithubが自動でビルドしてくれる。
+
+ローカルでビルドしたい場合は下記コマンドを実行；
 
 ```
-gem install
+bundle exec jekyll build
 ```
 
-サーバを起動；
+あるいは、下記コマンドでサーバを立てる；
 
 ```
 bundle exec jekyll server
 ```
 
-### Gemfile
+サーバが立ったらブラウザで http://127.0.0.1:4000/ を開く。
 
-`gemfile.lock` を生成：
 
-```
-bundle install
-```
-
-gem version を更新；
-
-```
-bundle update
-```
-
-### Documents
-
-いつか作ります。お待ちを。
-
-## デプロイ環境での注意
+### デプロイ環境での注意
 
 - Github Pagesでは、未来の記事も表示される。
 - yml中の文字列に `:` が含まれる場合はちゃんとクオーテーションで囲まないとエラーが出る。
 - [ホワイトリスト](https://pages.github.com/versions/)に無いプラグインは無効化される。
+  - プラグインを使いたいなら、ローカルでビルドして生成されたサイトを公開すればよい
+  - Github Actionsで自動化できる
 
-## プラグイン
+### プラグイン
 
 - 目次の出力
   - https://github.com/allejo/jekyll-toc
@@ -65,7 +74,12 @@ bundle update
   - https://github.com/apsislabs/jekyll-tidy
   - https://github.com/threedaymonk/htmlbeautifier
 
----
+
+### Documents
+
+いつか作ります。お待ちを。
+
+----
 
 ## ブラウザ自動更新
 
