@@ -113,15 +113,11 @@ Liquid というプログラム言語？がある。
 - 配列の2つ目に `/assets/img/` 以下のパスのみを指定する。
 
 マクロ解説（`/_includes/image.html`）
-- {% raw %}`{% include images.html path=page.imagePath src=page.images %}`{% endraw %}
-- 引数 `path` には共通なパス与える。
   - 複数ある画像の `img/` からファイル自体までの path が同じとき、それをここで指定しておけばヘッダーの配列に書くのはファイル名だけでよくなるので便利。
-  - 不要であれば、引数 `path` は指定しなくてよい。
 - 引数 `src` にはヘッダーの配列の名前を与える。
 - `page.**` は「このページに書いてある `**` という変数の値」という意味。
 
 
-{% include images.html path=page.path2images1 src=page.images1 %}
 
 こんな感じで出ます。
 
