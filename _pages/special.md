@@ -1,6 +1,5 @@
 ---
 title: Special
-permalink: special
 rp2017xy: https://vuccaken.github.io/rp2017xy/
 ---
 
@@ -11,7 +10,7 @@ rp2017xy: https://vuccaken.github.io/rp2017xy/
 学園祭の団体企画内容などが書いてあります。
 
 - 2020年度 学園祭！　は中止になりました (T_T)
-- [2019年度 学園祭！]({{ site.baseurl }}/pages/events/fes2019.html)
+- [2019年度 学園祭！]({{ "events/fes2019" | relative_url }})
 - [2018年度 学園祭！]({{page.rp2017xy}}/festival2018.html){:target="_blank"}
 - [2017年度 学園祭！]({{page.rp2017xy}}/festival2017.html){:target="_blank"}
 
@@ -19,7 +18,7 @@ rp2017xy: https://vuccaken.github.io/rp2017xy/
 
 新歓イベント情報が書いてあります。見てね。
 
-- [2020年度 新歓！！]({{ site.baseurl }}/pages/events/sin2020.html)
+- [2020年度 新歓！！]({{ "events/sin2020" | relative_url }})
 - [2019年度 新歓！！]({{page.rp2017xy}}/shinkan2019.html){:target="_blank"}
 - [2018年度 新歓！！]({{page.rp2017xy}}/shinkan2018.html){:target="_blank"}
 

@@ -17,6 +17,8 @@ images1:
 {% for item in include.src %}
   {%- assign file_name = item[1] -%}
   {%- assign alt = item[0] -%}
-  <img src="{{ site.baseurl }}/assets/img/{{ include.dir }}{{ file_name }}" alt="{{ alt }}">
+  {% capture path %}assets/img/{{ include.dir }}{{ file_name }}{% endcapture %}
+  {% assign url = path | relative_url %}
+  <img src="{{ url }}" alt="{{ alt }}">
 {% endfor -%}
 </div>

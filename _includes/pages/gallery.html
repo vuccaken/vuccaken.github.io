@@ -16,8 +16,9 @@
 <div class="gallery">
   {%- for img in include.files %}
   <figure class="item">
-    <a href="{{ site.baseurl }}/assets/img/{{ include.dir }}{{ img.file }}">
-      <img src="{{ site.baseurl }}/assets/img/{{ include.dir }}th-{{ img.file }}" alt="image by {{ img.author }}">
+    {% assign dir = "assets/img/" | append: include.dir | relative_url %}
+    <a href="{{ dir }}{{ img.file }}">
+      <img src="{{ dir }}th-{{ img.file }}" alt="image by {{ img.author }}">
     </a>
     <figcaption>
       <table>

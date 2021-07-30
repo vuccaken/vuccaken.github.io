@@ -17,11 +17,11 @@ layout: default
 
       <div class="info-area">
         <div class="title">
-          <a href="{{ site.baseurl }}/pages/news.html">News</a>
+          <a href="{{ 'news' | relative_url }}">News</a>
         </div>
         <div class="frame">
           {%- for post in site.posts %}
-          <a href="{{ site.baseurl }}/pages/news.html#{{ post.url }}">
+          <a href="{{ 'news' | relative_url }}#{{ post.url }}">
             <div class="home_news">
               <div class="news-date">{{ post.date | date: "%Y.%m.%d" }}</div>
               <div class="news-title">{{ post.title }}</div>

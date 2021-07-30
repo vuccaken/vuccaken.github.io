@@ -1,7 +1,6 @@
 ---
 # layout: default
 title: About
-permalink: about
 
 images:
   - [act alpha at day, pages/actalpha_th.jpg]

@@ -1,6 +1,5 @@
 ---
 title: Template
-permalink: template
 
 path2images1: posts/2019-12-14-OB/
 images1:
@@ -32,7 +31,7 @@ images2:
   - [立命館大学](http://www.ritsumei.ac.jp){:target="_blank"}
   - これは kmarkdown 独自の機能
 - 内部リンク
-  - [member]({{ site.baseurl }}/pages/member.html)
+  - [member]({{ 'member' | relative_url }})
   - `_site/` 以下のパスで指定する。
 
 ### 画像 image
@@ -40,7 +39,7 @@ images2:
 - centering:
 
 {: style="text-align: center;"}
-![act alpha]({{ site.baseurl }}/assets/img/pages/actalpha_th.jpg)
+![act alpha]({{ 'assets/img/pages/actalpha_th.jpg' | relative_url }})
 
 - 注意：画像の出力は、基本的には後述の自作マクロ `images.html` を使うようにしてください。
 
@@ -113,11 +112,15 @@ Liquid というプログラム言語？がある。
 - 配列の2つ目に `/assets/img/` 以下のパスのみを指定する。
 
 マクロ解説（`/_includes/image.html`）
+- {% raw %}`{% include images.html dir=page.imagePath src=page.images %}`{% endraw %}
+- 引数 `dir` には共通なパス与える。
   - 複数ある画像の `img/` からファイル自体までの path が同じとき、それをここで指定しておけばヘッダーの配列に書くのはファイル名だけでよくなるので便利。
+  - 不要であれば、引数 `dir` は指定しなくてよい。
 - 引数 `src` にはヘッダーの配列の名前を与える。
 - `page.**` は「このページに書いてある `**` という変数の値」という意味。
 
 
+{% include images.html dir=page.path2images1 src=page.images1 %}
 
 こんな感じで出ます。
 

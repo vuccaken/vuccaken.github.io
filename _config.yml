@@ -25,6 +25,7 @@ collections:
     output: true
   pages:
     output: true
+    permalink: /:path/
 
 defaults:
   - scope:
@@ -33,11 +34,12 @@ defaults:
     values:
       layout: "post"
   - scope:
-      path: ""
+      path: "_pages"
       type: "pages"
     values:
       layout: "page"
       toc: true
+
 
 ## 変換対象から除外
 exclude:
@@ -48,7 +50,7 @@ exclude:
   - Gemfile.lock
   - Makefile
   - Procfile
-  - REAADME.md
+  - README.md
   - setup.sh
 
 plugins:

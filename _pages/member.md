@@ -1,6 +1,5 @@
 ---
 title: Member
-permalink: member
 ---
 
 ## 会員構成（{{ site.data.members.current-year }}年度）

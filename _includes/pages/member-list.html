@@ -14,9 +14,8 @@
 
   {%- if include.isOB == isOB -%}
 
-    {%- capture icon_url -%}
-      {{- site.baseurl }}/assets/img/member-icon/{{ member.icon | default: "default.png"}}
-    {%- endcapture -%}
+    {% assign icon_name = member.icon | default: "default.png" %}
+    {% assign icon_url = "assets/img/member-icon/" | append: icon_name | relative_url %}
 
     {%- assign isBachelor = false -%}
     {%- assign isMaster = false -%}

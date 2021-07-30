@@ -1,9 +1,9 @@
 <footer>
   <div class="wrapper">
     <nav>
-      <a href="/" {% if page.url == / %}class="current"{% endif %}>Top</a>
+      <a href="/" {% if page.url == "/" %}class="current"{% endif %}>Top</a>
       {%- for item in site.data.navigation %}
-        <a href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+        <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
       {%- endfor %}
     </nav>
 
