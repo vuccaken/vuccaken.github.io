@@ -4,16 +4,15 @@ html {
     font-size: calc(625% * 0.9);
   }
   // font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
-  font-family: 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, MS PGothic, sans-serif;
-  letter-spacing: 1px;
+  font-family: $base-font-family;
+  // letter-spacing: 1px;
 }
 
 body {
   -webkit-text-size-adjust: 100%;
-  max-width: 1000px;
+  max-width: $content-width;
   // min-width: 250px;
   margin: 20px auto;
-  padding: 0;
   background-color: $bg-color;
   color: $text-color;
   font-size: .15rem;
@@ -55,8 +54,6 @@ h2 {
   padding: 8px 15px;
   font-size: .20rem;
   font-weight: normal;
-  
-  // margin: 0;
 }
 h2:first-child {
   margin-top: 0;

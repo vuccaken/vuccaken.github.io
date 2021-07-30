@@ -31,14 +31,13 @@ header {
         margin-bottom: 0;
       }
       position: relative;
-      z-index: 10; // 無いとcontentの下敷きに...
+      z-index: 10;
+
+      &:hover{
+        opacity: 0.9;
+      }
     }
-    .logo:hover{
-      text-decoration: none;
-      opacity: 0.9;
-      // filter:alpha(opacity=80);
-      // -ms-filter: "alpha( opacity=80 )";
-    }
+
     .menu-area {
       // border: solid 1px aqua;
       margin: auto;
