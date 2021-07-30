@@ -62,13 +62,13 @@
         color: $text-color;
       }
       a:hover {
-        color: $thm-color;
+        color: $brand-color;
       }
     }
     .frame {
       // background: aqua;
       height: 320px;
-      border: 1px solid $thm-color;
+      border: 1px solid $brand-color;
       border-radius: 10px;
       overflow: auto;
       -ms-overflow-style: none;    /* IE, Edge 対応 */

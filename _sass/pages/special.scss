@@ -12,7 +12,7 @@
       margin: auto;
       max-width: 200px;
       max-height: 200px;
-      border: solid 1px $thm-color;
+      border: solid 1px $brand-color;
     }
     img:hover {
       opacity: 0.8;
@@ -22,7 +22,7 @@
       tr, td {
         font-size: .12rem;
         padding: 0;
-        // border: solid 1px $thm-color;
+        // border: solid 1px $brand-color;
       }
       .row1 {
         text-align: right;
