@@ -3,19 +3,16 @@ html {
   @media screen and (max-width: 480px) {
     font-size: calc(625% * 0.9);
   }
-  // font-family: 'ヒラギノ丸ゴ ProN W4', Meiryo, sans-serif, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, "M+ 1p";
-  font-family: $base-font-family;
-  // letter-spacing: 1px;
 }
 
 body {
-  -webkit-text-size-adjust: 100%;
-  max-width: $content-width;
-  // min-width: 250px;
-  margin: 20px auto;
-  background-color: $bg-color;
-  color: $text-color;
+  font-family: $base-font-family;
   font-size: .15rem;
+  color: $text-color;
+  background-color: $bg-color;
+  max-width: $content-width;
+  margin: 20px auto;
+  letter-spacing: 1px;
 }
 
 li {
