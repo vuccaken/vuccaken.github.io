@@ -10,9 +10,12 @@ body {
   font-size: .15rem;
   color: $text-color;
   background-color: $bg-color;
-  max-width: $content-width;
-  margin: 20px auto;
   letter-spacing: 1px;
+}
+
+header, main, footer {
+  max-width: $content-width;
+  margin: 0 auto;
 }
 
 li {

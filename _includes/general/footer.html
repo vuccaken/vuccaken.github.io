@@ -1,5 +1,4 @@
 <footer>
-  <div class="wrapper">
     <nav>
       <a href="/" {% if page.url == "/" %}class="current"{% endif %}>Top</a>
       {%- for item in site.data.navigation %}
@@ -42,5 +41,4 @@
       {%- endif -%}
     </div>
     <div class="copyright">&copy;{{ site.copyright }}</div>
-  </div>
 </footer>
