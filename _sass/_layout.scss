@@ -50,17 +50,17 @@ header {
       .menu {
         // border: solid 1px tomato;
         text-align: center;
-        a{
+        a {
           // border: solid 1px aqua;
           color: $text-color;
           padding: 2px 10px;
           border-radius: 20px;
           font-size: .17rem;
-        }
-        a:hover,
-        .current{
-          background-color: $text-color;
-          color: $bg-color;
+
+          &:hover, &.current {
+            background-color: $text-color;
+            color: $bg-color;
+          }
         }
       }
     }
