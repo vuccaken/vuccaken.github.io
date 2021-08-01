@@ -88,30 +88,7 @@
       </ul>
 
       <div class="links-area">
-        {%- if member.links.homepage -%}
-        <a href="{{ member.links.homepage }}" target="_blank">
-          <span class="fa-stack">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fas fa-home fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        {%- endif -%}
-        {%- if member.links.twitter -%}
-        <a href="https://twitter.com/{{ member.links.twitter}}" target="_blank">
-          <span class="fa-stack">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        {%- endif -%}
-        {%- if member.links.github -%}
-        <a href="https://github.com/{{ member.links.github }}" target="_blank">
-          <span class="fa-stack">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        {%- endif -%}
+        {% include general/social.html src=member.links %}
       </div>
 
     </div>

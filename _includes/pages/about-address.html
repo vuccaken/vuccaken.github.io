@@ -2,11 +2,12 @@
   <table>
     <tr>
       <td class="right">e-mail:</td>
-      <td>{{ site.email }}</td>
+      <td>{{ site.social.email }}</td>
     </tr>
     <tr>
+      {% assign twitter = site.social.twitter %}
       <td class="right">Twitter:</td>
-      <td><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">@{{ site.twitter_username }}</a></td>
+      <td><a href="https://twitter.com/{{ twitter }}" target="_blank">@{{ twitter }}</a></td>
     </tr>
   </table>
 </div>

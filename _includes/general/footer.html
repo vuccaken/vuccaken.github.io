@@ -7,38 +7,7 @@
   </nav>
 
   <div class="sns">
-    {%- if site.email -%}
-      <a href="{{ site.email | prepend: 'mailto:' }}" target="_blank">
-        <span class="fa-stack">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    {%- endif -%}
-    {%- if site.twitter_username -%}
-      <a href="{{ site.twitter_username | prepend: 'https://twitter.com/' }}" target="_blank">
-        <span class="fa-stack">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    {%- endif -%}
-    {%- if site.github_username -%}
-      <a href="{{ site.github_username | prepend: 'https://github.com/' }}" target="_blank">
-        <span class="fa-stack">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    {%- endif -%}
-    {%- if site.youtube_url -%}
-      <a href="{{ site.youtube_url }}" target="_blank">
-        <span class="fa-stack">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    {%- endif -%}
+    {% include general/social.html src=site.social %}
   </div>
   <div class="copyright">&copy;{{ site.copyright }}</div>
 </footer>
