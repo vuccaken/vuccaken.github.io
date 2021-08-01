@@ -54,64 +54,26 @@ a:hover {
 p {
   // border: solid 1px tomato;
   line-height: .2rem;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
+  // margin-block-start: 0.5em;
+  // margin-block-end: 0.5em;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: $spacing-unit;
+  font-weight: normal;
+}
+
 h1 {
   font-size: .25rem;
-  font-weight: normal;
 }
 h2 {
-  // color: #0F9;
-  // background-color: $bg-color-sub;
-  margin-top: .40rem;
-  border: solid 1.5px $brand-color;
-  border-radius: 12px;
-  padding: 8px 15px;
   font-size: .20rem;
-  font-weight: normal;
-}
-h2:first-child {
-  margin-top: 0;
-}
-h2:before {
-  // border-right: solid 2px $brand-color;
-  // color: $brand-color;
-  // content: '●';
-  // padding-right: 0.5em;
 }
 h3 {
-  border-left: solid 8px $brand-color-sub;
-  padding-left: 15px;
   font-size: .18rem;
-  font-weight: normal;
 }
-h4 {
+h4, h5, h6 {
   font-size: .16rem;
-  font-weight: normal;
-}
-h4:before {
-  content: '★';
-  // content: '●';
-  padding-right: 7px;
-  color: yellow;
-}
-h4:after {
-  content: '★';
-  padding-left: 7px;
-  color: yellow;
-}
-h5 {
-  // border: solid 1px $brand-color;
-  margin-bottom: 10px;
-  font-size: .16rem;
-  font-weight: normal;
-}
-h5:before {
-  // content: '★';
-  content: '●';
-  padding-right: 0.5em;
-  color: greenyellow;
 }
 
 .table-space {
@@ -142,5 +104,5 @@ th, td {
 
 img {
   max-width: 100%;
-  display: block;
+  // display: block;
 }

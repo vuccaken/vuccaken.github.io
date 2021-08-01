@@ -69,7 +69,7 @@
 
 
 //
-// Page Header
+// Page Content
 //
 .page-header {
   // border: solid 1px tomato;
@@ -103,22 +103,47 @@
   }
 }
 
-
-//
-// Page Content
-//
-main {
+main.page-content {
   // border: solid 1px greenyellow;
-}
+  margin-bottom: $spacing-unit;
 
-.content.pages .inner {
-  // border: solid 1px greenyellow;
-  margin: 10px;
+  $space: $spacing-unit / 2;
+
   h2 {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -$space;
+    margin-right: -$space;
+    padding: $space/2 $space;
+    border: solid 1.5px $brand-color;
+    border-radius: 12px;
+  }
+
+  h3 {
+    border-left: solid $space/2 $brand-color-sub;
+    padding-left: $space;
+  }
+
+  h4 {
+    &:before {
+      content: '★';
+      padding-right: $space / 3;
+      color: yellow;
+    }
+    &:after {
+      content: '★';
+      padding-left: $space / 3;
+      color: yellow;
+    }
+  }
+
+  h5 {
+    &:before {
+      content: '●';
+      padding-right: 0.5em;
+      color: greenyellow;
+    }
   }
 }
+
 
 //
 // Site Footer
