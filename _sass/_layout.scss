@@ -77,6 +77,10 @@
 
   h1.page-title {
     margin: 0;
+    text-align: center;
+    .subtitle {
+      font-size: 90%;
+    }
   }
 
   .page-toc {
