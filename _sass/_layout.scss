@@ -14,7 +14,8 @@
 .site-header {
   // border: solid 1px gold;
   // > * {border: solid 1px aqua;}
-  margin: $spacing-unit 0;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
 
   a.site-title {
     position: absolute;
