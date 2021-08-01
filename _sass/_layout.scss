@@ -8,64 +8,56 @@
   margin: 0 20px;
 }
 
-header {
-  // border: solid 1px aqua;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.site-header {
+  // border: solid 1px gold;
+  margin-top: $spacing-unit;
 
   nav {
-    // border: solid 1px tomato;
-    display: grid;
-    grid-row-gap: 10px;
-    justify-items: center;
-    grid-template-columns: auto minmax(100px, 1fr);
-    @media screen and (max-width: 270px) {
-      grid-template-columns: none;
-    }
-    .logo {
-      // border: solid 1px aqua;
-      display: block;
+    display: flex;
+    gap: $spacing-unit;
+
+    // > * {border: solid 1px aqua;}
+
+    .site-logo {
       width: 90px;
+      max-width: none;
       margin-bottom: -100%;
-      @media screen and (max-width: 635px) {
-        width: 70px;
-        margin-bottom: 0;
-      }
       position: relative;
       z-index: 10;
 
       &:hover{
         opacity: 0.9;
+        transition: 100ms;
       }
     }
 
-    .menu-area {
-      // border: solid 1px aqua;
-      margin: auto;
-      width: 100%;
-      display: grid;
-      grid-gap: 10px 0px;
-      align-items: center;
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      .menu {
+    ul.site-nav {
+      list-style: none;
+      flex-grow: 1;
+      margin-left: 0;
+      margin-bottom: $spacing-unit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: $spacing-unit / 2;
+      
+      a.page-link {
         // border: solid 1px tomato;
-        text-align: center;
-        a {
-          // border: solid 1px aqua;
-          color: $text-color;
-          padding: 2px 10px;
-          border-radius: 20px;
-          font-size: .17rem;
+        font-size: .17rem;
+        color: $text-color;
+        padding: 2px 10px;
+        border-radius: 20px;
 
-          &:hover, &.current {
-            background-color: $text-color;
-            color: $bg-color;
-          }
+        &:hover, &.current {
+          background-color: $text-color;
+          color: $bg-color;
+          transition: 100ms;
         }
       }
     }
   }
 }
+
 
 .page-title-area {
   @media screen and (max-width: 635px) {
@@ -126,6 +118,10 @@ header {
       }
     }
   }
+}
+
+main {
+  // border: solid 1px greenyellow;
 }
 
 .content.pages .inner {

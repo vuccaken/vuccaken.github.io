@@ -1,16 +1,21 @@
-<header>
+<header class="site-header">
   <nav>
-    <a href="{{ '/' | relative_url }}">
-      <img class="logo" src="{{ 'assets/img/logo.png' | relative_url }}"/>
+    {% assign file = 'assets/img/logo.png' %}
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      <img class="site-logo" src="{{ file | relative_url }}"/>
     </a>
-    <div class="menu-area">
+    
+    <ul class="site-nav">
       {%- for item in site.data.navigation %}
-      <div class="menu">
-        <a href="{{ item.link | relative_url }}"
-        {%- if page.url == item.link %}class="current"{% endif %}>
-        {{- item.name }}</a>
-      </div>
+        {% assign url = item.link | relative_url %}
+        {%- if page.url == url %}
+          {% assign c = 'current' %}
+        {% else %}
+          {% assign c = '' %}
+        {% endif %}
+        
+        <li><a class="page-link {{ c }}" href="{{ url }}">{{ item.name }}</a></li>
       {%- endfor %}
-    </div>
+    </ul>
   </nav>
 </header>
