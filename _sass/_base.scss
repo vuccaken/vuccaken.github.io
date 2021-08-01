@@ -5,6 +5,13 @@ html {
   }
 }
 
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: $base-font-family;
   font-size: .15rem;
@@ -16,12 +23,23 @@ body {
 header, main, footer {
   max-width: $content-width;
   margin: 0 auto;
+  padding: 0 $spacing-unit;
 }
 
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: $spacing-unit / 2;
+}
+
+ul {
+  margin-left: $spacing-unit;
+}
 li {
   // border: solid 1px tomato;
-  margin: .07rem 0;
+  // margin: .07rem 0;
 }
+
 a {
   text-decoration: none;
   color: $link-base-color;
@@ -122,4 +140,9 @@ tr {
 th, td {
   padding: 5px 8px;
   // border: solid 1px tomato;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
