@@ -2,50 +2,49 @@
 layout: default
 ---
 
-<div class="top-image">
+<section class="top-image">
   <div class="home-content">
       {{ content }}
   </div>
-</div>
+</section>
 
 
 <section class="section-info">
 
-      <section class="info-block">
-        <header class="info-header">
-          <h2><a href="{{ 'news' | relative_url }}">News</a></h2>
-        </header>
-        <div class="frame">
-          {%- for post in site.posts %}
-          <a class="news-link" href="{{ 'news' | relative_url }}#{{ post.url }}">
+  {% if site.posts.size > 0 %}
+    <section class="info-block">
+      <header class="info-header">
+        <h2><a href="{{ 'news' | relative_url }}">News</a></h2>
+      </header>
+      <div class="frame">
+        {%- for post in site.posts %}
+        <a class="news-link" href="{{ 'news' | relative_url }}#{{ post.url }}">
+          <div class="news-date">{{ post.date | date: "%Y.%m.%d" }}</div>
+          <div class="news-title">{{ post.title }}</div>
+        </a>
+        {%- endfor %}
+      </div>
+    </section>
+  {% endif %}
 
-              <div class="news-date">{{ post.date | date: "%Y.%m.%d" }}</div>
-              <div class="news-title">{{ post.title }}</div>
-              {%- comment -%} <p>{{ post.excerpt }}</p> {%- endcomment %}
-
-          </a>
-          {%- endfor %}
-        </div>
-      </section>
-
-      {% assign twitter = site.social.twitter %}
-      {% if twitter %}
-      <section class="info-block">
-        <header class="info-header">
-          <h2><a href="https://twitter.com/{{ twitter }}">Twitter</a></h2>
-        </header>
-        <div class="frame">
-          <a class="twitter-timeline" data-lang="ja"
-            data-theme="dark"
-            data-border-color="#333"
-            data-link-color="#f00"
-            data-chrome="noheader nofooter transparent noborders noscrollbar"
-            href="https://twitter.com/{{ twitter }}">
-            Tweets by {{ twitter }}
-          </a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </section>
-      {% endif %}
+  {% assign twitter = site.social.twitter %}
+  {% if twitter %}
+    <section class="info-block">
+      <header class="info-header">
+        <h2><a href="https://twitter.com/{{ twitter }}">Twitter</a></h2>
+      </header>
+      <div class="frame">
+        <a class="twitter-timeline" data-lang="ja"
+          data-theme="dark"
+          data-border-color="#333"
+          data-link-color="#f00"
+          data-chrome="noheader nofooter transparent noborders noscrollbar"
+          href="https://twitter.com/{{ twitter }}">
+          Tweets by {{ twitter }}
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
+  {% endif %}
 
 </section>
