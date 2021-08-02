@@ -46,7 +46,7 @@ defaults:
 
 ## 変換対象から除外
 exclude:
-  - .vscode/*
+  - .vscode/
   - .gitignore
   - bs-config.js
   - Gemfile
