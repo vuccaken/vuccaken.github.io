@@ -9,33 +9,31 @@ layout: default
 </div>
 
 
-<div class="content home">
-  <div class="wrapper">
-    <div class="home-info-section">
+<section class="section-info">
 
-      <div class="info-area">
-        <div class="title">
-          <a href="{{ 'news' | relative_url }}">News</a>
-        </div>
+      <section class="info-block">
+        <header class="info-header">
+          <h2><a href="{{ 'news' | relative_url }}">News</a></h2>
+        </header>
         <div class="frame">
           {%- for post in site.posts %}
-          <a href="{{ 'news' | relative_url }}#{{ post.url }}">
-            <div class="home_news">
+          <a class="news-link" href="{{ 'news' | relative_url }}#{{ post.url }}">
+
               <div class="news-date">{{ post.date | date: "%Y.%m.%d" }}</div>
               <div class="news-title">{{ post.title }}</div>
               {%- comment -%} <p>{{ post.excerpt }}</p> {%- endcomment %}
-            </div>
+
           </a>
           {%- endfor %}
         </div>
-      </div>
+      </section>
 
       {% assign twitter = site.social.twitter %}
       {% if twitter %}
-      <div class="info-area">
-        <div class="title">
-          <a href="https://twitter.com/{{ twitter }}">Twitter</a>
-        </div>
+      <section class="info-block">
+        <header class="info-header">
+          <h2><a href="https://twitter.com/{{ twitter }}">Twitter</a></h2>
+        </header>
         <div class="frame">
           <a class="twitter-timeline" data-lang="ja"
             data-theme="dark"
@@ -47,9 +45,7 @@ layout: default
           </a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-      </div>
+      </section>
       {% endif %}
 
-    </div>
-  </div>
-</div>
+</section>

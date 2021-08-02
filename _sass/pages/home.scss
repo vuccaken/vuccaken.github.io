@@ -41,24 +41,27 @@
 }
 
 // news and twitter frames
-.home-info-section {
+.section-info {
   // border: 1px solid aqua;
-  margin: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  @media screen and (max-width: 400px) {
-    grid-template-columns: 1fr;
-  }
-  grid-gap: 20px;
-  justify-items: center;
-  .info-area {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: $spacing-unit;
+
+  .info-block {
     // border: 1px solid aqua;
-    width: 100%;
+    flex: 1 0 200px;
     max-width: 400px;
-    .title {
+
+    .info-header h2 {
+      border: none;
+      padding: 0;
+      margin: 0;
+
       text-align: center;
-      padding-bottom: 8px;
+      margin-bottom: $spacing-unit / 3;
       font-size: .17rem;
+
       a {
         color: $text-color;
       }
@@ -67,39 +70,37 @@
       }
     }
     .frame {
-      // background: aqua;
       height: 320px;
       border: 1px solid $brand-color;
       border-radius: 10px;
       overflow: auto;
       -ms-overflow-style: none;    /* IE, Edge 対応 */
       scrollbar-width: none;       /* Firefox 対応 */
-    }
-    .frame::-webkit-scrollbar {  /* Chrome, Safari 対応 */
-      display: none;
+      &::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+        display: none;
+      }
     }
   }
 }
 
+a.news-link {
+  display: block;
+  padding: $spacing-unit/4 $spacing-unit/2;
+  font-size: .14rem;
 
-.home_news {
-  padding: 5px 10px;
-  padding-bottom: 7px;
-  // border-bottom: solid 1px #aaa;
+  &:hover {
+    background-color: rgba(0,0,0,0.3);
+  }
+
   .news-date {
     color: $text-color-sub;
-    font-size: .14rem;
-    margin-bottom: 3px;
+    margin-bottom: .3em;
   }
   .news-title {
     color: $text-color;
-    font-size: .14rem;
   }
 }
-.home_news:hover {
-  // background-color: aqua;
-  background-color: rgba(0,0,0,0.3);
-}
+
 .twitter-timeline {
   // background-color: tomato;
   // color: yellow;
