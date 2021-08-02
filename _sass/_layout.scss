@@ -26,7 +26,6 @@
   a.site-title {
     position: absolute;
     z-index: 10;
-    padding: 0 $spacing-unit / 2;
 
     &:hover {
       opacity: 0.9;
@@ -40,7 +39,7 @@
   }
 
   nav.site-nav {
-    margin-left: 90px + $spacing-unit;
+    margin-left: 90px + $spacing-unit / 2;
   }
 
   ul.site-nav-list {
