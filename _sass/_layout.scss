@@ -188,22 +188,6 @@ main.page-content {
   }
 }
 
-//
-// code block style
-//
-@import url(monokai.css);
-// @import url(github.css);
-.highlight, .highlighter-rouge{
-  margin: 5px 0;
-}
-pre {
-  // border: solid 1px aqua;
-  margin: 0;
-  padding: 10px 0;
-  overflow-x: auto;
-  overflow-y: auto;
-  max-height: 500px;
-}
 
 // 画像を横に並べる
 // _includes/images.html

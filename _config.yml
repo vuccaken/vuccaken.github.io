@@ -21,8 +21,6 @@ social:
   youtube: UCKO7a5YVCnFAquUzLKeIrMg
 
 
-highlighter: rouge # code syntax highlight
-
 collections:
   members:
     output: true

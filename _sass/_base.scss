@@ -106,3 +106,37 @@ img {
   max-width: 100%;
   // display: block;
 }
+
+
+//
+// Code formatting
+//
+pre, code {
+  font-family: $code-font-family;
+  font-size: 0.9375em;
+}
+
+// inline code
+:not(pre) > code {
+  padding: 1px 5px;
+  margin: 0 3px;
+  color: $inline-code-text-color;
+  background-color: $inline-code-bg-color;
+  border-radius: 5px;
+}
+
+// code block
+pre {
+  padding: $spacing-unit/2 $spacing-unit/2;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px;
+
+  code {
+    line-height: 1.5;
+  }
+}
+
+.highlight {
+  border-radius: 5px;
+}
