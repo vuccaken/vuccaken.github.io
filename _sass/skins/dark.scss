@@ -1,3 +1,23 @@
+@charset "utf-8";
+
+$brand-color:        lighten(#f82, 5%) !default;
+$brand-color-sub:    #59f !default;
+
+$text-color:         #eee !default;
+$text-color-sub:     $brand-color-sub !default;
+
+$bg-color:           #222 !default;
+$bg-color-sub:       #444 !default;
+
+$inline-code-text-color: $text-color !default;
+$inline-code-bg-color: darken($bg-color-sub, 20%) !default;
+
+$link-base-color:    $brand-color-sub !default;
+$link-visited-color: $link-base-color !default;
+$link-hover-color:   $brand-color !default;
+
+
+// monokai.css
 .highlight .hll { background-color: #49483e }
 .highlight  { background: #272822; color: #f8f8f2 }
 .highlight .c { color: #75715e } /* Comment */
