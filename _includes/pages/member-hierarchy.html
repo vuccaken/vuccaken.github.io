@@ -10,69 +10,70 @@
 
 {%- assign yaer = site.data.members.current-year -%}
 
-<div class="table-space">
-  <table class="member_table">
-    <thead>
-      <tr>
-        <th>{{ grade_head }}</th><th>学部</th><th>学科</th><th>人数</th>
-      </tr>
-    </thead>
-    <tbody>
-{% assign items_loop = 0 %}
-{%- for item in items %}
-  {% assign grade_loop = grade_loop | plus: 1 %}
+<table class="member_table">
+  <thead>
+    <tr>
+      <th>{{ grade_head }}</th><th>学部</th><th>学科</th><th>人数</th>
+    </tr>
+  </thead>
 
-  {% assign zebra_parity = grade_loop | modulo: 2 %}
-  {% if zebra_parity == 0 %}
-    {% assign zebra_parity = 'zebra-even' %}
-  {% else %}
-    {% assign zebra_parity = 'zebra-odd' %}
-  {% endif %}
+  <tbody>
+    {% assign grade_loop = 0 %}
+    {%- for item in items %}
 
-  {%- if include.isOB == false -%}
-    {% if item.doctor %}
-      {% assign grade = yaer | minus: item.doctor | plus: 1 | prepend: "D" %}
-    {% elsif item.master %}
-      {% assign grade = yaer | minus: item.master | plus: 1 | prepend: "M" %}
-    {% else %}
-      {% assign grade = yaer | minus: item.enroll | plus: 1 %}
-    {% endif %}
-  {%- else -%}
-    {% assign grade = item.graduate | minus: 2000 %}
-  {%- endif -%}
+      {% assign grade_loop = grade_loop | plus: 1 %}
+      {% assign zebra_parity = grade_loop | modulo: 2 %}
+      {% if zebra_parity == 0 %}
+        {% assign zebra_parity = 'zebra-even' %}
+      {% else %}
+        {% assign zebra_parity = 'zebra-odd' %}
+      {% endif %}
 
-  {%- assign belong_loop = 0 %}
-  {%- for belong in item.belong %}
-    {% assign belong_loop = belong_loop | plus: 1 %}
-    {%- if belong_loop == 1 %}
-      <tr class="grade {{ zebra_parity }}">
-        {% if grade_loop == items.size %}
-          {% assign radius = 'b l' %}
+      {%- if include.isOB == false -%}
+        {% if item.doctor %}
+          {% assign grade = yaer | minus: item.doctor | plus: 1 | prepend: "D" %}
+        {% elsif item.master %}
+          {% assign grade = yaer | minus: item.master | plus: 1 | prepend: "M" %}
         {% else %}
-          {% assign radius = '' %}
+          {% assign grade = yaer | minus: item.enroll | plus: 1 %}
         {% endif %}
-        <td class="{{ radius }}" rowspan="{{ item.belong | size }}">
-          {{- grade | append: grade_unit -}}
-        </td>
-        {%- comment -%} 学部 {%- endcomment -%}
-        <td>{{ belong[0] }}</td>
-        {%- comment -%} 学科 {%- endcomment -%}
-        <td>{{ belong[1] }}</td>
-        {%- comment -%} 人数 {%- endcomment -%}
-        <td>{{ belong[2] }}名</td>
-      </tr>
-    {%- else %}
-      <tr class="no-row-border {{ zebra_parity }}">
-        {%- comment -%} 学部 {%- endcomment -%}
-        <td class="c">{{ belong[0] }}</td>
-        {%- comment -%} 学科 {%- endcomment -%}
-        <td>{{ belong[1] }}</td>
-        {%- comment -%} 人数 {%- endcomment -%}
-        <td>{{ belong[2] }}名</td>
-      </tr>
-    {%- endif %}
-  {%- endfor %}
-{%- endfor %}
-    </tbody>
-  </table>
-</div>
+      {%- else -%}
+        {% assign grade = item.graduate | minus: 2000 %}
+      {%- endif -%}
+
+      {%- assign belong_loop = 0 %}
+      {%- for belong in item.belong %}
+        {% assign belong_loop = belong_loop | plus: 1 %}
+        {%- if belong_loop == 1 %}
+          <tr class="grade {{ zebra_parity }}">
+            {% if grade_loop == items.size %}
+              {% assign radius = 'b l' %}
+            {% else %}
+              {% assign radius = '' %}
+            {% endif %}
+
+            <td class="{{ radius }}" rowspan="{{ item.belong | size }}">
+              {{- grade | append: grade_unit -}}
+            </td>
+            {%- comment -%} 学部 {%- endcomment -%}
+            <td>{{ belong[0] }}</td>
+            {%- comment -%} 学科 {%- endcomment -%}
+            <td>{{ belong[1] }}</td>
+            {%- comment -%} 人数 {%- endcomment -%}
+            <td>{{ belong[2] }}名</td>
+          </tr>
+        {%- else %}
+          <tr class="no-row-border {{ zebra_parity }}">
+            {%- comment -%} 学部 {%- endcomment -%}
+            <td class="c">{{ belong[0] }}</td>
+            {%- comment -%} 学科 {%- endcomment -%}
+            <td>{{ belong[1] }}</td>
+            {%- comment -%} 人数 {%- endcomment -%}
+            <td>{{ belong[2] }}名</td>
+          </tr>
+        {%- endif %}
+      {%- endfor %}
+
+    {%- endfor %}
+  </tbody>
+</table>

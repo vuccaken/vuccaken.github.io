@@ -1,13 +1,13 @@
-<div class="table-space">
-  <table class="left-header">
+{% assign twitter = site.social.twitter %}
+<table class="left-header">
+  <tbody>
     <tr>
       <th>e-mail</th>
       <td>{{ site.social.email }}</td>
     </tr>
     <tr>
-      {% assign twitter = site.social.twitter %}
       <th>Twitter</th>
       <td><a href="https://twitter.com/{{ twitter }}" target="_blank">@{{ twitter }}</a></td>
     </tr>
-  </table>
-</div>
+  </tbody>
+</table>
