@@ -1,34 +1,40 @@
+//
+// Special
+//
 .gallery {
-  // border: solid 1px tomato;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 15px;
-  .item{
-    // border: solid 1px aqua;
-    // text-align: center;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-unit;
+  justify-content: flex-start;
+
+  .chirashi {
     img {
       display: block;
-      margin: auto;
       max-width: 200px;
       max-height: 200px;
-      border: solid 1px $brand-color;
+      // border: solid 1px $bg-color-sub;
+      box-shadow: 0 0 10px 3px black;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
-    img:hover {
-      opacity: 0.8;
-    }
-    table{
+
+    figcaption {
       margin-top: 5px;
-      tr, td {
+    }
+    table {
+      margin: 0 auto;
+      box-shadow: unset;
+
+      tr, th, td {
         font-size: .12rem;
         padding: 0;
-        // border: solid 1px $brand-color;
+        background: unset !important;
+        border: unset !important;
       }
-      .row1 {
+      th {
         text-align: right;
-      }
-      .row2 {
-        min-width: 50px; // 50%
       }
     }
   }
