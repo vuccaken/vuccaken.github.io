@@ -128,3 +128,228 @@ Liquid というプログラム言語？がある。
 
 ## メモ
 
+## tables
+
+tbodyなどを用いずtable要素にtrを直置きした場合でも、ブラウザではtbodyが存在するように解釈される。
+
+なので、`table > tr`のようにtrが直置きされるような場合は考えないことにする。
+
+### markdownで作成
+
+| あああ | あああ | あああ |
+| ----- | ----- | ----- |
+| いいい | いいい | いいい |
+| いいい | いいい | いいい |
+| いいい | いいい | いいい |
+
+テキスト方向、クラス指定
+
+{: .col-border}
+| あああ | あああ | あああ | あああ |
+| ----: | :---: | :---- | ----- |
+| 右寄せ | 中央寄せ | 左寄せ | 指定なし |
+| いいい | いいい | いいい | いいい |
+| いいい | いいい | いいい | いいい |
+| いいい | いいい | いいい | いいい |
+
+
+### 基本パターン
+
+#### captionなし
+
+thead, tbody使用
+
+<table>
+  <thead>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+tbodyのみ使用
+
+<table>
+  <tbody>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+
+tbodyのみ使用。thなし
+
+<table>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+NG: theadとtbody使用。thなし
+
+<table>
+  <thead>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+
+#### captionあり
+
+<table>
+  <caption>thead, tbody使用</caption>
+  <thead>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>tbodyのみ</caption>
+  <tbody>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>tbodyのみ。thなし</caption>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+
+### レイアウトいろいろ
+
+<table class="left-header">
+  <caption>左ヘッダー<code>class="left-header"</code></caption>
+  <tbody>
+    <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+<table class="no-zebra">
+  <caption>縞模様なし<code>class="no-zebra"</code></caption>
+  <thead>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+<table class="no-row-border">
+  <caption>横ボーダーなし<code>class="no-row-border"</code></caption>
+  <thead>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>一部横ボーダー非表示</caption>
+  <thead>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td class="no-row-border">非表示 td</td><td>いいい</td></tr>
+    <tr><td class="no-row-border">非表示 td</td><td>いいい</td><td class="no-row-border">非表示 td</td></tr>
+    <tr class="no-row-border"><td>非表示 tr</td><td>非表示 tr</td><td>非表示 tr</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+<table class="col-border">
+  <caption>縦ボーダーあり<code>class="col-border"</code></caption>
+  <thead>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+<table class="col-border">
+  <caption>縦ボーダーあり、一部非表示</caption>
+  <thead>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td class="no-col-border">非表示 td</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr class="no-col-border"><td>非表示 tr</td><td>非表示 tr</td><td>非表示 tr</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td class="no-col-border">非表示 td</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>rowspanとcolspan。角に相当するセルには手動でborder-radiusを付けなければならない</caption>
+  <thead>
+    <tr><th>あああ</th><th colspan="2">あああ</th><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>いいい</td><td>いいい</td><td>いいい</td><td>いいい</td><td rowspan="2">ううう</td><td>いいい</td></tr>
+    <tr><td class="l b" rowspan="3">ううう</td><td>いいい</td><td rowspan="2">ううう</td><td>いいい</td><td>いいい</td></tr>
+    <tr><td>いいい</td><td>いいい</td><td class="r b" rowspan="2" colspan="2">ううう</td></tr>
+    <tr><td class="c">あああ</td><td>いいい</td><td class="c">あああ</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>rowspan使用例のサンプル。<br>縞模様と横ボーダーを手動で処理</caption>
+  <thead>
+    <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
+  </thead>
+  <tbody>
+    <tr class="zebra-odd"><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr class="zebra-even"><td rowspan="3">いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr class="zebra-even no-row-border"><td>いいい</td><td>いいい</td></tr>
+    <tr class="zebra-even no-row-border"><td>いいい</td><td>いいい</td></tr>
+    <tr class="zebra-odd"><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr class="zebra-even"><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr class="zebra-odd"><td class="l b" rowspan="2">ううう</td><td>いいい</td><td>いいい</td></tr>
+    <tr class="zebra-odd no-row-border"><td class="c">いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
