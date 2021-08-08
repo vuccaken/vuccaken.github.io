@@ -9,7 +9,7 @@ $text-color-sub:     $brand-color-sub !default;
 $bg-color:           #222 !default;
 $bg-color-sub:       #444 !default;
 
-$inline-code-text-color: $text-color !default;
+$inline-code-text-color: darken($text-color, 10%) !default;
 $inline-code-bg-color: darken($bg-color-sub, 20%) !default;
 
 $link-base-color:    $brand-color-sub !default;
