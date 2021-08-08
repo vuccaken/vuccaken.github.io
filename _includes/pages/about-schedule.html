@@ -1,8 +1,8 @@
 <div class="table-space">
-  <table>
+  <table class="left-header">
   {% for item in site.data.about.schedule %}
     <tr>
-      <td class="right month">{{ item.month }}</td>
+      <th>{{ item.month }}</th>
       <td>{{ item.content }}</td>
     </tr>
   {% endfor %}

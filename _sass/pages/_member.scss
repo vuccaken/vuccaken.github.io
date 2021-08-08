@@ -1,19 +1,6 @@
 //
 // member
 //
-.member_table {
-  thead tr {
-    // background-color: #ccc;
-    // color: tomato;
-    border-bottom: solid 2px $brand-color;
-  }
-  tbody {
-    text-align: center;
-    .grade { // tr
-      border-top: solid 1px #aaa;
-    }
-  }
-}
 
 .member-card-area{
   margin: 20px 0;

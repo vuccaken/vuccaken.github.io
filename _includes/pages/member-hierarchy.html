@@ -18,7 +18,16 @@
       </tr>
     </thead>
     <tbody>
+{% assign items_loop = 0 %}
 {%- for item in items %}
+  {% assign grade_loop = grade_loop | plus: 1 %}
+
+  {% assign zebra_parity = grade_loop | modulo: 2 %}
+  {% if zebra_parity == 0 %}
+    {% assign zebra_parity = 'zebra-even' %}
+  {% else %}
+    {% assign zebra_parity = 'zebra-odd' %}
+  {% endif %}
 
   {%- if include.isOB == false -%}
     {% if item.doctor %}
@@ -32,21 +41,36 @@
     {% assign grade = item.graduate | minus: 2000 %}
   {%- endif -%}
 
-  {%- assign isFirst = true %}
+  {%- assign belong_loop = 0 %}
   {%- for belong in item.belong %}
-    {%- if isFirst == true %}
-      <tr class="grade">
-        <td rowspan="{{ item.belong | size }}">
+    {% assign belong_loop = belong_loop | plus: 1 %}
+    {%- if belong_loop == 1 %}
+      <tr class="grade {{ zebra_parity }}">
+        {% if grade_loop == items.size %}
+          {% assign radius = 'b l' %}
+        {% else %}
+          {% assign radius = '' %}
+        {% endif %}
+        <td class="{{ radius }}" rowspan="{{ item.belong | size }}">
           {{- grade | append: grade_unit -}}
         </td>
-      {%- assign isFirst = false %}
-    {%- else %}
-      <tr>
-    {%- endif %}
-        <td>{{ belong[0] }}</td>  {%- comment -%} 学部 {%- endcomment -%}
-        <td>{{ belong[1] }}</td>  {%- comment -%} 学科 {%- endcomment -%}
-        <td>{{ belong[2] }}名</td>{%- comment -%} 人数 {%- endcomment -%}
+        {%- comment -%} 学部 {%- endcomment -%}
+        <td>{{ belong[0] }}</td>
+        {%- comment -%} 学科 {%- endcomment -%}
+        <td>{{ belong[1] }}</td>
+        {%- comment -%} 人数 {%- endcomment -%}
+        <td>{{ belong[2] }}名</td>
       </tr>
+    {%- else %}
+      <tr class="no-row-border {{ zebra_parity }}">
+        {%- comment -%} 学部 {%- endcomment -%}
+        <td class="c">{{ belong[0] }}</td>
+        {%- comment -%} 学科 {%- endcomment -%}
+        <td>{{ belong[1] }}</td>
+        {%- comment -%} 人数 {%- endcomment -%}
+        <td>{{ belong[2] }}名</td>
+      </tr>
+    {%- endif %}
   {%- endfor %}
 {%- endfor %}
     </tbody>

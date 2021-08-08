@@ -1,8 +1,8 @@
 <div class="table-space">
-  <table>
+  <table class="left-header">
   {% for item in site.data.about.active_plan %}
     <tr>
-      <td class="right active">{{ item.name }}：</td>
+      <th>{{ item.name }}</th>
       <td>{{ item.date }}</td>
     </tr>
   {% endfor %}

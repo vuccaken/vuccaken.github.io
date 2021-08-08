@@ -141,6 +141,76 @@ main.page-content {
       color: greenyellow;
     }
   }
+
+
+  table {
+    $table-border-radius: $spacing-unit / 2;
+    $table-border-width: 1px;
+    $cell-border-width: 1px;
+    $cell-border-color: $table-border-color;
+    
+    border-radius: $table-border-radius;
+    border: solid $table-border-width $table-border-color;
+    background-color: $table-border-color;
+    box-shadow: 0px 0px 10px 0px black;
+
+    caption {
+      margin-bottom: 5px;
+    }
+
+    // 横ボーダー（border-top）
+    :not(
+      :is(&, thead, tbody:not(thead ~ tbody))
+      > tr:first-of-type
+    ) > :is(th, td):not(.no-row-border *):not(.no-row-border)
+    {
+      border-top: solid $cell-border-width $cell-border-color;
+    }
+
+    // 縦ボーダー（border-left）
+    &.col-border
+    :is(td):not(:first-child):not(.no-col-border):not(.no-col-border *)
+    {
+      border-left: solid $cell-border-width $cell-border-color;
+    }
+
+    // セルのスタイル
+    th {
+      color: $table-header-text-color;
+      background-color: $table-header-bg-color;
+      border-bottom: solid 2px $table-border-color-02;
+    }
+    &.left-header th {
+      color: inherit;
+      background-color: inherit;
+      border-bottom: none;
+      text-align: right;
+    }
+    tr {
+      color: $table-text-color;
+      background-color: $table-bg-color;
+    }
+    &:not(.no-zebra) :is(
+      thead ~ tbody > tr:is(:nth-child(even):not(.zebra-odd), .zebra-even),
+      :not(thead ~ tbody) > tr:is(:nth-child(odd):not(.zebra-even), .zebra-odd)
+    ) {
+      background-color: $table-zebra-bg-color;
+    }
+
+    // 四隅のセルを角丸に
+    :is(&, thead, tbody:not(thead ~ *)) > tr:first-of-type
+    {
+      :first-child {border-top-left-radius: $table-border-radius;}
+      :last-child {border-top-right-radius: $table-border-radius;}
+    }
+    :is(:last-child > tr:last-child > :first-child, tr > .b.l):not(.c) {
+      border-bottom-left-radius: $table-border-radius;
+    }
+    :is(:last-child > tr:last-child > :last-child, tr > .b.r):not(.c) {
+      border-bottom-right-radius: $table-border-radius;
+    }
+  }
+
 }
 
 

@@ -76,31 +76,24 @@ h4, h5, h6 {
   font-size: .16rem;
 }
 
-.table-space {
-  // background-color: aqua;
-  background-color: $bg-color-sub;
-  width: 80%;
-  max-width: 500px;
-  margin: 10px auto;
-  padding: 10px 10px;
-  border-radius: 20px;
-}
+
 table {
-  // background-color: #00d;
-  // border: solid 2px #fff;
-  empty-cells: hide;
-  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $spacing-unit / 2;
+
+  border-collapse: separate;
   border-spacing: 0;
-  width: 100%;
-  margin: auto;
+
+  th, td {
+    padding: $spacing-unit/3 $spacing-unit/2;
+    min-width: 60px;
+  }
+  th {
+    font-weight: normal;
+  }
 }
-tr {
-  // border: solid 1px aqua;
-}
-th, td {
-  padding: 5px 8px;
-  // border: solid 1px tomato;
-}
+
 
 img {
   max-width: 100%;

@@ -17,6 +17,15 @@ $link-visited-color: $link-base-color !default;
 $link-hover-color:   $brand-color !default;
 
 
+$table-text-color:        $text-color !default;
+$table-header-text-color: $text-color !default;
+$table-bg-color:          darken($bg-color-sub, 8%) !default;
+$table-zebra-bg-color:    $bg-color-sub !default;
+$table-header-bg-color:   $bg-color-sub !default;
+$table-border-color:      $bg-color !default;
+$table-border-color-02:   darken($brand-color, 20%) !default;
+
+
 // monokai.css
 .highlight .hll { background-color: #49483e }
 .highlight  { background: #272822; color: #f8f8f2 }
