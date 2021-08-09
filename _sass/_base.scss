@@ -1,8 +1,8 @@
 html {
-  font-size: 625%;
-  @media screen and (max-width: 480px) {
-    font-size: calc(625% * 0.9);
-  }
+  font-size: $base-font-size;
+  // @media screen and (max-width: 480px) {
+  //   font-size: $small-font-size;
+  // }
 }
 
 body, h1, h2, h3, h4, h5, h6,
@@ -14,7 +14,6 @@ dl, dd, ol, ul, figure {
 
 body {
   font-family: $base-font-family;
-  font-size: .15rem;
   color: $text-color;
   background-color: $bg-color;
   letter-spacing: 1px;
@@ -53,7 +52,7 @@ a:hover {
 
 p {
   // border: solid 1px tomato;
-  line-height: .2rem;
+  // line-height: .2rem;
   // margin-block-start: 0.5em;
   // margin-block-end: 0.5em;
 }
@@ -64,16 +63,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: .25rem;
+  font-size: 1.5rem;
 }
 h2 {
-  font-size: .20rem;
+  font-size: 1.375rem;
 }
 h3 {
-  font-size: .18rem;
+  font-size: 1.25rem;
 }
 h4, h5, h6 {
-  font-size: .16rem;
+  font-size: 1.125rem;
 }
 
 

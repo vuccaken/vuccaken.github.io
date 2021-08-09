@@ -52,7 +52,7 @@
     
     a.page-link {
       // border: solid 1px tomato;
-      font-size: .17rem;
+      font-size: 1rem;
       color: $text-color;
       padding: 2px 10px;
       border-radius: 20px;
@@ -82,9 +82,11 @@
 
   h1.page-title {
     margin: 0;
+    font-size: 1.75rem;
     text-align: center;
+
     .subtitle {
-      font-size: 90%;
+      font-size: 1.5rem;
     }
   }
 
@@ -254,7 +256,7 @@ main.page-content {
   .copyright {
     width: 100%;
     text-align: center;
-    font-size: .12rem;
+    font-size: 0.875rem;
   }
 }
 
