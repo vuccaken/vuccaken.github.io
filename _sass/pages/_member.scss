@@ -1,6 +1,12 @@
 //
 // member
 //
+table.member-hierarchy {
+  tr.grade > td:first-child,
+  td:last-child {
+    text-align: right;
+  }
+}
 
 .member-card-area{
   margin: 20px 0;
