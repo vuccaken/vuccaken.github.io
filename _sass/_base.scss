@@ -5,6 +5,10 @@ html {
   // }
 }
 
+
+//
+// Reset some basic elements
+//
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -16,9 +20,8 @@ body {
   font-family: $base-font-family;
   color: $text-color;
   background-color: $bg-color;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
 }
-
 
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -26,6 +29,30 @@ ul, ol, dl, figure {
   margin-bottom: $spacing-unit / 2;
 }
 
+
+//
+// Images
+//
+img {
+  max-width: 100%;
+}
+
+
+//
+// Figures
+//
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: 0.875rem;
+}
+
+
+//
+// Lists
+//
 ul, ol {
   margin-left: $spacing-unit;
 }
@@ -37,26 +64,10 @@ li {
   }
 }
 
-a {
-  text-decoration: none;
-  color: $link-base-color;
-}
-a:visited {
-  text-decoration: none;
-  color: $link-visited-color;
-}
-a:hover {
-  text-decoration: none;
-  color: $link-hover-color;
-}
 
-p {
-  // border: solid 1px tomato;
-  // line-height: .2rem;
-  // margin-block-start: 0.5em;
-  // margin-block-end: 0.5em;
-}
-
+//
+// Headings
+//
 h1, h2, h3, h4, h5, h6 {
   margin-top: $spacing-unit;
   font-weight: normal;
@@ -76,6 +87,46 @@ h4, h5, h6 {
 }
 
 
+//
+// Links
+//
+a {
+  text-decoration: none;
+  color: $link-base-color;
+}
+a:visited {
+  text-decoration: none;
+  color: $link-visited-color;
+}
+a:hover {
+  text-decoration: none;
+  color: $link-hover-color;
+}
+
+
+//
+// Blockquotes
+//
+// blockquote {
+//   color: $brand-color;
+//   border-left: 4px solid $border-color-01;
+//   padding-left: $spacing-unit / 2;
+//   font-size: 1.125rem;
+//   font-style: italic;
+
+//   > :last-child {
+//     margin-bottom: 0;
+//   }
+
+//   i, em {
+//     font-style: normal;
+//   }
+// }
+
+
+//
+// Tables
+//
 table {
   margin-left: auto;
   margin-right: auto;
@@ -91,12 +142,6 @@ table {
   th {
     font-weight: normal;
   }
-}
-
-
-img {
-  max-width: 100%;
-  // display: block;
 }
 
 
