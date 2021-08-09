@@ -2,6 +2,8 @@
 // member
 //
 table.member-hierarchy {
+  white-space: nowrap;
+  
   tr.grade > td:first-child,
   td:last-child {
     text-align: right;
