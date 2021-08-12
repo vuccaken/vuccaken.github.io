@@ -8,6 +8,11 @@ table.member-hierarchy {
   td:last-child {
     text-align: right;
   }
+
+  tr.grade > td:is(:nth-child(2), :nth-child(3)),
+  tr:not(.grade) > td:is(:nth-child(1), :nth-child(2)) {
+    text-align: center;
+  }
 }
 
 .member-card-area{
