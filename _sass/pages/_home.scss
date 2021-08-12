@@ -87,7 +87,7 @@
 
 a.news-link {
   display: block;
-  padding: $spacing-unit/4 $spacing-unit/2;
+  padding: $spacing-unit/8 $spacing-unit/2;
   font-size: 0.875rem;
 
   &:hover {
@@ -96,7 +96,6 @@ a.news-link {
 
   .news-date {
     color: $text-color-sub;
-    margin-bottom: .3em;
   }
   .news-title {
     color: $text-color;
