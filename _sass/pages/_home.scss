@@ -73,7 +73,9 @@
       height: 320px;
       border: 1px solid $brand-color;
       border-radius: 10px;
+      box-shadow: 0 0 20px 0 black;
       overflow: auto;
+      
       -ms-overflow-style: none;    /* IE, Edge 対応 */
       scrollbar-width: none;       /* Firefox 対応 */
       &::-webkit-scrollbar {  /* Chrome, Safari 対応 */
@@ -89,7 +91,7 @@ a.news-link {
   font-size: 0.875rem;
 
   &:hover {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(#000, 0.3);
   }
 
   .news-date {
