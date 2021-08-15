@@ -26,7 +26,8 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure {
+ul, ol, dl, figure,
+%vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -70,21 +71,24 @@ li {
 // Headings
 //
 h1, h2, h3, h4, h5, h6 {
-  margin-top: $spacing-unit;
   font-weight: normal;
+}
+
+h1, h2 {
+  margin-top: $spacing-unit;
 }
 
 h1 {
   font-size: 1.5rem;
 }
 h2 {
-  font-size: 1.375rem;
-}
-h3 {
   font-size: 1.25rem;
 }
-h4, h5, h6 {
+h3 {
   font-size: 1.125rem;
+}
+h4, h5, h6 {
+  font-size: 1.0625rem;
 }
 
 
