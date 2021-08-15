@@ -1,24 +1,53 @@
 {%- comment -%}
 
-%%%%%    使い方    %%%%%
+# 機能
+画像を横並びで表示する（FlexBox）。
+
+
+# 引数
+(scalar) include.dir    画像ファイルに共通のディレクトリのパス
+(scalar) include.file   画像ファイルのパス
+(array)  include.file   第1引数：alt属性
+                        第2引数：画像ファイルのパス
+
+パスは assets/img/ 以下のみを指定。
+例：/assets/img/hoge/img.png  ->  hoge/img.png
+
+# 使い方
 
 ---
-images1_dir: posts/2019-12-14-OB/
+dir1: posts/2024-08-17/
 images1:
-  - [OB1, posts/2019-12-14-OB/2019-OB-1.jpg]
-  - [OB2, posts/2019-12-14-OB/2019-OB-2.jpg]
+  - [alt1, picture1.jpg]
+  - [alt2, picture2.jpg]
+  - [alt3, picture3.jpg]
+
+images2:
+  - posts/2024-08-17/picture1.jpg
+  - posts/2024-08-17/picture2.jpg
+  - posts/2024-08-17/picture3.jpg
 ---
-{% include images.html dir=page.images1_dir src=page.images1 %}
+
+{% include images.html dir=page.dir1 src=page.images1 %}
+
+{% include images.html src=page.images2 %}
+
+{% assign images3 = "
+  posts/2024-08-17/picture1.jpg
+  posts/2024-08-17/picture2.jpg
+  posts/2024-08-17/picture3.jpg
+" | split: " " %}
+
+{% include images.html src=images3 %}
 
 {%- endcomment -%}
 
+{% assign dir = 'assets/img/' | append: include.dir | relative_url %}
 
-<div class="img-list">
-{% for item in include.src %}
-  {%- assign file_name = item[1] -%}
-  {%- assign alt = item[0] -%}
-  {% capture path %}assets/img/{{ include.dir }}{{ file_name }}{% endcapture %}
-  {% assign url = path | relative_url %}
-  <img src="{{ url }}" alt="{{ alt }}">
-{% endfor -%}
+<div class="img-container">
+  {% for item in include.src %}
+    {% assign file = item[1] | default: item %}
+    {% assign alt = item[0] | default: file %}
+    <img alt="{{ alt }}" src="{{ dir }}{{ file }}">
+  {% endfor %}
 </div>
