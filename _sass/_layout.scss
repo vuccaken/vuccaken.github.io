@@ -48,6 +48,7 @@
     a.page-link {
       // border: solid 1px tomato;
       // font-size: 1rem;
+      letter-spacing: 1px;
       color: $text-color;
       padding: 5px 10px;
       border-radius: 20px;
@@ -249,6 +250,13 @@ main.page-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    a {
+      color: $brand-color-sub;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
 
   .copyright {
