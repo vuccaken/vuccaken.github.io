@@ -17,7 +17,8 @@ layout: default
       </header>
       <div class="frame">
         {%- for post in site.posts %}
-        <a class="news-link" href="{{ 'news' | relative_url }}#{{ post.url }}">
+        {% assign post_id = post.id | remove_first: '/' | replace: "/", "-" %}
+        <a class="news-link" href="{{ 'news' | relative_url }}#{{ post_id }}">
           <div class="news-date">{{ post.date | date: "%Y.%m.%d" }}</div>
           <div class="news-title">{{ post.title }}</div>
         </a>

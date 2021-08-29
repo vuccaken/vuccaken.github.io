@@ -5,7 +5,8 @@ toc: false
 
 <div class="news-wrap">
   {% for post in site.posts %}
-    <article class="news-article" id="{{ post.url }}">
+    {% assign post_id = post.id | remove_first: '/' | replace: "/", "-" %}
+    <article class="news-article" id="{{ post_id }}">
       <header class="news-header">
         <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span>
         <h1 class="title">{{ post.title }}</h1>
