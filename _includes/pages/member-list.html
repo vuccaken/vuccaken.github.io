@@ -1,88 +1,88 @@
-{%- assign currentYear = site.data.members.current-year -%}
-{%- assign members=site.data.members.members -%}
+{% assign current_year = site.data.members.current-year %}
+{% assign members=site.data.members.members %}
 
 <div class="member-card-area">
-{%- for member in members -%}
+{% for member in members %}
 
-  {%- if member.admissions.finish.year -%}
-    {%- assign isOB = true -%}
-    {%- assign isBelong = false -%}
-  {%- else -%}
-    {%- assign isOB = false -%}
-    {%- assign isBelong = true -%}
-  {%- endif -%}
+  {% if member.admissions.finish.year %}
+    {% assign isOB = true %}
+    {% assign isBelong = false %}
+  {% else %}
+    {% assign isOB = false %}
+    {% assign isBelong = true %}
+  {% endif %}
 
-  {%- if include.isOB == isOB -%}
+  {% if include.isOB == isOB %}
 
     {% assign icon_name = member.icon | default: "default.png" %}
     {% assign icon_url = "assets/img/member-icon/" | append: icon_name | relative_url %}
 
-    {%- assign isBachelor = false -%}
-    {%- assign isMaster = false -%}
-    {%- assign isDoctor = false -%}
+    {% assign isBachelor = false %}
+    {% assign isMaster = false %}
+    {% assign isDoctor = false %}
 
-    {%- if member.admissions.doctor.year -%}
-      {%- assign isDoctor = true -%}
-    {%- elsif member.admissions.master.year -%}
-      {%- assign isMaster = true -%}
-    {%- else -%}
-      {%- assign isBachelor = true -%}
-    {%- endif -%}
+    {% if member.admissions.doctor.year %}
+      {% assign isDoctor = true %}
+    {% elsif member.admissions.master.year %}
+      {% assign isMaster = true %}
+    {% else %}
+      {% assign isBachelor = true %}
+    {% endif %}
 
-    {%- if member.admissions.finish.drop-out == true -%}
-      {%- assign isDropOut = true -%}
-    {%- else -%}
-      {%- assign isDropOut = false -%}
-    {%- endif -%}
+    {% if member.admissions.finish.drop-out == true %}
+      {% assign isDropOut = true %}
+    {% else %}
+      {% assign isDropOut = false %}
+    {% endif %}
 
-    {%- if isBachelor -%}
-      {%- assign grade = member.admissions.bachelor -%}
-    {%- elsif isMaster -%}
-      {%- assign grade = member.admissions.master -%}
-    {%- elsif isDoctor -%}
-      {%- assign grade = member.admissions.doctor -%}
-    {%- endif -%}
+    {% if isBachelor %}
+      {% assign grade = member.admissions.bachelor %}
+    {% elsif isMaster %}
+      {% assign grade = member.admissions.master %}
+    {% elsif isDoctor %}
+      {% assign grade = member.admissions.doctor %}
+    {% endif %}
 
-    {%- if isBelong -%}
-      {%- assign belong_key = "所属" -%}
-    {%- elsif isDropOut -%}
-      {%- assign belong_key = "中退" -%}
-    {%- elsif isBachelor -%}
-      {%- assign belong_key = "卒業" -%}
-    {%- else -%}
-      {%- assign belong_key = "修了" -%}
-    {%- endif -%}
+    {% if isBelong %}
+      {% assign belong_key = "所属" %}
+    {% elsif isDropOut %}
+      {% assign belong_key = "中退" %}
+    {% elsif isBachelor %}
+      {% assign belong_key = "卒業" %}
+    {% else %}
+      {% assign belong_key = "修了" %}
+    {% endif %}
 
-    {%- capture belong_val -%}
-      {{- grade.faculty | append: " " -}}
-      {{- grade.department -}}
-      {%- if isBelong -%}
-        {{- currentYear | minus: grade.year | plus: 1 | prepend: " " | append: "回生" -}}
-      {%- endif -%}
-    {%- endcapture %}
+    {% capture belong_val %}
+      {{- grade.faculty -}}
+      {{- grade.department | prepend: " " -}}
+      {% if isBelong %}
+        {{- current_year | minus: grade.year | plus: 1 | prepend: " " | append: "回生" -}}
+      {% endif %}
+    {% endcapture %}
 
-    {%- unless member.draft == true %}
+
     <div class="member-card">
 
       <h3 class="name" {% if member.index-id %}id="{{ member.index-id }}"{% endif %}>
-      {%- if member.positions.current -%}
+      {% if member.positions.current %}
         <span class="heading">{{ member.positions.current }}</span>
-      {%- endif -%}
-        <span>{{- member.name -}}</span>
+      {% endif %}
+        <span>{{ member.name }}</span>
       </h3>
 
       <img class="icon" src="{{ icon_url }}" alt="{{ member.name }}'s icon"/>
 
       <ul class="profile-list">
         <li><span class="heading">{{ belong_key }}</span>{{ belong_val }}</li>
-        {%- if member.positions.past -%}
+        {% if member.positions.past %}
           <li><span class="heading">過去の役職</span>{{ member.positions.past }}</li>
-        {%- endif -%}
-        {%- for item in member.profile -%}
-          {%- if item.a %}
+        {% endif %}
+        {% for item in member.profile %}
+          {% if item.a %}
             <li><span class="heading">{{ item.q }}</span>{{ item.a }}</li>
-          {%- endif -%}
-        {%- endfor %}
+          {% endif %}
+        {% endfor %}
       </ul>
 
       <div class="links-area">
@@ -90,8 +90,7 @@
       </div>
 
     </div>
-    {%- endunless -%}
 
-  {%- endif -%}
-{%- endfor -%}
+  {% endif %}
+{% endfor %}
 </div>

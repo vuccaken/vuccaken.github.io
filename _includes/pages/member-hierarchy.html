@@ -1,14 +1,14 @@
-{%- if include.isOB == false -%}
+{% if include.isOB == false %}
   {% assign grade_head = "学年" %}
   {% assign grade_unit = "回生" %}
   {% assign items = site.data.members.hierarchy.active %}
-{%- else -%}
+{% else %}
   {% assign grade_head = "卒業年" %}
   {% assign grade_unit = "年度卒" %}
   {% assign items = site.data.members.hierarchy.OB %}
-{%- endif -%}
+{% endif %}
 
-{%- assign yaer = site.data.members.current-year -%}
+{% assign yaer = site.data.members.current-year %}
 
 <table class="member-hierarchy">
   <thead>
@@ -19,7 +19,7 @@
 
   <tbody>
     {% assign grade_loop = 0 %}
-    {%- for item in items %}
+    {% for item in items %}
 
       {% assign grade_loop = grade_loop | plus: 1 %}
       {% assign zebra_parity = grade_loop | modulo: 2 %}
@@ -29,7 +29,7 @@
         {% assign zebra_parity = 'zebra-odd' %}
       {% endif %}
 
-      {%- if include.isOB == false -%}
+      {% if include.isOB == false %}
         {% if item.doctor %}
           {% assign grade = yaer | minus: item.doctor | plus: 1 | prepend: "D" %}
         {% elsif item.master %}
@@ -37,14 +37,14 @@
         {% else %}
           {% assign grade = yaer | minus: item.enroll | plus: 1 %}
         {% endif %}
-      {%- else -%}
+      {% else %}
         {% assign grade = item.graduate | minus: 2000 %}
-      {%- endif -%}
+      {% endif %}
 
-      {%- assign belong_loop = 0 %}
-      {%- for belong in item.belong %}
+      {% assign belong_loop = 0 %}
+      {% for belong in item.belong %}
         {% assign belong_loop = belong_loop | plus: 1 %}
-        {%- if belong_loop == 1 %}
+        {% if belong_loop == 1 %}
           <tr class="grade {{ zebra_parity }}">
             {% if grade_loop == items.size %}
               {% assign radius = 'b l' %}
@@ -55,25 +55,25 @@
             <td class="{{ radius }}" rowspan="{{ item.belong | size }}">
               {{- grade | append: grade_unit -}}
             </td>
-            {%- comment -%} 学部 {%- endcomment -%}
+            {% comment %} 学部 {% endcomment %}
             <td>{{ belong[0] }}</td>
-            {%- comment -%} 学科 {%- endcomment -%}
+            {% comment %} 学科 {% endcomment %}
             <td>{{ belong[1] }}</td>
-            {%- comment -%} 人数 {%- endcomment -%}
+            {% comment %} 人数 {% endcomment %}
             <td>{{ belong[2] }}名</td>
           </tr>
-        {%- else %}
+        {% else %}
           <tr class="no-row-border {{ zebra_parity }}">
-            {%- comment -%} 学部 {%- endcomment -%}
+            {% comment %} 学部 {% endcomment %}
             <td class="c">{{ belong[0] }}</td>
-            {%- comment -%} 学科 {%- endcomment -%}
+            {% comment %} 学科 {% endcomment %}
             <td>{{ belong[1] }}</td>
-            {%- comment -%} 人数 {%- endcomment -%}
+            {% comment %} 人数 {% endcomment %}
             <td>{{ belong[2] }}名</td>
           </tr>
-        {%- endif %}
-      {%- endfor %}
+        {% endif %}
+      {% endfor %}
 
-    {%- endfor %}
+    {% endfor %}
   </tbody>
 </table>

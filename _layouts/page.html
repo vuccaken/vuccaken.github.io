@@ -4,17 +4,17 @@ layout: default
 
 <header class="page-header">
   <h1 class="page-title">
-    {%- if page.subtitle %}
+    {% if page.subtitle %}
       <div class="subtitle">{{ page.subtitle }}</div>
-    {%- endif %}
+    {% endif %}
     <div class="title">{{ page.title }}</div>
   </h1>
 
-  {%- if page.toc == true %}
+  {% if page.toc == true %}
     <div class="page-toc">
       {% include general/toc.html html=content h_min=2 h_max=2 class="toc-ul" item_class="toc-li" anchor_class="toc-a" %}
     </div>
-  {%- endif %}
+  {% endif %}
 </header>
 
 {{ content }}

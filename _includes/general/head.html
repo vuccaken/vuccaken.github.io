@@ -4,12 +4,12 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
 
   <title>
-    {%- if page.subtitle %}{{ page.subtitle | append: " " }}{% endif -%}
-    {%- if page.url == '/' -%}
+    {% if page.subtitle %}{{- page.subtitle | append: " " -}}{% endif %}
+    {% if page.url == '/' %}
       {{- page.title -}}
-    {%- else -%}
+    {% else %}
       {{- page.title | append: " - " | append: site.short_title -}}
-    {%- endif -%}
+    {% endif %}
   </title>
 
   <meta name="author" content="{{ site.author }}">

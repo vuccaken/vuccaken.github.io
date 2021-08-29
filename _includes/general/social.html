@@ -1,46 +1,46 @@
 {% assign src = include.src %}
 
-{%- if member.links.homepage -%}
-<a href="{{ member.links.homepage }}" target="_blank">
+{% if src.homepage %}
+<a href="{{ src.homepage }}" target="_blank">
   <span class="fa-stack">
     <i class="fas fa-circle fa-stack-2x"></i>
     <i class="fas fa-home fa-stack-1x fa-inverse"></i>
   </span>
 </a>
-{%- endif -%}
+{% endif %}
 
-{%- if src.email -%}
+{% if src.email %}
   <a href="mailto:{{ src.email }}" target="_blank">
     <span class="fa-stack">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
     </span>
   </a>
-{%- endif -%}
+{% endif %}
 
-{%- if src.twitter -%}
+{% if src.twitter %}
   <a href="https://twitter.com/{{ src.twitter }}" target="_blank">
     <span class="fa-stack">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
     </span>
   </a>
-{%- endif -%}
+{% endif %}
 
-{%- if src.github -%}
+{% if src.github %}
   <a href="https://github.com/{{ src.github }}" target="_blank">
     <span class="fa-stack">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fab fa-github fa-stack-1x fa-inverse"></i>
     </span>
   </a>
-{%- endif -%}
+{% endif %}
 
-{%- if src.youtube -%}
+{% if src.youtube %}
   <a href="https://www.youtube.com/channel/{{ src.youtube }}" target="_blank">
     <span class="fa-stack">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
     </span>
   </a>
-{%- endif -%}
+{% endif %}
