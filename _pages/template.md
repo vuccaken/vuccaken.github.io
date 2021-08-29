@@ -1,38 +1,90 @@
 ---
 title: Template
 
-path2images1: posts/2019-12-14-OB/
+dir1: posts/2019-12-14-OB/
 images1:
-- [OB1,2019-OB-1.jpg]
-- [OB2,2019-OB-2.jpg]
+  - [OB1, 2019-OB-1.jpg]
+  - [OB2, 2019-OB-2.jpg]
 
 images2:
-- [act,pages/actalpha_th.jpg]
-- [act,pages/actalpha_th.jpg]
-- [act,pages/actalpha_th.jpg]
+  - [act, pages/actalpha_th.jpg]
+  - [act, pages/actalpha_th.jpg]
+  - [act, pages/actalpha_th.jpg]
 ---
 
 テンプレというかマニュアル。
 
-## 見出し h2
-### 見出し h3
-#### 見出し h4
-##### 見出し h5
-注：見出しは h1 は使わず、h2から始めてください。
 
-## markdown チートシート
-ソースを直接見てください。
+## はじめに
+
+このサイトは[Jekyll](http://jekyllrb-ja.github.io){:target="_blank"}という静的サイトビルダーによって生成されています。
+
+JekyllはRubyのGemです（初心者は無視）。
+
+サーバーは[GitHub Pages](https://pages.github.com){:target="_blank"}を利用しています。
+無料です。
+
+このサイトのソースはGitHubに置いてますが、masterブランチにpushするたびに自動でビルドするように設定されています。
+
+
+## サイトの更新方法
+
+ローカルにJekyllの開発環境を整え、サイトの変更をコミットし、リモートリポジトリ（GitHub）へpushする方法が基本的です。
+
+開発環境の構築についてはリポジトリの[READMEファイル](https://github.com/vuccaken/vuccaken.github.io#readme){:target="_blank"}の方に書いておきます。
+
+
+## Jekyllの基礎知識・文法
+
+まずはJekyll公式サイトにある[Step by Step チュートリアル](http://jekyllrb-ja.github.io/docs/step-by-step/01-setup/){:target="_blank"}をやってみてください。
+最低限の知識はここで学べます。
+
+### Liquid
+
+ソースのhtmlファイルを除いてみると`{% raw %}{% hoge %}{% endraw %}`のような記法がたくさん見受けられるかと思います。
+これは[Liquid](https://shopify.github.io/liquid/){:target="_blank"}というテンプレート言語の文法で「タグ」と呼ばれます。
+
+Liquidのおかげでhtml中でfor文やif文などが使えたり、他にもいろいろなことができるようになります！
+
+公開されるhtmlにはLiquidの記述は残っておらず、Jekyllでビルドする際にコンパイルされます。
+
+詳細は適宜[ドキュメント](https://shopify.github.io/liquid/basics/introduction/){:target="_blank"}を見てもらうことにして、以下で`{% raw %}{{ }}{% endraw %}`や`{% raw %}{% %}{% endraw %}`や`|`が出てきたらLiquidの記法だと思ってください。
+
+
+
+
+## Markdownチートシート
+
+Markdown記法のチートシートです。LiquidやJekyll独自の記法も混ざっています。
+
+拡張子が`.md`のファイル内でしか機能しないので注意です。
+
 
 ### リンク
-- 基本
-  - [立命館大学](http://www.ritsumei.ac.jp)
-  - `[name](URL)`
-- 外部リンク（新規タブで開く）
-  - [立命館大学](http://www.ritsumei.ac.jp){:target="_blank"}
-  - これは kmarkdown 独自の機能
-- 内部リンク
-  - [member]({{ 'member' | relative_url }})
-  - `_site/` 以下のパスで指定する。
+
+リンクは基本的には次のように書きます；
+
+```md
+[立命館大学](http://www.ritsumei.ac.jp)
+```
+
+リンクを新規タブで開く場合は次のように書きます；
+
+```md
+[立命館大学](http://www.ritsumei.ac.jp){:target="_blank"}
+```
+
+外部リンクは全て新規タブで開くルールにしています。できれば守ってください。
+
+内部リンクを貼る場合は、下記のようにしてください；
+
+```liquid
+{% raw %}[member]({% link _pages/member.md %}){% endraw %}
+```
+
+`link`タグの引数には、リンク先ページの（ビルド前の）ルートからの相対パスを指定します。
+
+`link`タグの詳細は[こちら](http://jekyllrb-ja.github.io/docs/liquid/tags/#リンク){:target="_blank"}を参照してください。
 
 ### 画像 image
 - `![alt](URL)`
@@ -62,21 +114,46 @@ images2:
 | 2   | monky | monopole |
 
 
-## jekyll
+### ソースコード
 
-このサイトはjekyllというhomepage builderによって生成されています。
+インラインコードは`` `hoge` ``のように書きます。
 
-buildはサーバーでもあるGithub Pagesが自動でやってくれます。
+コードブロックは次のように書きます；
 
-ローカルでサイトを生成するにはもろもろのインストールが必要です。
+````
+```
+<section class="hoge">
+  <h1>にゃあ</h1>
+  <p>ほげほげ。にゃーん</p>
+</section>
+```
+````
 
-### Liquid
-Liquid というプログラム言語？がある。
+コードの言語を指定すれば文法でハイライトしてくれます；
 
-{% raw %}{{ }}{% endraw %} か {% raw %}{% %}{% endraw %} で囲まれているところがソレのプログラムで、タグと呼ばれる。
+````
+```html
+<section class="hoge">
+  <h1>にゃあ</h1>
+  <p>ほげほげ。にゃーん</p>
+</section>
+```
+````
 
-- 参考
-  - [liquid チートシート](https://gist.github.com/JJediny/a466eed62cee30ad45e2)
+あるいはJekyllで用意されている`highlight`タグを使うこともできます；
+
+{% raw %}
+```liquid
+{% highlight html %}
+<section class="hoge">
+  <h1>にゃあ</h1>
+  <p>ほげほげ。にゃーん</p>
+</section>
+{% endhighlight %}
+```
+{% endraw %}
+
+
 
 
 ## 自作マクロ
@@ -112,7 +189,7 @@ Liquid というプログラム言語？がある。
 - 配列の2つ目に `/assets/img/` 以下のパスのみを指定する。
 
 マクロ解説（`/_includes/image.html`）
-- {% raw %}`{% include images.html dir=page.imagePath src=page.images %}`{% endraw %}
+- {% raw %}`{% include images.html dir=page.dir src=page.images %}`{% endraw %}
 - 引数 `dir` には共通なパス与える。
   - 複数ある画像の `img/` からファイル自体までの path が同じとき、それをここで指定しておけばヘッダーの配列に書くのはファイル名だけでよくなるので便利。
   - 不要であれば、引数 `dir` は指定しなくてよい。
@@ -120,13 +197,54 @@ Liquid というプログラム言語？がある。
 - `page.**` は「このページに書いてある `**` という変数の値」という意味。
 
 
-{% include images.html dir=page.path2images1 src=page.images1 %}
+{% include images.html dir=page.dir1 src=page.images1 %}
 
 こんな感じで出ます。
 
 {% include images.html src=page.images2 %}
 
-## メモ
+
+
+{% assign images3 = "
+  posts/2019-12-14-OB/2019-OB-2.jpg
+  pages/actalpha_th.jpg
+  pages/actalpha_th.jpg
+" | split: " " %}
+
+{% include images.html src=images3 %}
+
+
+
+
+
+
+
+
+
+## 見栄え
+
+サイト上での表示の確認です。
+
+### 見出し
+
+<section class="heading-sample">
+  <h1>見出し h1</h1>
+  <h2>見出し h2</h2>
+  <h3>見出し h3</h3>
+  <h4>見出し h4</h4>
+  <h5>見出し h5</h5>
+  <h6>見出し h6</h6>
+  <p>段落。ほげほげ。</p>
+</section>
+<style>
+.heading-sample {
+  padding: 0 30px;
+  margin-bottom: 15px;
+  border: solid 2px pink;
+}
+</style>
+
+注：見出しは h1 は使わず、h2から始めてください。
 
 ## tables
 
