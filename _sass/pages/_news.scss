@@ -13,8 +13,6 @@
   @media screen and (max-width: 350px + $spacing-unit * 2) {
     // cancel min-width of news-article
     grid-template-columns: 100%;
-    // URLがうまく折り返さないので、これで強制する。
-    word-break: break-all;
   }
 }
 
@@ -22,13 +20,17 @@
   padding: $spacing-unit;
   border-radius: $spacing-unit / 2;
   background-color: $bg-color-sub;
-  // font-size: 80%;
   box-shadow: $box-shadow;
+
+  a {
+    // URLがうまく折り返さないので、これで強制する。
+    word-break: break-all;
+  }
 }
 
 .news-header {
   border-bottom: solid 2px #aaa;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 4;
 
   .date {
     // margin-bottom: $spacing-unit / 4;
