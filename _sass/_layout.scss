@@ -153,7 +153,7 @@ main.page-content {
     border-radius: $table-border-radius;
     border: solid $table-border-width $table-border-color;
     background-color: $table-border-color;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: $box-shadow;
 
     caption {
       margin-bottom: 5px;

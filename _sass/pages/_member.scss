@@ -29,7 +29,7 @@ table.member-hierarchy {
   background-color: $bg-color-sub;
   padding: ($spacing-unit / 3) ($spacing-unit / 2);
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 black;
+  box-shadow: $box-shadow;
 
   h3.name {
     border: none;
