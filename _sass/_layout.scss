@@ -176,16 +176,10 @@ main.page-content {
     }
 
     // セルのスタイル
-    th {
+    &:not(.left-header) th {
       color: $table-header-text-color;
       background-color: $table-header-bg-color;
       border-bottom: solid 2px $table-border-color-02;
-    }
-    &.left-header th {
-      color: inherit;
-      background-color: inherit;
-      border-bottom: none;
-      text-align: right;
     }
     tr {
       color: $table-text-color;

@@ -33,11 +33,11 @@ images:
 <table class="left-header">
   <tbody>
     <tr>
-      <th>e-mail</th>
+      <th style="text-align: right">e-mail</th>
       <td>{{ mail_address }}</td>
     </tr>
     <tr>
-      <th>Twitter</th>
+      <th style="text-align: right">Twitter</th>
       <td><a href="https://twitter.com/{{ twitter_id }}" target="_blank">@{{ twitter_id }}</a></td>
     </tr>
   </tbody>
