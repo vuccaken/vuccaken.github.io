@@ -1,0 +1,41 @@
+//
+// Special
+//
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-unit;
+  justify-content: flex-start;
+
+  .chirashi {
+    img {
+      display: block;
+      max-width: 200px;
+      max-height: 200px;
+      // border: solid 1px $bg-color-sub;
+      box-shadow: $box-shadow;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    figcaption {
+      margin-top: 5px;
+    }
+    table {
+      margin: 0 auto;
+      box-shadow: unset;
+
+      tr, th, td {
+        font-size: 0.875rem;
+        padding: 0;
+        background: unset !important;
+        border: unset !important;
+      }
+      th {
+        text-align: right;
+      }
+    }
+  }
+}

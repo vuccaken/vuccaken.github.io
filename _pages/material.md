@@ -1,7 +1,5 @@
 ---
 title: Material
-permalink: material
-toc: true
 ---
 
 ## セミナー資料

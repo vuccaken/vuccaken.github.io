@@ -1,0 +1,109 @@
+//
+// HOME
+//
+
+.top-image {
+  margin-bottom: $spacing-unit;
+  margin-left: -$spacing-unit;
+  margin-right: -$spacing-unit;
+
+  background-image: url(../img/pages/tesla.jpg);
+  background-repeat: no-repeat;
+  // background-position: bottom center;
+  background-position: center center;
+  background-size: cover;
+
+  height: 450px;
+  padding: 50px 110px;
+  @media screen and (max-width: 750px) {
+    height: 400px;
+  }
+  @media screen and (max-width: 635px) {
+    height: 300px;
+    padding: $spacing-unit;
+  }
+  @media screen and (max-width: 500px) {
+    height: 220px;
+  }
+
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  .home-content {
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 10px 20px rgba(0,0,0,0.7);
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// news and twitter frames
+.home-info {
+  // border: 1px solid aqua;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: $spacing-unit;
+
+  .info-block {
+    // border: 1px solid aqua;
+    flex: 1 0 200px;
+    max-width: 400px;
+
+    .info-header h2 {
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      text-align: center;
+      margin-bottom: $spacing-unit / 3;
+      font-size: 1.125rem;
+
+      a {
+        color: $text-color;
+      }
+      a:hover {
+        color: $brand-color;
+      }
+    }
+    .frame {
+      height: 320px;
+      // border: 1px solid $brand-color;
+      border: 2px solid $bg-color-sub;
+      border-radius: 10px;
+      // box-shadow: 0px 0px 10px 0 black;
+      overflow: auto;
+      
+      -ms-overflow-style: none;    /* IE, Edge 対応 */
+      scrollbar-width: none;       /* Firefox 対応 */
+      &::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+        display: none;
+      }
+    }
+  }
+}
+
+a.news-link {
+  display: block;
+  padding: $spacing-unit/8 $spacing-unit/2;
+  font-size: 0.875rem;
+
+  &:hover {
+    background-color: rgba(#000, 0.3);
+  }
+
+  .news-date {
+    color: $text-color-sub;
+  }
+  .news-title {
+    color: $text-color;
+  }
+}
+
+.twitter-timeline {
+  // background-color: tomato;
+  // color: yellow;
+}

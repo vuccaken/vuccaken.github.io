@@ -1,0 +1,188 @@
+html {
+  font-size: $base-font-size;
+  // @media screen and (max-width: 480px) {
+  //   font-size: $small-font-size;
+  // }
+}
+
+
+//
+// Reset some basic elements
+//
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+  color: $text-color;
+  background-color: $bg-color;
+  line-height: $base-line-height;
+  // letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+p {
+  text-align: justify;
+}
+
+
+//
+// Images
+//
+img {
+  max-width: 100%;
+}
+
+
+//
+// Figures
+//
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: 0.875rem;
+}
+
+
+//
+// Lists
+//
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+
+//
+// Headings
+//
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1, h2 {
+  margin-top: $spacing-unit;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1.125rem;
+}
+h4, h5, h6 {
+  font-size: 1.0625rem;
+}
+
+
+//
+// Links
+//
+a {
+  text-decoration: none;
+  color: $link-base-color;
+}
+a:visited {
+  text-decoration: none;
+  color: $link-visited-color;
+}
+a:hover {
+  text-decoration: none;
+  color: $link-hover-color;
+}
+
+
+//
+// Blockquotes
+//
+// blockquote {
+//   color: $brand-color;
+//   border-left: 4px solid $border-color-01;
+//   padding-left: $spacing-unit / 2;
+//   font-size: 1.125rem;
+//   font-style: italic;
+
+//   > :last-child {
+//     margin-bottom: 0;
+//   }
+
+//   i, em {
+//     font-style: normal;
+//   }
+// }
+
+
+//
+// Tables
+//
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $spacing-unit / 2;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  th, td {
+    padding: $spacing-unit/3 $spacing-unit/2;
+    min-width: 60px;
+  }
+  th {
+    font-weight: normal;
+  }
+}
+
+
+//
+// Code formatting
+//
+pre, code {
+  font-family: $code-font-family;
+  font-size: 0.9375em;
+}
+
+// inline code
+:not(pre) > code {
+  padding: 1px 5px;
+  margin: 0 3px;
+  color: $inline-code-text-color;
+  background-color: $inline-code-bg-color;
+  border-radius: 5px;
+}
+
+// code block
+pre {
+  padding: $spacing-unit/2 $spacing-unit/2;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px;
+
+  code {
+    line-height: 1.5;
+  }
+}
+
+.highlight {
+  border-radius: 5px;
+}

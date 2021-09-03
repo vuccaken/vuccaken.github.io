@@ -1,0 +1,83 @@
+//
+// member
+//
+table.member-hierarchy {
+  white-space: nowrap;
+  
+  tr.grade > td:first-child,
+  td:last-child {
+    text-align: right;
+  }
+
+  tr.grade > td:is(:nth-child(2), :nth-child(3)),
+  tr:not(.grade) > td:is(:nth-child(1), :nth-child(2)) {
+    text-align: center;
+  }
+}
+
+.member-card-area {
+  margin-top: $spacing-unit;
+  display: grid;
+  gap: $spacing-unit;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+}
+
+.member-card {
+  width: calc(100% - #{$spacing-unit});
+  max-width: 360px;
+  background-color: $bg-color-sub;
+  padding: ($spacing-unit / 3) ($spacing-unit / 2);
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+
+  h3.name {
+    border: none;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  img.icon {
+    display: block;
+    margin: 10px auto;
+    height: 160px;
+    max-width: 100%;
+  }
+
+  ul.profile-list {
+    margin: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  .heading {
+    padding: 4px 8px;
+    margin-right: 8px;
+    border-radius: 10px;
+    font-size: 90%;
+    background-color: $bg-color;
+  }
+
+  .links-area {
+    // > * {border: solid 1px aqua;}
+    text-align: right;
+
+    .fa-stack {
+      width: 35px;
+    }
+    .fa-stack-1x {
+      color: $text-color;
+    }
+    .fa-stack-2x {
+      color: $bg-color;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+}
+

@@ -14,28 +14,30 @@
 {%- endcomment -%}
 
 <div class="gallery">
-  {%- for img in include.files %}
-  <figure class="item">
-    <a href="{{ site.baseurl }}/assets/img/{{ include.dir }}{{ img.file }}">
-      <img src="{{ site.baseurl }}/assets/img/{{ include.dir }}th-{{ img.file }}" alt="image by {{ img.author }}">
-    </a>
-    <figcaption>
-      <table>
-      {%- if img.title %}
-      <tr>
-        <td class="row1">テーマ：</td>
-        <td class="row2">{{ img.title }}</td>
-      </tr>
-      {%- endif %}
-      {%- if img.author %}
-      <tr>
-        <td class="row1">作者：</td>
-        <td class="row2">{{ img.author }}</td>
-      </tr>
-      {%- endif %}
-    </table>
-    </figcaption>
-
-  </figure>
-  {%- endfor %}
+  {% for img in include.files %}
+    <figure class="chirashi">
+      {% assign dir = "assets/img/" | append: include.dir | relative_url %}
+      <a href="{{ dir }}{{ img.file }}">
+        <img src="{{ dir }}th-{{ img.file }}" alt="image by {{ img.author }}">
+      </a>
+      <figcaption>
+        <table>
+          <tbody>
+            {% if img.title %}
+              <tr>
+                <th>テーマ：</th>
+                <td>{{ img.title }}</td>
+              </tr>
+            {% endif %}
+            {% if img.author %}
+              <tr>
+                <th>作者：</th>
+                <td>{{ img.author }}</td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </figcaption>
+    </figure>
+  {% endfor %}
 </div>

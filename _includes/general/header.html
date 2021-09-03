@@ -1,18 +1,21 @@
-<header>
-  <div class="wrapper">
-    <nav>
-      <a href="{{ site.baseurl }}/">
-        <img class="logo" src="{{ site.baseurl }}/assets/img/logo.png"/>
-      </a>
-      <div class="menu-area">
-        {%- for item in site.data.navigation %}
-        <div class="menu">
-          <a href="{{ site.baseurl }}{{ item.link }}"
-          {%- if page.url == item.link %}class="current"{% endif %}>
-          {{- item.name }}</a>
-        </div>
-        {%- endfor %}
-      </div>
-    </nav>
-  </div>
+<header class="site-header">
+  {% assign file = 'assets/img/logo.png' %}
+  <a class="site-title" href="{{ '/' | relative_url }}">
+    <img class="site-logo" src="{{ file | relative_url }}"/>
+  </a>
+
+  <nav class="site-nav">
+    <ul class="site-nav-list">
+      {% for nav in site.data.navigation %}
+        {% assign nav_url = nav.link | relative_url %}
+        {% if page.url == nav_url %}
+          {% assign c = 'current' %}
+        {% else %}
+          {% assign c = '' %}
+        {% endif %}
+        
+        <li><a class="page-link {{ c }}" href="{{ nav_url }}">{{ nav.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
