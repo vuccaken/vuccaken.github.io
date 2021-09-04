@@ -62,6 +62,25 @@
       }
     }
   }
+
+  // 幅が狭くなってsite-navが折り返すタイミング
+  @media screen and (max-width: 650px) {
+    display: flex;
+    align-items: center;
+
+    a.site-title {
+      position: relative;
+    }
+
+    img.site-logo {
+      width: 70px;
+    }
+
+    nav.site-nav {
+      margin-left: 0;
+      flex-grow: 1;
+    }
+  }
 }
 
 
