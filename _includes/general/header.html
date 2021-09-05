@@ -9,12 +9,12 @@
       {% for nav in site.data.navigation %}
         {% assign nav_url = nav.link | relative_url %}
         {% if page.url == nav_url %}
-          {% assign c = 'current' %}
+          {% assign c = ' current' %}
         {% else %}
           {% assign c = '' %}
         {% endif %}
         
-        <li><a class="page-link {{ c }}" href="{{ nav_url }}">{{ nav.name }}</a></li>
+        <li><a class="page-link {{- c }}" href="{{ nav_url }}">{{ nav.name }}</a></li>
       {% endfor %}
     </ul>
   </nav>
