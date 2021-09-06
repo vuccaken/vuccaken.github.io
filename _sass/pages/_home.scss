@@ -3,9 +3,11 @@
 //
 
 .top-image {
-  margin-bottom: $spacing-unit;
-  margin-left: -$spacing-unit;
-  margin-right: -$spacing-unit;
+  margin: $spacing-unit (-$spacing-unit);
+
+  @include media-query($on-mobile) {
+    margin: ($spacing-unit / 2) (-$spacing-unit / 2);
+  }
 
   background-image: url(../img/pages/tesla.jpg);
   background-repeat: no-repeat;

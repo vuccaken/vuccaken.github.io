@@ -22,6 +22,10 @@
   background-color: $bg-color-sub;
   box-shadow: $box-shadow;
 
+  @include media-query($on-mobile) {
+    padding: $spacing-unit / 2;
+  }
+
   a {
     // URLがうまく折り返さないので、これで強制する。
     word-break: break-all;

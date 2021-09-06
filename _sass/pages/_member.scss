@@ -21,6 +21,10 @@ table.member-hierarchy {
   gap: $spacing-unit;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-items: center;
+
+  @include media-query($on-mobile) {
+    gap: $spacing-unit / 2;
+  }
 }
 
 .member-card {

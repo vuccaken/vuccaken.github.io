@@ -1,10 +1,16 @@
 //
 // 共通
 //
+$logo-width: 90px;
+
 .site-header, .page-content, .site-footer {
   max-width: $content-width;
   margin: 0 auto;
   padding: 0 $spacing-unit;
+
+  @include media-query($on-mobile) {
+    padding: 0 $spacing-unit / 2;
+  }
 }
 
 //
@@ -14,7 +20,10 @@
   // border: solid 1px gold;
   // > * {border: solid 1px aqua;}
   margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+
+  @include media-query($on-mobile) {
+    margin-top: $spacing-unit / 2;
+  }
 
   a.site-title {
     position: absolute;
@@ -30,11 +39,12 @@
 
   img.site-logo {
     max-width: none;
-    width: 90px;
+    width: $logo-width;
+    margin-bottom: -6px; // 謎の空白をキャンセル
   }
 
   nav.site-nav {
-    margin-left: 90px + $spacing-unit / 2;
+    margin-left: $logo-width + $spacing-unit / 2;
   }
 
   ul.site-nav-list {
@@ -64,9 +74,10 @@
   }
 
   // 幅が狭くなってsite-navが折り返すタイミング
-  @media screen and (max-width: 650px) {
+  @include media-query(650px) {
     display: flex;
     align-items: center;
+    gap: $spacing-unit / 2;
 
     a.site-title {
       position: relative;
@@ -81,6 +92,13 @@
       flex-grow: 1;
     }
   }
+  
+  @include media-query($on-mobile) {
+    nav.site-nav {
+      margin: 0 auto;
+      max-width: 250px;
+    }
+  }
 }
 
 
@@ -90,8 +108,17 @@
 .page-header {
   // border: solid 1px tomato;
   // > * {border: solid 1px aqua;}
-  padding: 0;
+  margin-top: $spacing-unit / 2;
   margin-bottom: $spacing-unit;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - #{$logo-width} * 2 - #{$spacing-unit});
+
+  @include media-query($on-mobile) {
+    max-width: none;
+  }
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -117,7 +144,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: $spacing-unit / 2;
+    gap: ($spacing-unit / 8) ($spacing-unit / 2);
   }
 }
 
@@ -130,13 +157,19 @@ main.page-content {
   h2 {
     margin-left: -$space;
     margin-right: -$space;
-    padding: $space/3 $space;
+    padding: ($space / 3) $space;
     border: solid 1.5px $brand-color;
     border-radius: 12px;
+
+    @include media-query($on-mobile) {
+      margin-left: -$space / 2;
+      margin-right: -$space / 2;
+      padding: ($space / 6) ($space / 2);
+    }
   }
 
   h3 {
-    border-left: solid $space/2 $brand-color-sub;
+    border-left: solid ($space / 2) $brand-color-sub;
     padding-left: $space;
   }
 
@@ -270,7 +303,7 @@ main.page-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: $spacing-unit / 2;
+    gap: ($spacing-unit / 4) ($spacing-unit / 2);
   }
 
   .social-links {
