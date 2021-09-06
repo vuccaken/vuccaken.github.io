@@ -1,10 +1,16 @@
 //
 // 共通
 //
+$logo-width: 90px;
+
 .site-header, .page-content, .site-footer {
   max-width: $content-width;
   margin: 0 auto;
   padding: 0 $spacing-unit;
+
+  @include media-query($on-mobile) {
+    padding: 0 $spacing-unit / 2;
+  }
 }
 
 //
@@ -14,7 +20,10 @@
   // border: solid 1px gold;
   // > * {border: solid 1px aqua;}
   margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+
+  @include media-query($on-mobile) {
+    margin-top: $spacing-unit / 2;
+  }
 
   a.site-title {
     position: absolute;
@@ -30,11 +39,12 @@
 
   img.site-logo {
     max-width: none;
-    width: 90px;
+    width: $logo-width;
+    margin-bottom: -6px; // 謎の空白をキャンセル
   }
 
   nav.site-nav {
-    margin-left: 90px + $spacing-unit / 2;
+    margin-left: $logo-width + $spacing-unit / 2;
   }
 
   ul.site-nav-list {
@@ -62,6 +72,33 @@
       }
     }
   }
+
+  // 幅が狭くなってsite-navが折り返すタイミング
+  @include media-query(650px) {
+    display: flex;
+    align-items: center;
+    gap: $spacing-unit / 2;
+
+    a.site-title {
+      position: relative;
+    }
+
+    img.site-logo {
+      width: 70px;
+    }
+
+    nav.site-nav {
+      margin-left: 0;
+      flex-grow: 1;
+    }
+  }
+  
+  @include media-query($on-mobile) {
+    nav.site-nav {
+      margin: 0 auto;
+      max-width: 250px;
+    }
+  }
 }
 
 
@@ -71,17 +108,26 @@
 .page-header {
   // border: solid 1px tomato;
   // > * {border: solid 1px aqua;}
-  padding: 0;
+  margin-top: $spacing-unit / 2;
   margin-bottom: $spacing-unit;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - #{$logo-width} * 2 - #{$spacing-unit});
+
+  @include media-query($on-mobile) {
+    max-width: none;
+  }
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: $spacing-unit / 2;
 
   h1.page-title {
     margin: 0;
     font-size: 1.75rem;
-    text-align: center;
 
     .subtitle {
       font-size: 1.5rem;
@@ -89,7 +135,6 @@
   }
 
   .page-toc {
-    width: 100%;
     font-size: 0.9375rem;
   }
 
@@ -99,7 +144,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: $spacing-unit / 2;
+    gap: ($spacing-unit / 8) ($spacing-unit / 2);
   }
 }
 
@@ -112,13 +157,19 @@ main.page-content {
   h2 {
     margin-left: -$space;
     margin-right: -$space;
-    padding: $space/3 $space;
+    padding: ($space / 3) $space;
     border: solid 1.5px $brand-color;
     border-radius: 12px;
+
+    @include media-query($on-mobile) {
+      margin-left: -$space / 2;
+      margin-right: -$space / 2;
+      padding: ($space / 6) ($space / 2);
+    }
   }
 
   h3 {
-    border-left: solid $space/2 $brand-color-sub;
+    border-left: solid ($space / 2) $brand-color-sub;
     padding-left: $space;
   }
 
@@ -168,11 +219,16 @@ main.page-content {
       border-top: solid $cell-border-width $cell-border-color;
     }
 
-    // 縦ボーダー（border-left）
+    // 縦ボーダー（border-right）
     &.col-border
-    :is(td):not(:first-child):not(.no-col-border):not(.no-col-border *)
+    th + td:not(:last-child):not(.no-col-border):not(.no-col-border *)
     {
       border-left: solid $cell-border-width $cell-border-color;
+    }
+    &.col-border
+    td:not(:last-child):not(.no-col-border):not(.no-col-border *)
+    {
+      border-right: solid $cell-border-width $cell-border-color;
     }
 
     // セルのスタイル
@@ -203,6 +259,16 @@ main.page-content {
     }
     :is(:last-child > tr:last-child > :last-child, tr > .b.r):not(.c) {
       border-bottom-right-radius: $table-border-radius;
+    }
+
+    // セルの改行を禁止するクラス
+    :is(th, td):is(
+      :nth-child(1):is(table.nowrap-col-1 *),
+      :nth-child(2):is(table.nowrap-col-2 *),
+      :nth-child(3):is(table.nowrap-col-3 *),
+      :nth-child(4):is(table.nowrap-col-4 *)
+    ) {
+      white-space: nowrap;
     }
   }
 
@@ -237,7 +303,7 @@ main.page-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: $spacing-unit / 2;
+    gap: ($spacing-unit / 4) ($spacing-unit / 2);
   }
 
   .social-links {

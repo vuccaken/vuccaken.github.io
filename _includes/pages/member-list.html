@@ -61,6 +61,15 @@
       {% endif %}
     {% endcapture %}
 
+{%- comment -%}
+    {% assign belong_vals = belong_val | split: " " %}
+    {% capture belong_val -%}
+      {%- for val in belong_vals -%}
+        <span class="inline-block">{{ val }}</span>
+      {%- endfor -%}
+    {%- endcapture %}
+    {% assign belong_val = belong_val | replace: "><", "> <" %}
+{%- endcomment -%}
 
     <div class="member-card">
 

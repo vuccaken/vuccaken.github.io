@@ -1,8 +1,9 @@
 html {
   font-size: $base-font-size;
-  // @media screen and (max-width: 480px) {
-  //   font-size: $small-font-size;
-  // }
+
+  @include media-query($on-mobile) {
+    font-size: $mobile-font-size;
+  }
 }
 
 
@@ -150,6 +151,11 @@ table {
   }
   th {
     font-weight: normal;
+  }
+
+  @include media-query($on-mobile) {
+    width: 100%;
+    th, td {min-width: 0;}
   }
 }
 

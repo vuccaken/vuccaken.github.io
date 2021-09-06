@@ -3,9 +3,11 @@
 //
 
 .top-image {
-  margin-bottom: $spacing-unit;
-  margin-left: -$spacing-unit;
-  margin-right: -$spacing-unit;
+  margin: $spacing-unit (-$spacing-unit);
+
+  @include media-query($on-mobile) {
+    margin: ($spacing-unit / 2) (-$spacing-unit / 2);
+  }
 
   background-image: url(../img/pages/tesla.jpg);
   background-repeat: no-repeat;
@@ -32,8 +34,8 @@
   align-items: flex-start;
 
   .home-content {
-    background-color: rgba(0,0,0,0.7);
-    box-shadow: 0px 0px 10px 20px rgba(0,0,0,0.7);
+    // background-color: rgba(0,0,0,0.7);
+    // box-shadow: 0px 0px 10px 20px rgba(0,0,0,0.7);
     > :last-child {
       margin-bottom: 0;
     }
