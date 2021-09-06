@@ -227,6 +227,16 @@ main.page-content {
     :is(:last-child > tr:last-child > :last-child, tr > .b.r):not(.c) {
       border-bottom-right-radius: $table-border-radius;
     }
+
+    // セルの改行を禁止するクラス
+    :is(th, td):is(
+      :nth-child(1):is(table.nowrap-col-1 *),
+      :nth-child(2):is(table.nowrap-col-2 *),
+      :nth-child(3):is(table.nowrap-col-3 *),
+      :nth-child(4):is(table.nowrap-col-4 *)
+    ) {
+      white-space: nowrap;
+    }
   }
 
 }
