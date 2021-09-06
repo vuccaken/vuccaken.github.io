@@ -260,7 +260,7 @@ tbodyなどを用いずtable要素にtrを直置きした場合でも、ブラ�
 | いいい | いいい | いいい |
 | いいい | いいい | いいい |
 
-テキスト方向、クラス指定
+テキスト方向、クラス指定（`.col-border`）
 
 {: .col-border}
 | あああ | あああ | あああ | あああ |
@@ -302,7 +302,7 @@ tbodyのみ使用
 </table>
 
 
-tbodyのみ使用。thなし
+tbodyのみ使用。thなしでtdのみ
 
 <table>
   <tbody>
@@ -366,8 +366,25 @@ NG: theadとtbody使用。thなし
 
 ### レイアウトいろいろ
 
+現状のcssでは下線を引くべき`th`を特定できないので、セルフでクラスを付けて区別する他無いです。
+
+`.left-header`クラスをセルフで付けることを妥協案とします。
+
 <table class="left-header">
   <caption>左ヘッダー<code>class="left-header"</code></caption>
+  <tbody>
+    <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+    <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
+  </tbody>
+</table>
+
+<table class="left-header col-border">
+  <caption>
+    左ヘッダーかつ縦ボーダーあり<br>
+    <code>class="left-header col-border"</code>
+  </caption>
   <tbody>
     <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>
     <tr><th>あああ</th><td>いいい</td><td>いいい</td><td>いいい</td></tr>

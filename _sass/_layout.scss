@@ -186,11 +186,16 @@ main.page-content {
       border-top: solid $cell-border-width $cell-border-color;
     }
 
-    // 縦ボーダー（border-left）
+    // 縦ボーダー（border-right）
     &.col-border
-    :is(td):not(:first-child):not(.no-col-border):not(.no-col-border *)
+    th + td:not(:last-child):not(.no-col-border):not(.no-col-border *)
     {
       border-left: solid $cell-border-width $cell-border-color;
+    }
+    &.col-border
+    td:not(:last-child):not(.no-col-border):not(.no-col-border *)
+    {
+      border-right: solid $cell-border-width $cell-border-color;
     }
 
     // セルのスタイル
