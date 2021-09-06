@@ -94,13 +94,13 @@
   margin-bottom: $spacing-unit;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: $spacing-unit / 2;
 
   h1.page-title {
     margin: 0;
     font-size: 1.75rem;
-    text-align: center;
 
     .subtitle {
       font-size: 1.5rem;
@@ -108,7 +108,6 @@
   }
 
   .page-toc {
-    width: 100%;
     font-size: 0.9375rem;
   }
 
