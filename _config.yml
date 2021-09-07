@@ -22,8 +22,6 @@ social:
 
 
 collections:
-  members:
-    output: true
   pages:
     output: true
     permalink: /:path/
@@ -44,6 +42,7 @@ defaults:
 
 ## 変換対象から除外
 exclude:
+  - .github/
   - .vscode/
   - .gitignore
   - bs-config.js
@@ -53,6 +52,12 @@ exclude:
   - Procfile
   - README.md
   - setup.sh
+  # ## 以下も除外しないとGitHub Actionsでエラーが出る
+  # - node_modules
+  # - vendor/bundle/
+  # - vendor/cache/
+  # - vendor/gems/
+  # - vendor/ruby/
 
 plugins:
   - jekyll-tidy
