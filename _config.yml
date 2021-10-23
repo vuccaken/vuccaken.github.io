@@ -20,8 +20,9 @@ social:
   github : vuccaken
   youtube: UCKO7a5YVCnFAquUzLKeIrMg
 
-
 collections:
+  members:
+    output: true
   pages:
     output: true
     permalink: /:path/
@@ -29,19 +30,25 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "posts"
     values:
-      layout: "post"
+      layout: default
   - scope:
-      path: "_pages"
-      type: "pages"
+      type: posts
     values:
-      layout: "page"
+      layout: post
+  - scope:
+      type: pages
+    values:
+      layout: page
       toc: true
 
+plugins:
+  - jekyll-tidy
+  - jekyll-admin
 
 ## 変換対象から除外
 exclude:
+  - _plugins/
   - .github/
   - .vscode/
   - .gitignore
@@ -58,6 +65,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-plugins:
-  - jekyll-tidy
