@@ -61,3 +61,4 @@ exclude:
 
 plugins:
   - jekyll-tidy
+  - jekyll-admin
