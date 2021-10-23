@@ -22,11 +22,17 @@ social:
 
 
 collections:
+  members:
+    output: true
   pages:
     output: true
     permalink: /:path/
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
   - scope:
       path: ""
       type: "posts"
