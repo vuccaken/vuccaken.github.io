@@ -79,8 +79,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-h1, h2 {
-  margin-top: $spacing-unit;
+h2:not(:first-of-type) {
+  margin-top: $spacing-unit * 2;
 }
 
 h1 {
