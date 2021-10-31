@@ -227,7 +227,7 @@ Markdown記法のチートシートです。LiquidやJekyll独自の記法も混
 
 ### 見出し
 
-<section class="heading-sample">
+<section class="heading-sample md-typeset">
   <h1>見出し h1</h1>
   <h2>見出し h2</h2>
   <h3>見出し h3</h3>
