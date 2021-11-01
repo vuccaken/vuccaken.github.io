@@ -4,12 +4,6 @@
 .news-wrap {
   display: grid;
   gap: $spacing-unit;
-  
-  // required content width: news-article width + side margins
-  @media screen and (max-width: 350px + $spacing-unit * 2) {
-    // cancel min-width of news-article
-    grid-template-columns: 100%;
-  }
 }
 
 .news-article {
