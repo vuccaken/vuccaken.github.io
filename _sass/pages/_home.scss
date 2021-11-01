@@ -57,13 +57,8 @@
     max-width: 400px;
 
     .info-header h2 {
-      border: none;
-      padding: 0;
-      margin: 0;
-
       text-align: center;
       margin-bottom: $spacing-unit / 3;
-      font-size: 1.125rem;
 
       a {
         color: $text-color;
@@ -72,14 +67,14 @@
         color: $brand-color;
       }
     }
+
     .frame {
       height: 320px;
-      // border: 1px solid $brand-color;
-      border: 2px solid $bg-color-sub;
+      background-color: rgba(#000, .2);
       border-radius: 10px;
-      // box-shadow: 0px 0px 10px 0 black;
       overflow: auto;
       
+      // スクロールバー非表示
       -ms-overflow-style: none;    /* IE, Edge 対応 */
       scrollbar-width: none;       /* Firefox 対応 */
       &::-webkit-scrollbar {  /* Chrome, Safari 対応 */

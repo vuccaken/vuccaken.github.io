@@ -9,8 +9,7 @@
 .news-article {
   padding: $spacing-unit;
   border-radius: $spacing-unit / 2;
-  background-color: $bg-color-sub;
-  box-shadow: $box-shadow;
+  background-color: rgba(#000, 0.2);
 
   @include media-query($on-mobile) {
     padding: $spacing-unit / 2;
@@ -39,6 +38,5 @@
 
 hr.news-separator {
   border-top: solid 2px #aaa;
-  // border-top: solid 2px blue;
   margin: ($spacing-unit / 2) 0;
 }

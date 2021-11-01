@@ -1,3 +1,61 @@
+// - - - - - - - - - - - - - - - - - - - -
+// グラデーション背景 & スクロールバー
+// - - - - - - - - - - - - - - - - - - - -
+
+$bg-grad-color: linear-gradient(180deg, #117 40%, #bd6a10 100%);
+$bg-grad-color-ios: linear-gradient(180deg, #117 35%, #b61 80%);
+
+// iPhoneやMacのSafariの上部UIの透過背景の色を設定
+// グラデーションの上部の色と滑らかになるように（同じ色を）設定
+body {
+  background-color: #117;
+}
+
+.grad-bg {
+  background: $bg-grad-color;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+.hoge {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+// iPhoneやiPadなどのiOS15のSarafi用の調整
+// スクロールでのカクツキ防止、画面下部UIの透過背景の設定のためのハック
+.safari.touch-device .grad-bg {
+  background: $bg-grad-color-ios;
+  height: 120vh;
+  margin-bottom: -120vh;
+  position: sticky;
+}
+// iPhone Xシリーズのノッチに被らないようにするための余白設定
+.safari.touch-device .grid-container {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+// スクロールバー（PC用）
+// webkit系ブラウザ（Safari, Chrome）のみ有効
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-track { // レール
+  background: $bg-grad-color;
+}
+body::-webkit-scrollbar-thumb { // つまみ
+  background-color: rgba(#fff, .3);
+  background-clip: content-box;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
 
 // - - - - - - - - - - - - - - - - - - - -
 // 大枠と共通設定
@@ -7,6 +65,12 @@
   min-height: 100vh;
   display: grid;
   grid-template: "header" auto "main" 1fr "footer" auto / 100%;
+}
+
+// iOSのSarari用
+.safari.touch-device .grid-container {
+  // .grad-bgの高さに合わせる
+  min-height: 120vh;
 }
 
 .wrapper {
@@ -68,17 +132,18 @@ $logo-width: 90px;
 
     a.page-link {
       // border: solid 1px tomato;
-      // font-size: 1rem;
       letter-spacing: 1px;
       color: $text-color;
-      padding: 5px 10px;
-      border-radius: 20px;
+      padding: 8px 14px;
+      border-radius: 8px;
       transition: 0.2s;
 
+      @include media-query(650px) {
+        padding: 6px 12px;
+      }
+
       &:hover, &.current {
-        background-color: $text-color;
-        color: $bg-color;
-        box-shadow: 0 0 10px 0 black;
+        background-color: rgba(#fff, .25);
         transition: 0.2s;
       }
     }
@@ -171,13 +236,14 @@ $space: $spacing-unit / 2;
   margin-left: -$space;
   margin-right: -$space;
   padding: ($space / 2) $space;
-  border: solid 1.5px $brand-color;
   border-radius: 12px;
+  background-color: rgba(#fff, 0.2);
 
   @include media-query($on-mobile) {
     margin-left: -$space / 2;
     margin-right: -$space / 2;
-    padding: ($space / 6) ($space / 2);
+    padding: ($space / 4) ($space / 2);
+    border-radius: 8px;
   }
 }
 
@@ -214,9 +280,9 @@ $space: $spacing-unit / 2;
   $cell-border-color: $table-border-color;
   
   border-radius: $table-border-radius;
-  border: solid $table-border-width $table-border-color;
-  background-color: $table-border-color;
-  box-shadow: $box-shadow;
+  // border: solid $table-border-width $table-border-color;
+  // background-color: $table-border-color;
+  // box-shadow: $box-shadow;
 
   caption {
     margin-bottom: 5px;
@@ -321,10 +387,17 @@ $space: $spacing-unit / 2;
     flex-wrap: wrap;
     justify-content: center;
 
-    a {
-      color: $brand-color-sub;
-      &:hover {
-        opacity: 0.7;
+    a:hover {
+      opacity: 0.7;
+    }
+
+    .fa-stack {
+      font-size: 1.25rem;
+      .fa-inverse {
+        color: rgba(#fff, .8);
+      }
+      :not(.fa-inverse) {
+        color: rgba(#000, .5);
       }
     }
   }

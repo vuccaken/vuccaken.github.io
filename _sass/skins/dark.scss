@@ -20,9 +20,9 @@ $box-shadow: 0px 0px 20px 0px rgba(black, 0.8);
 
 $table-text-color:        $text-color !default;
 $table-header-text-color: $text-color !default;
-$table-bg-color:          darken($bg-color-sub, 8%) !default;
-$table-zebra-bg-color:    $bg-color-sub !default;
-$table-header-bg-color:   $bg-color-sub !default;
+$table-bg-color:          rgba(#222, .4) !default;
+$table-zebra-bg-color:    rgba(#444, .4) !default;
+$table-header-bg-color:   $table-zebra-bg-color !default;
 $table-border-color:      $bg-color !default;
 $table-border-color-02:   darken($brand-color, 20%) !default;
 
