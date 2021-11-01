@@ -67,25 +67,23 @@ table.member-hierarchy {
   }
 
   .links-area {
-    // > * {border: solid 1px aqua;}
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+
+    a:hover {
+      opacity: 0.7;
+    }
 
     .fa-stack {
-      width: 35px;
-    }
-    .fa-stack-1x {
-      color: $text-color;
-    }
-    .fa-stack-2x {
-      color: $bg-color;
-    }
-    a:hover {
-      opacity: 0.8;
+      font-size: 1.25rem;
+      .fa-inverse {
+        color: rgba(#fff, .8);
+      }
+      :not(.fa-inverse) {
+        color: rgba(#000, .5);
+      }
     }
   }
 
-  .inline-block {
-    display: inline-block;
-  }
 }
 
