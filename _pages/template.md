@@ -406,8 +406,8 @@ NG: theadとtbody使用。thなし
   </tbody>
 </table>
 
-<table class="no-row-border">
-  <caption>横ボーダーなし<code>class="no-row-border"</code></caption>
+<table class="row-border">
+  <caption>横ボーダーあり<code>class="row-border"</code></caption>
   <thead>
     <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
   </thead>
@@ -419,8 +419,8 @@ NG: theadとtbody使用。thなし
   </tbody>
 </table>
 
-<table>
-  <caption>一部横ボーダー非表示</caption>
+<table class="row-border">
+  <caption>横ボーダーあり、一部非表示</caption>
   <thead>
     <tr><th>あああ</th><th>あああ</th><th>あああ</th></tr>
   </thead>
