@@ -2,11 +2,11 @@
 #   _config.yml
 # 
 
-title : 立命館大学 物理科学研究会 公式HP
+title : 立命館大学 物理科学研究会
 short_title: 物理科学研究会
 author: 立命館大学物理科学研究会
 copyright: 2019-2021 立命館大学 物理科学研究会
-keywords: 立命館大学, 物理科学研究会
+keywords: 立命館大学, 物理科学研究会, vuccaken
 description: >- # this means to ignore newlines until "baseurl:"
   立命館大学物理科学研究会の公式ホームページです。
   物理科学研究会は、立命館大学BKCにて、物理学を中心として科学全般についての研究活動を行っている学友会学術部公認のサークル団体です。
@@ -19,6 +19,8 @@ social:
   twitter: vuccaken
   github : vuccaken
   youtube: UCKO7a5YVCnFAquUzLKeIrMg
+
+timezone: Asia/Tokyo
 
 collections:
   members:
