@@ -245,14 +245,14 @@ $space: $spacing-unit / 2;
     background-color: $table-header-bg-color;
     border-bottom: solid 2px $table-border-color-02;
   }
-  tr {
+  td, th {
     color: $table-text-color;
     background-color: $table-bg-color;
   }
   &:not(.no-zebra) :is(
     thead ~ tbody > tr:is(:nth-child(even):not(.zebra-odd), .zebra-even),
     :not(thead ~ tbody) > tr:is(:nth-child(odd):not(.zebra-even), .zebra-odd)
-  ) {
+  ) > :is(td, .left-header th) {
     background-color: $table-zebra-bg-color;
   }
 
