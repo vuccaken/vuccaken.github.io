@@ -3,10 +3,10 @@
 //
 
 .top-image {
-  margin: $spacing-unit (-$spacing-unit);
+  margin: 0 (-$spacing-unit);
 
   @include media-query($on-mobile) {
-    margin: ($spacing-unit / 2) (-$spacing-unit / 2);
+    margin: 0 (-$spacing-unit / 2);
   }
 
   background-image: url(../img/pages/tesla.jpg);
@@ -45,6 +45,7 @@
 // news and twitter frames
 .home-info {
   // border: 1px solid aqua;
+  margin-top: $spacing-unit;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -92,6 +93,13 @@ a.news-link {
   display: block;
   padding: $spacing-unit/8 $spacing-unit/2;
   font-size: 0.875rem;
+
+  &:first-child {
+    padding-top: $spacing-unit / 4;
+  }
+  &:last-child {
+    padding-bottom: $spacing-unit / 4;
+  }
 
   &:hover {
     background-color: rgba(#000, 0.3);
