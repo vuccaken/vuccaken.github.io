@@ -3,7 +3,7 @@
 // - - - - - - - - - - - - - - - - - - - -
 
 $bg-grad-color: linear-gradient(180deg, #117 40%, #bd6a10 100%);
-$bg-grad-color-ios: linear-gradient(180deg, #117 35%, #b61 80%);
+$bg-grad-color-ios: linear-gradient(180deg, #117 30%, #b61 80%);
 
 // iPhoneやMacのSafariの上部UIの透過背景の色を設定
 // グラデーションの上部の色と滑らかになるように（同じ色を）設定
@@ -408,6 +408,22 @@ $space: $spacing-unit / 2;
     text-align: center;
     font-size: 0.875rem;
   }
+}
+
+// Back to Top Buttom
+.back-to-top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  
+  .btn {
+    font-size: 4rem;
+    color: rgba(#000, .5);
+  }
+}
+
+.mobile .back-to-top {
+  display: none;
 }
 
 
