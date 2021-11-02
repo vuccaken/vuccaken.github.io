@@ -2,13 +2,10 @@
 // グラデーション背景 & スクロールバー
 // - - - - - - - - - - - - - - - - - - - -
 
-$bg-grad-color: linear-gradient(180deg, #117 40%, #bd6a10 100%);
-$bg-grad-color-ios: linear-gradient(180deg, #117 30%, #b61 80%);
-
 // iPhoneやMacのSafariの上部UIの透過背景の色を設定
 // グラデーションの上部の色と滑らかになるように（同じ色を）設定
 body {
-  background-color: #117;
+  background-color: $bg-color;
 }
 
 .grad-bg {
@@ -45,6 +42,7 @@ body {
 // webkit系ブラウザ（Safari, Chrome）のみ有効
 body::-webkit-scrollbar {
   width: 15px;
+  height: 0;
 }
 body::-webkit-scrollbar-track { // レール
   background: $bg-grad-color;

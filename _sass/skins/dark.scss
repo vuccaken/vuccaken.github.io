@@ -6,17 +6,18 @@ $brand-color-sub:    #59f !default;
 $text-color:         #eee !default;
 $text-color-sub:     $brand-color-sub !default;
 
-$bg-color:           #222 !default;
-$bg-color-sub:       #444 !default;
+$bg-color:           #117 !default;
+$bg-grad-color:      linear-gradient(180deg, #117 40%, #bd6a10 100%);
+$bg-grad-color-ios:  linear-gradient(180deg, #117 20%, #bd6a10 80%);
 
-$inline-code-text-color: darken($text-color, 10%) !default;
-$inline-code-bg-color: darken($bg-color-sub, 20%) !default;
+$inline-code-text-color: darken(orange, 5%) !default;
+$inline-code-bg-color: rgba(#000, .5) !default;
 
 $link-base-color:    $brand-color-sub !default;
 $link-visited-color: $link-base-color !default;
 $link-hover-color:   $brand-color !default;
 
-$box-shadow: 0px 0px 20px 0px rgba(black, 0.8);
+$box-shadow: 0px 0px 20px 0px rgba(#000, .8);
 
 $table-text-color:        $text-color !default;
 $table-header-text-color: $text-color !default;
