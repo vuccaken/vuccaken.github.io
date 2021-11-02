@@ -415,10 +415,15 @@ $space: $spacing-unit / 2;
   position: fixed;
   right: 0;
   bottom: 0;
+  transition: .3s;
   
   .btn {
     font-size: 4rem;
     color: rgba(#000, .5);
+  }
+
+  &:hover {
+    bottom: 10px;
   }
 }
 
