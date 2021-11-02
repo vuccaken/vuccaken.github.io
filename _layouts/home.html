@@ -13,12 +13,12 @@ layout: default
   {% if site.posts.size > 0 %}
     <section class="info-block">
       <header class="info-header">
-        <h2><a href="{{ "news" | relative_url }}">News</a></h2>
+        <h2><a href="{% link _pages/news.html %}">News</a></h2>
       </header>
       <div class="frame">
         {% for post in site.posts %}
           {% assign post_id = post.id | remove_first: "/" | replace: "/", "-" %}
-          <a class="news-link" href="{{ "news" | relative_url }}#{{ post_id }}">
+          <a class="news-link" href="{% link _pages/news.html %}#{{ post_id }}">
             <div class="news-date">{{ post.date | date: "%Y.%m.%d" }}</div>
             <div class="news-title">{{ post.title }}</div>
           </a>
