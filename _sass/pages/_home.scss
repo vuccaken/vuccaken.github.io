@@ -69,7 +69,7 @@
     }
 
     .frame {
-      height: 320px;
+      height: 350px;
       background-color: rgba(#000, .2);
       border-radius: 10px;
       overflow: auto;
@@ -87,7 +87,7 @@
 a.news-link {
   display: block;
   padding: $spacing-unit/8 $spacing-unit/2;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 
   &:first-child {
     padding-top: $spacing-unit / 4;

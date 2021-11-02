@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: $spacing-unit;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   .chirashi {
     img {

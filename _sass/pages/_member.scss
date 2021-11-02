@@ -19,6 +19,7 @@ table.member-hierarchy {
   margin-top: $spacing-unit;
   display: grid;
   gap: $spacing-unit;
+  // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-items: center;
 
@@ -29,7 +30,7 @@ table.member-hierarchy {
 
 .member-card {
   width: calc(100% - #{$spacing-unit});
-  max-width: 360px;
+  max-width: 450px;
   background-color: rgba(#000, .3);
   padding: ($spacing-unit / 3) ($spacing-unit / 2);
   border-radius: 10px;
