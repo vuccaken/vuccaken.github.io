@@ -103,12 +103,11 @@ $logo-width: 90px;
   a.site-title {
     position: absolute;
     z-index: 10;
-    transition-duration: 0.2s;
+    transition: 0.3s;
 
     &:hover {
       opacity: 0.8;
-      // transform: scale(1.1);
-      transition-duration: 0.2s;
+      transform: scale(1.05);
     }
   }
 
@@ -136,7 +135,7 @@ $logo-width: 90px;
       color: $text-color;
       padding: 8px 14px;
       border-radius: 8px;
-      transition: 0.2s;
+      transition: 0.3s;
 
       @include media-query(650px) {
         padding: 6px 12px;
@@ -144,7 +143,6 @@ $logo-width: 90px;
 
       &:hover, &.current {
         background-color: rgba(#fff, .25);
-        transition: 0.2s;
       }
     }
   }
