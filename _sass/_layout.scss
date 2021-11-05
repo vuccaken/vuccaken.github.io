@@ -52,6 +52,11 @@ body::-webkit-scrollbar-thumb { // つまみ
   border-radius: 10px;
 }
 
+// Firefox用
+html {
+  scrollbar-color: rgba(#fff, .4) #333;
+}
+
 
 // - - - - - - - - - - - - - - - - - - - -
 // 大枠と共通設定
