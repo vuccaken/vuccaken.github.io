@@ -2,10 +2,18 @@
 // グラデーション背景 & スクロールバー
 // - - - - - - - - - - - - - - - - - - - -
 
+// 一応デフォルト
 body {
+  background-color: #222;
+}
+
+// iOS15 Safari用
+// アドレスバーの背景色
+.safari.touch-device body {
   background-color: $bg-color;
 }
 
+// 背景のグラデーション
 .grad-bg {
   background: $bg-grad-color;
   height: 100vh;
@@ -14,12 +22,6 @@ body {
   top: 0;
   left: 0;
   z-index: -3;
-}
-
-.hoge {
-  position: fixed;
-  bottom: 0;
-  right: 0;
 }
 
 // iPhoneやiPadなどのiOS15のSarafi用の調整
