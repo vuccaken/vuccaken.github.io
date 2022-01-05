@@ -1,5 +1,5 @@
 ---
-title: 物理科学研究会 公式HP
+title: Top
 layout: home
 permalink: /
 # toc: false

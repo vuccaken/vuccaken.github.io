@@ -3,9 +3,9 @@
 # 
 
 title : 立命館大学 物理科学研究会
-short_title: 物理科学研究会
+short_title: 物科研 # タブに表示するタイトル
 author: 立命館大学物理科学研究会
-copyright: 2019-2021 立命館大学 物理科学研究会
+copyright: 2019-2022 立命館大学 物理科学研究会
 keywords: 立命館大学, 物理科学研究会, vuccaken
 description: >- # this means to ignore newlines until "baseurl:"
   立命館大学物理科学研究会の公式ホームページです。
@@ -13,6 +13,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   このホームページでは日々の活動や、各部員の研究成果をまとめた「会誌」の公開などをしています。
 baseurl: "" # the subpath of your site, e.g. /blog
 url    : "http://vuccaken.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+image: "assets/img/pages/tesla.jpg" # OGPで使用
 
 social:
   email  : vuccaken@gmail.com
