@@ -36,6 +36,10 @@ defaults:
     values:
       layout: default
   - scope:
+      type: members
+    values:
+      layout: member
+  - scope:
       type: posts
     values:
       layout: post

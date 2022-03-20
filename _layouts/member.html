@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<header class="page-header">
+  <h1 class="page-title">
+    {% if page.subtitle %}
+      <div class="subtitle">{{ page.subtitle }}</div>
+    {% endif %}
+    <div class="title">{{ page.title }}</div>
+  </h1>
+</header>
+
+<div class="md-typeset">
+  <h2>{{ page.name }}</h2>
+
+  {{ content }}
+
+  <br><br>
+  <a href="{% link _pages/member.md %}">メンバー一覧へ戻る</a>
+</div>
