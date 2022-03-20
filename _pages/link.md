@@ -92,16 +92,24 @@ title: Link
 
 {% assign youtube_ids = "
   q7SbeF3Oqu8
-  gknDmz_5AFo
-  Ksf_gq6fZZM
-  6bnaBnd4kyU
   65MVxnJbS0c
   IZ45CJEFO1M
   YL5seAenTN4
+  bitPvpElktE
   FdV-tZU5f6g
+  skbwCtTWFzc
   Qjkt93Wo_D8
-  dhPnetBJ1bY
+  FRlGYKAMLJQ
+  tex_lgotA20
 " | split: " " %}
+
+{%- comment -%}
+  6bnaBnd4kyU
+  gknDmz_5AFo
+  Ksf_gq6fZZM
+  dhPnetBJ1bY
+  4_fvGiulqk8
+{%- endcomment -%}
 
 <div class="youtube-grid">
 {%- for youtube_id in youtube_ids %}
