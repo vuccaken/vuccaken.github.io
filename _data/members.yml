@@ -34,7 +34,7 @@ hierarchy:
     #     - [理工, 物理, 10]
     #     - [理工, ロボ, 5]
   OB:
-    - graduate: 2022
+    - graduate: 2021
       belong:
         - [理工, 物理, 2]
         - [理工, ロボ, 1]
