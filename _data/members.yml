@@ -1,10 +1,10 @@
-current-year: 2021
+current-year: 2022
 
 hierarchy:
   active:
     - enroll: 2021
       belong:
-        - ["null", "null", "3"]
+        - [理工, 物理, 3]
     - enroll: 2020
       belong:
         - [理工, 物理, 2]
@@ -14,15 +14,15 @@ hierarchy:
     - enroll: 2018
       belong:
         - [理工, 機械, 1]
-    - enroll: 2017
-      master: 2021
-      belong:
-        - ["null", "null", "NAN"]
-    - enroll: 2016
-      master: 2020
-      belong:
-        - [理工, 物理, 2]
-        - [理工, ロボ, 1]
+    # - enroll: 2017
+    #   master: 2021
+    #   belong:
+    #     - ["null", "null", "NAN"]
+    # - enroll: 2016
+    #   master: 2020
+    #   belong:
+    #     - [理工, 物理, 2]
+    #     - [理工, ロボ, 1]
     # - enroll: 2015
     #   master: 2019
     #   belong:
@@ -34,6 +34,10 @@ hierarchy:
     #     - [理工, 物理, 10]
     #     - [理工, ロボ, 5]
   OB:
+    - graduate: 2022
+      belong:
+        - [理工, 物理, 2]
+        - [理工, ロボ, 1]
     - graduate: 2020
       belong:
         - [理工, 物理, 1]
