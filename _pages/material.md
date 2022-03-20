@@ -33,7 +33,7 @@ title: Material
 
 ### 2020年代
 - 2020年度
-  - Now developing!!
+  - ~~Now developing!!~~ 制作中止！
   - [vuccaken/kaishi2020](https://github.com/vuccaken/kaishi2020){:target="_blank"}
 
 ### 2010年代
