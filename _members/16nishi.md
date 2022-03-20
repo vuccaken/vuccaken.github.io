@@ -10,7 +10,7 @@ admissions:
     faculty: 理工学研究科
     department: 基礎理工学専攻 物理科学コース
   finish:
-    year:
+    year: 2022
 positions:
   past: 会長
 icon: kumakinntore.png

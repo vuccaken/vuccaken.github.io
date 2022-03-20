@@ -11,10 +11,9 @@ admissions:
     faculty: 理工学研究科
     department: 基礎理工学専攻 物理科学コース
   finish:
-    year:
+    year: 2022
 positions:
-  current: HP管理人
-  past: 会計
+  past: 会計、HP管理人
 icon: nuko06.png
 links:
   homepage: https://znuko.github.io/nukodocs/
@@ -30,9 +29,13 @@ profile:
   - q: 座右の銘
     a: 迷ったらやらない
   - q: 過去のテーマ
-    a: ゼータ関数、隠れた変数理論
+    a: ゼータ関数、隠れた変数理論、AdS/CFT対応
   - q: 極上のアニメ
     a: 苺ましまろ、三ツ星カラーズ、わたてん
   - q: 一言
     a: 2次元と10次元に興味があります。
 ---
+
+やあ。こんにちわ。
+
+このホームページを作った人です。
