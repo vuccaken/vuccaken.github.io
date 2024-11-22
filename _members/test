@@ -1,0 +1,24 @@
+---
+name: YY
+admissions:
+  bachelor:
+    year: 2022
+    faculty: 理工学部
+    department: 物理科学科
+positions:
+  current: 会長
+icon: 
+profile:
+  - q: 出身地
+    a: 岡山
+  - q: 趣味
+    a: Twitter（現X）
+  - q: 好きなもの
+    a: 数学
+  - q: 座右の銘
+    a: 温故知新
+  - q: 極上のアニメ
+    a: 
+  - q: 一言
+    a: アー
+---
