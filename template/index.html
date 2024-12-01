@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, viewport-fit=cover"><!--  -->
+    <title>物科研 -  Template</title>
+    <!--  -->
+    <meta name="author" content="立命館大学物理科学研究会">
+    <meta name="keywords" content="立命館大学, 物理科学研究会, vuccaken">
+    <meta name="description" content="立命館大学物理科学研究会の公式ホームページです。 物理科学研究会は、立命館大学BKCにて、物理学を中心として科学全般についての研究活動を行っている学友会学術部公認のサークル団体です。 このホームページでは日々の活動や、各部員の研究成果をまとめた「会誌」の公開などをしています。">
+    <!-- OGP -->
+    <meta property="og:site_name" content="立命館大学 物理科学研究会">
+    <meta property="og:title" content="Template">
+    <meta property="og:description" content="立命館大学物理科学研究会の公式ホームページです。 物理科学研究会は、立命館大学BKCにて、物理学を中心として科学全般についての研究活動を行っている学友会学術部公認のサークル団体です。 このホームページでは日々の活動や、各部員の研究成果をまとめた「会誌」の公開などをしています。">
+    <meta property="og:url" content="/template/">
+    <meta property="og:image" content="/assets/img/pages/tesla.jpg">
+    <meta property="og:locale" content="ja">
+    <meta property="og:type" content="website">
+    <!-- color theme -->
+    <meta name="theme-color" content="#117">
+    <meta name="twitter:widgets:theme" content="dark" />
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- JavaScript -->
+    <script src="/assets/js/css_browser_selector.js" type="text/javascript"></script>
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/site-icon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/img/site-icon/favicon.ico">
+  </head>
+  <body>
+    <div class="grad-bg"></div>
+    <div class="grid-container">
+      <header class="site-header">
+        <div class="wrapper">
+          <a class="site-title" href="/">
+            <img class="site-logo" src="/assets/img/logo.png"/>
+          </a>
+          <nav class="site-nav">
+            <ul class="site-nav-list">
+              <li><a class="page-link" href="/news/">News</a></li>
+              <li><a class="page-link" href="/about/">About</a></li>
+              <li><a class="page-link" href="/member/">Member</a></li>
+              <li><a class="page-link" href="/material/">Material</a></li>
+              <li><a class="page-link" href="/link/">Link</a></li>
+              <li><a class="page-link" href="/special/">Special</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="wrapper">
+          <header class="page-header">
+            <h1 class="page-title">
+              <div class="title">Template</div>
+            </h1>
+            <div class="page-toc">
+              <ul class="toc-ul">
+                <li class="toc-li"><a href="#はじめに" class="toc-a">はじめに</a></li>
+                <li class="toc-li"><a href="#サイトの更新方法" class="toc-a">サイトの更新方法</a></li>
+                <li class="toc-li"><a href="#jekyllの基礎知識文法" class="toc-a">Jekyllの基礎知識・文法</a></li>
+                <li class="toc-li"><a href="#markdownチートシート" class="toc-a">Markdownチートシート</a></li>
+                <li class="toc-li"><a href="#自作マクロ" class="toc-a">自作マクロ</a></li>
+                <li class="toc-li"><a href="#見栄え" class="toc-a">見栄え</a></li>
+                <li class="toc-li"><a href="#" class="toc-a">見出し h2</a></li>
+                <li class="toc-li"><a href="#tables" class="toc-a">tables</a></li>
+                <li class="toc-li"><a href="#フォントサイズ" class="toc-a">フォントサイズ</a></li>
+              </ul>
+            </div>
+          </header>
+          <div class="md-typeset">
+            <p>テンプレというかマニュアル。</p>
+            <h2 id="はじめに">はじめに</h2>
+            <p>このサイトは<a href="http://jekyllrb-ja.github.io" target="_blank">Jekyll</a>という静的サイトビルダーによって生成されています。</p>
+            <p>JekyllはRubyのGemです（初心者は無視）。</p>
+            <p>サーバーは<a href="https://pages.github.com" target="_blank">GitHub Pages</a>を利用しています。
+              無料です。</p>
+            <p>このサイトのソースはGitHubに置いてますが、masterブランチにpushするたびに自動でビルドするように設定されています。</p>
+            <h2 id="サイトの更新方法">サイトの更新方法</h2>
+            <p>ローカルにJekyllの開発環境を整え、サイトの変更をコミットし、リモートリポジトリ（GitHub）へpushする方法が基本的です。</p>
+            <p>開発環境の構築についてはリポジトリの<a href="https://github.com/vuccaken/vuccaken.github.io#readme" target="_blank">READMEファイル</a>の方に書いておきます。</p>
+            <h2 id="jekyllの基礎知識文法">Jekyllの基礎知識・文法</h2>
+            <p>まずはJekyll公式サイトにある<a href="http://jekyllrb-ja.github.io/docs/step-by-step/01-setup/" target="_blank">Step by Step チュートリアル</a>をやってみてください。
+              最低限の知識はここで学べます。</p>
+            <h3 id="liquid">Liquid</h3>
+            <p>ソースのhtmlファイルを除いてみると<code class="language-plaintext highlighter-rouge">{% hoge %}</code>のような記法がたくさん見受けられるかと思います。
+              これは<a href="https://shopify.github.io/liquid/" target="_blank">Liquid</a>というテンプレート言語の文法で「タグ」と呼ばれます。</p>
+            <p>Liquidのおかげでhtml中でfor文やif文などが使えたり、他にもいろいろなことができるようになります！</p>
+            <p>公開されるhtmlにはLiquidの記述は残っておらず、Jekyllでビルドする際にコンパイルされます。</p>
+            <p>詳細は適宜<a href="https://shopify.github.io/liquid/basics/introduction/" target="_blank">ドキュメント</a>を見てもらうことにして、以下で<code class="language-plaintext highlighter-rouge">{{ }}</code>や<code class="language-plaintext highlighter-rouge">{% %}</code>や<code class="language-plaintext highlighter-rouge">|</code>が出てきたらLiquidの記法だと思ってください。</p>
+            <h2 id="markdownチートシート">Markdownチートシート</h2>
+            <p>Markdown記法のチートシートです。LiquidやJekyll独自の記法も混ざっています。</p>
+            <p>拡張子が<code class="language-plaintext highlighter-rouge">.md</code>のファイル内でしか機能しないので注意です。</p>
+            <h3 id="リンク">リンク</h3>
+            <p>リンクは基本的には次のように書きます；</p>
+            <div class="language-md highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code><span class="p">[</span><span class="nv">立命館大学</span><span class="p">](</span><span class="sx">http://www.ritsumei.ac.jp</span><span class="p">)</span>
+</code></pre>
+              </div>
+            </div>
+            <p>リンクを新規タブで開く場合は次のように書きます；</p>
+            <div class="language-md highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code><span class="p">[</span><span class="nv">立命館大学</span><span class="p">](</span><span class="sx">http://www.ritsumei.ac.jp</span><span class="p">)</span>{:target="_blank"}
+</code></pre>
+              </div>
+            </div>
+            <p>外部リンクは全て新規タブで開くルールにしています。できれば守ってください。</p>
+            <p>内部リンクを貼る場合は、下記のようにしてください；</p>
+            <div class="language-liquid highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>[member](<span class="p">{%</span><span class="w"> </span><span class="nt">link</span><span class="w"> </span>_pages/member.md<span class="w"> </span><span class="p">%}</span>)
+</code></pre>
+              </div>
+            </div>
+            <p><code class="language-plaintext highlighter-rouge">link</code>タグの引数には、リンク先ページの（ビルド前の）ルートからの相対パスを指定します。</p>
+            <p><code class="language-plaintext highlighter-rouge">link</code>タグの詳細は<a href="http://jekyllrb-ja.github.io/docs/liquid/tags/#リンク" target="_blank">こちら</a>を参照してください。</p>
+            <h3 id="画像-image">画像 image</h3>
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">![alt](URL)</code></li>
+              <li>centering:</li>
+            </ul>
+            <p style="text-align: center;"><img src="/assets/img/pages/actalpha_th.jpg" alt="act alpha" /></p>
+            <ul>
+              <li>注意：画像の出力は、基本的には後述の自作マクロ <code class="language-plaintext highlighter-rouge">images.html</code> を使うようにしてください。</li>
+            </ul>
+            <h3 id="文字の装飾">文字の装飾</h3>
+            <ul>
+              <li>取り消し線： <del>取り消します</del></li>
+              <li>太字： <strong>太いです</strong></li>
+              <li>inline code: <code class="language-plaintext highlighter-rouge">\documentclass{jsarticle}</code></li>
+              <li>code block:
+                <div class="language-tex highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code><span class="nt">\begin{align}</span>
+  F = ma <span class="k">\label</span><span class="p">{</span>eq:EOM<span class="p">}</span>
+<span class="nt">\end{align}</span>
+</code></pre>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <h3 id="表-table">表 table</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th style="text-align: right">No.</th>
+                  <th style="text-align: left">who</th>
+                  <th style="text-align: center">eat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: right">1</td>
+                  <td style="text-align: left">man</td>
+                  <td style="text-align: center">Apple</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right">2</td>
+                  <td style="text-align: left">monky</td>
+                  <td style="text-align: center">monopole</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="ソースコード">ソースコード</h3>
+            <p>インラインコードは<code class="language-plaintext highlighter-rouge">`hoge`</code>のように書きます。</p>
+            <p>コードブロックは次のように書きます；</p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>```
+&lt;section class="hoge"&gt;
+  &lt;h1&gt;にゃあ&lt;/h1&gt;
+  &lt;p&gt;ほげほげ。にゃーん&lt;/p&gt;
+&lt;/section&gt;
+```
+</code></pre>
+              </div>
+            </div>
+            <p>コードの言語を指定すれば文法でハイライトしてくれます；</p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>```html
+&lt;section class="hoge"&gt;
+  &lt;h1&gt;にゃあ&lt;/h1&gt;
+  &lt;p&gt;ほげほげ。にゃーん&lt;/p&gt;
+&lt;/section&gt;
+```
+</code></pre>
+              </div>
+            </div>
+            <p>あるいはJekyllで用意されている<code class="language-plaintext highlighter-rouge">highlight</code>タグを使うこともできます；</p>
+            <div class="language-liquid highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">highlight</span><span class="w"> </span>html<span class="w"> </span><span class="p">%}</span>
+&lt;section class="hoge"&gt;
+  &lt;h1&gt;にゃあ&lt;/h1&gt;
+  &lt;p&gt;ほげほげ。にゃーん&lt;/p&gt;
+&lt;/section&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">endhighlight</span><span class="w"> </span><span class="p">%}</span>
+</code></pre>
+              </div>
+            </div>
+            <h2 id="自作マクロ">自作マクロ</h2>
+            <h3 id="画像">画像</h3>
+            <h4 id="画像ファイルの配置">画像ファイルの配置</h4>
+            <p>画像ファイルは、 <code class="language-plaintext highlighter-rouge">/assets/img/</code> 以下のしかるべき場所に配置する。</p>
+            <ul>
+              <li>ディレクトリ構造 (<code class="language-plaintext highlighter-rouge">/assets/img/</code>)
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">events/</code>
+                    <ul>
+                      <li>学祭や新歓の特設ページ用</li>
+                    </ul>
+                  </li>
+                  <li><code class="language-plaintext highlighter-rouge">gallery/</code>
+                    <ul>
+                      <li>いまのところ、spacialページのチラシ用</li>
+                    </ul>
+                  </li>
+                  <li><code class="language-plaintext highlighter-rouge">member-icon/</code>
+                    <ul>
+                      <li>memberページの会員のアイコン</li>
+                    </ul>
+                  </li>
+                  <li><code class="language-plaintext highlighter-rouge">pages/</code>
+                    <ul>
+                      <li>固定ページ（topとかaboutとか）用</li>
+                      <li>基本的に増えることはないはず</li>
+                    </ul>
+                  </li>
+                  <li><code class="language-plaintext highlighter-rouge">posts/</code>
+                    <ul>
+                      <li>newsページに表示する各post用</li>
+                      <li>post名と同じディレクトリを作成して入れる</li>
+                    </ul>
+                  </li>
+                  <li><code class="language-plaintext highlighter-rouge">site-icon/</code>
+                    <ul>
+                      <li>bookmarkとかに使われるこのサイトのアイコン。faviconとか。</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>サムネは手動で生成する。
+              オリジナルは消してもいい。</p>
+            <p>というのが現状なのだが、なんとかして自動化したい。</p>
+            <h4 id="使い方">使い方</h4>
+            <p>画像ソースのパスは、使用するページのヘッダーのところ（<code class="language-plaintext highlighter-rouge">---</code> で囲まれているとこ）に yml で書く。</p>
+            <ul>
+              <li>配列の1つめは alt オプション。</li>
+              <li>配列の2つ目に <code class="language-plaintext highlighter-rouge">/assets/img/</code> 以下のパスのみを指定する。</li>
+            </ul>
+            <p>マクロ解説（<code class="language-plaintext highlighter-rouge">/_includes/image.html</code>）</p>
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">{% include images.html dir=page.dir src=page.images %}</code></li>
+              <li>引数 <code class="language-plaintext highlighter-rouge">dir</code> には共通なパス与える。
+                <ul>
+                  <li>複数ある画像の <code class="language-plaintext highlighter-rouge">img/</code> からファイル自体までの path が同じとき、それをここで指定しておけばヘッダーの配列に書くのはファイル名だけでよくなるので便利。</li>
+                  <li>不要であれば、引数 <code class="language-plaintext highlighter-rouge">dir</code> は指定しなくてよい。</li>
+                </ul>
+              </li>
+              <li>引数 <code class="language-plaintext highlighter-rouge">src</code> にはヘッダーの配列の名前を与える。</li>
+              <li><code class="language-plaintext highlighter-rouge">page.**</code> は「このページに書いてある <code class="language-plaintext highlighter-rouge">**</code> という変数の値」という意味。</li>
+            </ul>
+            <div class="img-container">
+              <img alt="OB1" src="/assets/img/posts/2019-12-14-OB/2019-OB-1.jpg" />
+              <img alt="OB2" src="/assets/img/posts/2019-12-14-OB/2019-OB-2.jpg" />
+            </div>
+            <p>こんな感じで出ます。</p>
+            <div class="img-container">
+              <img alt="act" src="/assets/img/pages/actalpha_th.jpg" />
+              <img alt="act" src="/assets/img/pages/actalpha_th.jpg" />
+              <img alt="act" src="/assets/img/pages/actalpha_th.jpg" />
+            </div>
+            <div class="img-container">
+              <img alt="posts/2019-12-14-OB/2019-OB-2.jpg" src="/assets/img/posts/2019-12-14-OB/2019-OB-2.jpg" />
+              <img alt="pages/actalpha_th.jpg" src="/assets/img/pages/actalpha_th.jpg" />
+              <img alt="pages/actalpha_th.jpg" src="/assets/img/pages/actalpha_th.jpg" />
+            </div>
+            <h2 id="見栄え">見栄え</h2>
+            <p>サイト上での表示の確認です。</p>
+            <h3 id="見出し">見出し</h3>
+            <section class="heading-sample md-typeset">
+              <h1>見出し h1</h1>
+              <h2>見出し h2</h2>
+              <h3>見出し h3</h3>
+              <h4>見出し h4</h4>
+              <h5>見出し h5</h5>
+              <h6>見出し h6</h6>
+              <p>段落。ほげほげ。</p>
+            </section>
+            <style>
+              .heading-sample {
+                padding: 0 30px;
+                margin-bottom: 15px;
+                border: solid 2px pink;
+              }
+            </style>
+            <p>注：見出しは h1 は使わず、h2から始めてください。</p>
+            <h2 id="tables">tables</h2>
+            <p>tbodyなどを用いずtable要素にtrを直置きした場合でも、ブラウザではtbodyが存在するように解釈される。</p>
+            <p>なので、<code class="language-plaintext highlighter-rouge">table &gt; tr</code>のようにtrが直置きされるような場合は考えないことにする。</p>
+            <h3 id="markdownで作成">markdownで作成</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>テキスト方向、クラス指定（<code class="language-plaintext highlighter-rouge">.col-border</code>）</p>
+            <table class="col-border">
+              <thead>
+                <tr>
+                  <th style="text-align: right">あああ</th>
+                  <th style="text-align: center">あああ</th>
+                  <th style="text-align: left">あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: right">右寄せ</td>
+                  <td style="text-align: center">中央寄せ</td>
+                  <td style="text-align: left">左寄せ</td>
+                  <td>指定なし</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right">いいい</td>
+                  <td style="text-align: center">いいい</td>
+                  <td style="text-align: left">いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right">いいい</td>
+                  <td style="text-align: center">いいい</td>
+                  <td style="text-align: left">いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right">いいい</td>
+                  <td style="text-align: center">いいい</td>
+                  <td style="text-align: left">いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="基本パターン">基本パターン</h3>
+            <h4 id="captionなし">captionなし</h4>
+            <p>thead, tbody使用</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>tbodyのみ使用</p>
+            <table>
+              <tbody>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>tbodyのみ使用。thなしでtdのみ</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>NG: theadとtbody使用。thなし</p>
+            <table>
+              <thead>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 id="captionあり">captionあり</h4>
+            <table>
+              <caption>thead, tbody使用</caption>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <caption>tbodyのみ</caption>
+              <tbody>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <caption>tbodyのみ。thなし</caption>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="レイアウトいろいろ">レイアウトいろいろ</h3>
+            <p>現状のcssでは下線を引くべき<code class="language-plaintext highlighter-rouge">th</code>を特定できないので、セルフでクラスを付けて区別する他無いです。</p>
+            <p><code class="language-plaintext highlighter-rouge">.left-header</code>クラスをセルフで付けることを妥協案とします。</p>
+            <table class="left-header">
+              <caption>左ヘッダー<code>class="left-header"</code></caption>
+              <tbody>
+                <tr>
+                  <th>あああ</th>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <th>あああ</th>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <th>あああ</th>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <th>あああ</th>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="left-header col-border">
+              <caption>
+                左ヘッダーかつ縦ボーダーあり<br />
+                <code>class="left-header col-border"</code>
+              </caption>
+              <tbody>
+                <tr>
+                  <th>あああ</th>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <th>あああ</th>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <th>あああ</th>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <th>あああ</th>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="no-zebra">
+              <caption>縞模様なし<code>class="no-zebra"</code></caption>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="row-border">
+              <caption>横ボーダーあり<code>class="row-border"</code></caption>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="row-border">
+              <caption>横ボーダーあり、一部非表示</caption>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td class="no-row-border">非表示 td</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td class="no-row-border">非表示 td</td>
+                  <td>いいい</td>
+                  <td class="no-row-border">非表示 td</td>
+                </tr>
+                <tr class="no-row-border">
+                  <td>非表示 tr</td>
+                  <td>非表示 tr</td>
+                  <td>非表示 tr</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="col-border">
+              <caption>縦ボーダーあり<code>class="col-border"</code></caption>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="col-border">
+              <caption>縦ボーダーあり、一部非表示</caption>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td class="no-col-border">非表示 td</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr class="no-col-border">
+                  <td>非表示 tr</td>
+                  <td>非表示 tr</td>
+                  <td>非表示 tr</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td class="no-col-border">非表示 td</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <caption>rowspanとcolspan。角に相当するセルには手動でborder-radiusを付けなければならない</caption>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th colspan="2">あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td rowspan="2">ううう</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td class="l b" rowspan="3">ううう</td>
+                  <td>いいい</td>
+                  <td rowspan="2">ううう</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td class="r b" rowspan="2" colspan="2">ううう</td>
+                </tr>
+                <tr>
+                  <td class="c">あああ</td>
+                  <td>いいい</td>
+                  <td class="c">あああ</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <caption>rowspan使用例のサンプル。<br />
+                縞模様と横ボーダーを手動で処理</caption>
+              <thead>
+                <tr>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                  <th>あああ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="zebra-odd">
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr class="zebra-even">
+                  <td rowspan="3">いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr class="zebra-even no-row-border">
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr class="zebra-even no-row-border">
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr class="zebra-odd">
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr class="zebra-even">
+                  <td>いいい</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr class="zebra-odd">
+                  <td class="l b" rowspan="2">ううう</td>
+                  <td>いいい</td>
+                  <td>いいい</td>
+                </tr>
+                <tr class="zebra-odd no-row-border">
+                  <td class="c">いいい</td>
+                  <td>いいい</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="フォントサイズ">フォントサイズ</h2>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>1 + 8/8 = 2     | 16 * 2     = 32
+1 + 6/8 = 1.75  | 16 * 1.75  = 28  h1
+1 + 4/8 = 1.5   | 16 * 1.5   = 24
+1 + 3/8 = 1.375 | 16 * 1.375 = 22  h2
+1 + 2/8 = 1.25  | 16 * 1.25  = 20  h3
+1 + 1/8 = 1.125 | 16 * 1.125 = 18  h4-h6
+1 + 0/8 = 1     | 16 * 1     = 16  p
+1 - 1/8 = 0.875 | 16 * 0.875 = 14  small
+1 - 2/8 = 0.75  | 16 * 0.75  = 12
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="wrapper">
+          <nav class="site-nav">
+            <ul class="site-nav-list">
+              <li><a href="/" >Top</a></li>
+              <li><a href="/news/" >News</a></li>
+              <li><a href="/about/" >About</a></li>
+              <li><a href="/member/" >Member</a></li>
+              <li><a href="/material/" >Material</a></li>
+              <li><a href="/link/" >Link</a></li>
+              <li><a href="/special/" >Special</a></li>
+            </ul>
+          </nav>
+          <div class="social-links">
+            <a href="mailto:vuccaken@gmail.com" target="_blank">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="https://twitter.com/vuccaken" target="_blank">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="https://github.com/vuccaken" target="_blank">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="https://www.youtube.com/channel/UCKO7a5YVCnFAquUzLKeIrMg" target="_blank">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </div>
+          <div class="copyright">&copy;2019-2022 立命館大学 物理科学研究会</div>
+        </div>
+      </footer>
+      <div class="back-to-top">
+        <a href="#" class="btn">
+          <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M754.42175 535.630187 534.314727 315.041186c-3.136433-4.727675-7.768941-8.646937-13.719466-10.728342-3.183506-1.249457-6.563486-1.812275-9.993608-1.738597-0.24457 0-0.442068-0.12382-0.697895-0.12382-0.331551 0-0.600681 0.148379-0.932232 0.170892-3.342118-0.047072-6.638187 0.466628-9.711176 1.665942-6.05081 2.105964-10.751878 6.075369-13.912871 10.924817L265.432837 535.630187c-10.201339 10.191106-9.406231 27.53103 1.727341 38.653345 11.144828 11.118222 27.947516 11.412934 38.151925 1.223874 0.806365-0.832971 1.603521-1.372254 2.276856-2.303462l173.826977-173.521009 0.282433 413.372725c-0.159636 1.079588 0 1.959631 0 3.039219 0 13.568017 12.076036 24.591071 27.838022 24.591071s28.54615-11.023054 28.54615-24.591071l0.295735-416.411945 173.862793 173.521009c0.686638 0.931209 1.469468 1.470491 2.304486 2.303462 10.188037 10.18906 26.991748 9.894348 38.136575-1.223874C763.829004 563.161217 764.612856 545.821293 754.42175 535.630187z"  /><path d="M865.262184 209.94764c0 13.851473-11.220552 25.082258-25.083282 25.082258L179.665451 235.029898c-13.852496 0-25.083282-11.231809-25.083282-25.082258l0 0c0-13.852496 11.230786-25.083282 25.083282-25.083282l660.513452 0C854.041632 184.864358 865.262184 196.095143 865.262184 209.94764L865.262184 209.94764z"  /></svg>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
