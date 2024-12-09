@@ -35,7 +35,7 @@ title: Material
 ### 2020年代
 
 - 2024年度
-  - 近日更新予定. 
+  - [2024年度初版](https://drive.google.com/file/d/12yXhTjig22_y-rQ0ttFPgbic-YN02MME/view?usp=sharing){:target="_blank"}
 
 
 - 2023年度
